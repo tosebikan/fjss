@@ -10,3 +10,7 @@ ul li {
 .nav_group li {
   margin: 5px 10px;
 }
+
+a {
+  text-decoration: none;
+}
