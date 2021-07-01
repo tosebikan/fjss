@@ -1,0 +1,12 @@
+ul li {
+  list-style-type: none;
+}
+
+.nav_group {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav_group li {
+  margin: 5px 10px;
+}

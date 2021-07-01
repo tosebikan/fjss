@@ -35,12 +35,15 @@ import Policy from "./screens/work/policy";
 import Projects from "./screens/work/projects";
 import Strategic from "./screens/work/strategic";
 
+import Nav from "./components/nav";
+
 function App() {
   return (
     <Router>
       <div className="App">
         <header className="App-header"></header>
 
+        <Nav />
         <Switch>
           <Route path="/" component={Home} exact={true} />
 
