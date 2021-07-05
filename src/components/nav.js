@@ -1,33 +1,36 @@
 import { NavLink } from "react-router-dom";
 import "./nav.css";
+import { FiChevronDown } from "react-icons/fi";
+import Logo from "../assets/images/logo.png";
 
 function Nav() {
   return (
     <div className="nav">
       <ul className="nav_group">
-        <li>
+        <li className="logo_container">
           <NavLink to="/" exact>
-            Home
+            <img src={Logo} alt="" className="logo" />
           </NavLink>
         </li>
-        <li>
+        <li className="sub_title">
           <NavLink to="/contact" exact>
             Contact
           </NavLink>
         </li>
-        <li>
+        <li className="sub_title">
           <NavLink to="/about" exact>
             About
           </NavLink>
         </li>
-        <li>
-          Our work
-          <ul>
-            <li>
-              <NavLink to="/policy" exact>
-                Policy Development Input Support
-              </NavLink>
-            </li>
+        <li className="sub_title">
+          <span className="sub_title_group">
+            Our work <FiChevronDown />
+          </span>
+          <ul className="sub_nav">
+            <NavLink to="/policy" exact>
+              <li> Policy Development Input Support </li>
+            </NavLink>
+
             <li>
               <NavLink to="/equality" exact>
                 Equality Diversity and Inclusion
@@ -60,9 +63,13 @@ function Nav() {
             </li>
           </ul>
         </li>
-        <li>
-          Resources
-          <ul>
+        <li className="sub_title">
+          <span className="sub_title_group">
+            Resources
+            <FiChevronDown />
+          </span>
+
+          <ul className="sub_nav">
             <li>
               <NavLink to="/reports" exact>
                 Reports
@@ -85,9 +92,13 @@ function Nav() {
             </li>
           </ul>
         </li>
-        <li>
-          Get involved
-          <ul>
+        <li className="sub_title">
+          <span className="sub_title_group">
+            Get involved
+            <FiChevronDown />
+          </span>
+
+          <ul className="sub_nav">
             <li>
               <NavLink to="/donate" exact>
                 Donate
@@ -110,9 +121,13 @@ function Nav() {
             </li>
           </ul>
         </li>
-        <li>
-          Media
-          <ul>
+        <li className="sub_title">
+          <span className="sub_title_group">
+            Media
+            <FiChevronDown />
+          </span>
+
+          <ul className="sub_nav">
             <li>
               <NavLink to="/gallery" exact>
                 Gallery (Photo and videos)
@@ -135,11 +150,14 @@ function Nav() {
             </li>
           </ul>
         </li>
-        <li>
+        <li className="sub_title">
           <NavLink to="/events" exact>
-            Events
+            <span className="sub_title_group">
+              Events
+              <FiChevronDown />
+            </span>
           </NavLink>
-          <ul>
+          <ul className="sub_nav">
             <li>
               <NavLink to="/upcoming_events" exact>
                 Upcoming Events

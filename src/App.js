@@ -44,7 +44,7 @@ function App() {
         <header className="App-header"></header>
 
         <Nav />
-        <Switch>
+        <Switch className="routes">
           <Route path="/" component={Home} exact={true} />
 
           {/* About */}
