@@ -12,8 +12,9 @@ ul li {
   display: flex;
   flex-direction: row;
   padding-left: 300px;
-  height: 40px;
-  padding-top: 40px;
+  height: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   margin-top: 0;
   z-index: 10;
 }
@@ -54,7 +55,7 @@ a {
 
 .sub_title:hover .sub_nav {
   display: block;
-  margin-top: 10px;
+  /* margin-top: 5px; */
 }
 
 .sub_nav {
@@ -74,6 +75,7 @@ a {
   height: 30px;
   display: flex;
   align-items: center;
+  padding-left: 5px;
 }
 
 .sub_nav li:hover {
