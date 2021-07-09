@@ -138,6 +138,36 @@ function Home() {
           <button>Join up</button>
         </div>
       </div>
+
+      {/*HOME NEWS SECTION*/}
+      <div className="home_news_container">
+        <div className="home_news_left">
+          <div className="home_news_images">
+            <img src={homeevent} alt="" />
+            <div className="home_news_vertical_image">
+              <img src={homeevent} alt="" />
+              <img src={homeevent} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="home_news_right">
+          <h2>LATEST NEWS</h2>
+          <div className="home_news_date">
+            <p>21</p>
+            <p>Feb</p>
+          </div>
+          <p className="home_news_body">
+            Serving our community is core to fjss group’s goals. [...]
+          </p>
+          <div className="home_new_snippet">
+            <p>
+              “Thank you FJSS Group for the friendly and helpful service.” Your
+              food support team is wonderful. 🙏🙏 Ignitious Ocansey
+            </p>
+          </div>
+          <button>Read more</button>
+        </div>
+      </div>
     </div>
   );
 }
