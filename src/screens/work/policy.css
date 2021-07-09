@@ -1,0 +1,36 @@
+.policy_hero {
+  position: relative;
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  margin-bottom: 150px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+}
+
+.policy_hero_text {
+  position: absolute;
+  top: 30%;
+  margin: auto 10%;
+}
+
+.policy_hero h2 {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+  align-self: center;
+}
+.policy_hero p {
+  color: #fc6a01;
+
+  font-size: 23px;
+  font-weight: 600;
+  align-self: center;
+}
+
+.policy_hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

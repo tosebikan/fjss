@@ -36,14 +36,15 @@ import Projects from "./screens/work/projects";
 import Strategic from "./screens/work/strategic";
 
 import Nav from "./components/nav";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <header className="App-header"></header>
-
         <Nav />
+
         <Switch className="routes">
           <Route path="/" component={Home} exact={true} />
 
@@ -107,6 +108,7 @@ function App() {
           <Route path="/strategic" component={Strategic} exact={true} />
         </Switch>
       </div>
+      <Footer />
     </Router>
   );
 }
