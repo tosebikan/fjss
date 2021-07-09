@@ -13,14 +13,22 @@
 .policy_hero_text {
   position: absolute;
   top: 30%;
-  margin: auto 10%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .policy_hero h2 {
   color: #fff;
   font-size: 72px;
   font-weight: 700;
-  align-self: center;
+  /* align-self: center; */
 }
 .policy_hero p {
   color: #fc6a01;
