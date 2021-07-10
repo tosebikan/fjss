@@ -1,0 +1,186 @@
+.policy_hero {
+  position: relative;
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  margin-bottom: 150px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+
+.policy_hero_text {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.policy_hero h2 {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+  /* align-self: center; */
+}
+.policy_hero p {
+  color: #fc6a01;
+
+  font-size: 23px;
+  font-weight: 600;
+  align-self: center;
+}
+
+.policy_hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* POLICY DEV SECTION */
+
+.policy_dev {
+  text-align: left;
+  margin: 0 5% 130px;
+}
+.policy_dev h2 {
+  font-size: 48px;
+  font-weight: 500;
+}
+.policy_dev p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+/* PROJECT COMPLETE SECTION */
+
+.project_complete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 150px;
+}
+
+.project_complete_left {
+  text-align: left;
+}
+
+.project_complete_left h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+.project_complete_title {
+  width: 350px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.project_complete_body {
+  width: 350px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.project_complete_left button {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  background-color: #fc6a01;
+  color: #fff;
+}
+.project_complete_left button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: #000;
+  color: #fff;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.project_complete_right img {
+  width: 600px;
+  height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ONGOING PROJECTS */
+
+.ongoing_projects {
+  background-color: #fc9801;
+  color: #fff;
+  padding: 60px 0;
+}
+.ongoing_projects h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.ongoing_projects_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ongoing_projects_group {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #000;
+  text-align: left;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.ongoing_projects_group img {
+  width: 350px;
+  height: 250px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.ongoing_projects_group button {
+  background-color: #fc6a01;
+  color: #fff;
+  border: none;
+  width: 100px;
+  border-radius: 20px;
+  padding: 8px 0;
+  margin-bottom: 20px;
+}
+
+.ongoing_projects_title {
+  font-size: 21px;
+  font-weight: 700;
+  width: 350px;
+  margin: 0;
+}
+.ongoing_projects_body {
+  font-size: 18px;
+  font-weight: 400;
+  width: 350px;
+  line-height: 27px;
+}
+
+/* UPCOMING PROJECTS */
+
+.upcoming_projects {
+  background-color: #fff;
+  color: #fff;
+  padding: 60px 0;
+}
+.upcoming_projects h2 {
+  color: #000;
+  font-size: 48px;
+  font-weight: 700;
+}

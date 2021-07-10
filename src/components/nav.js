@@ -28,7 +28,9 @@ function Nav() {
           </span>
           <ul className="sub_nav">
             <NavLink to="/policy" exact>
-              <li> Policy Development Input Support </li>
+              <li>
+                <p> Policy Development Input Support </p>
+              </li>
             </NavLink>
 
             <li>
@@ -41,11 +43,11 @@ function Nav() {
                 Legal Services
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/projects" exact>
-                Projects
-              </NavLink>
-            </li>
+
+            <NavLink to="/projects" exact>
+              <li> Projects </li>
+            </NavLink>
+
             <li>
               <NavLink to="/strategic" exact>
                 Strategic Partnerships
