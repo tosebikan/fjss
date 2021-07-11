@@ -33,36 +33,46 @@ function Nav() {
               </li>
             </NavLink>
 
-            <li>
-              <NavLink to="/equality" exact>
-                Equality Diversity and Inclusion
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/legal" exact>
-                Legal Services
-              </NavLink>
-            </li>
-
-            <NavLink to="/projects" exact>
-              <li> Projects </li>
+            <NavLink to="/equality" exact>
+              <li>
+                <p> Equality Diversity and Inclusion </p>{" "}
+              </li>
             </NavLink>
 
-            <li>
-              <NavLink to="/strategic" exact>
-                Strategic Partnerships
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/community" exact>
-                Community Engagements
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/opportunity" exact>
-                Creating Opportunities
-              </NavLink>
-            </li>
+            <NavLink to="/legal" exact>
+              <li>
+                {" "}
+                <p> Legal Services </p>
+              </li>
+            </NavLink>
+
+            <NavLink to="/projects" exact>
+              <li>
+                {" "}
+                <p> Projects </p>
+              </li>
+            </NavLink>
+
+            <NavLink to="/strategic" exact>
+              <li>
+                {" "}
+                <p> Strategic Partnerships </p>{" "}
+              </li>
+            </NavLink>
+
+            <NavLink to="/community" exact>
+              <li>
+                {" "}
+                <p> Community Engagements </p>{" "}
+              </li>
+            </NavLink>
+
+            <NavLink to="/opportunity" exact>
+              <li>
+                {" "}
+                <p> Creating Opportunities </p>
+              </li>
+            </NavLink>
           </ul>
         </li>
         <li className="sub_title">
@@ -72,26 +82,33 @@ function Nav() {
           </span>
 
           <ul className="sub_nav">
-            <li>
-              <NavLink to="/reports" exact>
-                Reports
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/links" exact>
-                Links
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/info" exact>
-                Helpful information
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/financial-accounts" exact>
-                Financial Accounts
-              </NavLink>
-            </li>
+            <NavLink to="/reports" exact>
+              <li>
+                {" "}
+                <p>Reports </p>
+              </li>
+            </NavLink>
+
+            <NavLink to="/links" exact>
+              <li>
+                {" "}
+                <p> Links </p>
+              </li>
+            </NavLink>
+
+            <NavLink to="/info" exact>
+              <li>
+                {" "}
+                <p> Helpful information </p>{" "}
+              </li>
+            </NavLink>
+
+            <NavLink to="/financial-accounts" exact>
+              <li>
+                {" "}
+                <p> Financial Accounts </p>{" "}
+              </li>
+            </NavLink>
           </ul>
         </li>
         <li className="sub_title">
@@ -101,26 +118,33 @@ function Nav() {
           </span>
 
           <ul className="sub_nav">
-            <li>
-              <NavLink to="/donate" exact>
-                Donate
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/volunteer" exact>
-                Volunteer
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/fund-raising" exact>
-                Fundraising
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/jobs" exact>
-                Jobs
-              </NavLink>
-            </li>
+            <NavLink to="/donate" exact>
+              <li>
+                {" "}
+                <p> Donate </p>
+              </li>
+            </NavLink>
+
+            <NavLink to="/volunteer" exact>
+              <li>
+                {" "}
+                <p> Volunteer </p>{" "}
+              </li>
+            </NavLink>
+
+            <NavLink to="/fund-raising" exact>
+              <li>
+                {" "}
+                <p> Fundraising </p>
+              </li>
+            </NavLink>
+
+            <NavLink to="/jobs" exact>
+              <li>
+                {" "}
+                <p> Jobs </p>{" "}
+              </li>
+            </NavLink>
           </ul>
         </li>
         <li className="sub_title">
@@ -130,26 +154,33 @@ function Nav() {
           </span>
 
           <ul className="sub_nav">
-            <li>
-              <NavLink to="/gallery" exact>
-                Gallery (Photo and videos)
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/podcast" exact>
-                Podcast
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/blog" exact>
-                Blog
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/news" exact>
-                News
-              </NavLink>
-            </li>
+            <NavLink to="/gallery" exact>
+              <li>
+                {" "}
+                <p> Gallery (Photo and videos) </p>{" "}
+              </li>
+            </NavLink>
+
+            <NavLink to="/podcast" exact>
+              <li>
+                {" "}
+                <p> Podcast </p>{" "}
+              </li>
+            </NavLink>
+
+            <NavLink to="/blog" exact>
+              <li>
+                {" "}
+                <p> Blog </p>{" "}
+              </li>
+            </NavLink>
+
+            <NavLink to="/news" exact>
+              <li>
+                {" "}
+                <p> News </p>
+              </li>
+            </NavLink>
           </ul>
         </li>
         <li className="sub_title">
@@ -160,21 +191,26 @@ function Nav() {
             </span>
           </NavLink>
           <ul className="sub_nav">
-            <li>
-              <NavLink to="/upcoming_events" exact>
-                Upcoming Events
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/past-events" exact>
-                Past Events
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/speak" exact>
-                Speak at our Events
-              </NavLink>
-            </li>
+            <NavLink to="/upcoming_events" exact>
+              <li>
+                {" "}
+                <p> Upcoming Events </p>
+              </li>
+            </NavLink>
+
+            <NavLink to="/past-events" exact>
+              <li>
+                {" "}
+                <p> Past Events </p>{" "}
+              </li>
+            </NavLink>
+
+            <NavLink to="/speak" exact>
+              <li>
+                {" "}
+                <p> Speak at our Events </p>{" "}
+              </li>
+            </NavLink>
           </ul>
         </li>
       </ul>
