@@ -72,10 +72,28 @@ function Donate() {
           </div>
           <div className="donate_method_row">
             <input type="radio" />
-            <p>Offline Donation</p>
+            <p>Paypal</p>
           </div>
         </form>
       </div>
+
+      {/*DONATE TERMS SECTION */}
+      <div className="donate_terms">
+        <h2>Terms and Conditions</h2>
+        <p>
+          Your personal data will be used to process your donation, support your
+          experience throughout this website, and for other purposes described
+          in our privacy policy.
+        </p>
+        <form className="donate_terms_form">
+          <div className="donate_terms_row">
+            <input type="radio" />
+            <p> Yes, I am happy for you to contact me via email or phone.</p>
+          </div>
+        </form>
+      </div>
+
+      <button className="donate_button">Donate Now</button>
     </div>
   );
 }

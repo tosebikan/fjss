@@ -90,7 +90,7 @@
   height: 45px;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-right: 20px;
   font-size: 18px;
 }
@@ -100,7 +100,7 @@
   height: 45px;
   padding: 0 20px;
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-right: 30px;
   border-radius: 5px;
   border: none;
@@ -141,7 +141,7 @@
   height: 45px;
   padding: 0 20px;
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
   margin-right: 0 40px;
   border-radius: 5px;
@@ -159,7 +159,7 @@
   height: 45px;
   padding: 0 20px;
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
   margin-right: 0 40px;
   border-radius: 5px;
@@ -176,11 +176,82 @@
 .donate_method {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  align-items: flex-start;
   width: 80%;
   height: 150px;
   border: 1px solid #cacaca;
   margin: 40px auto;
   border-radius: 20px;
+}
+.donate_method h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 13px;
+  margin-top: 16px;
+  padding-left: 40px;
+}
+.donate_method p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 13px;
+  padding-left: 40px;
+}
+
+.donate_method_form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 40px;
+}
+.donate_method_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background-color: red; */
+  margin-right: 100px;
+}
+.donate_method_row p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 13px;
+  padding: 0 10px;
+}
+
+/* DONATE TERMS */
+
+.donate_terms {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+}
+.donate_terms h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.donate_terms p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.donate_terms_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.donate_terms_row input {
+  margin-right: 10px;
+}
+
+/* DONATE BUTTON */
+
+.donate_button {
+  border: none;
+  padding: 16px 40px;
+  background-color: #fc6a01;
+  color: #fff;
+  border-radius: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 100px 0;
 }
