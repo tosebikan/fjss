@@ -1,0 +1,99 @@
+.volunteer_hero {
+  position: relative;
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  margin-bottom: 150px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+
+.volunteer_hero_text {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.volunteer_hero h2 {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+  /* align-self: center; */
+}
+.volunteer_hero p {
+  color: #fc6a01;
+
+  font-size: 23px;
+  font-weight: 600;
+  align-self: center;
+}
+
+.volunteer_hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* VOLUNTEER REQ SECTION */
+
+.volunteer_req_form {
+  margin: 40px auto 80px;
+  width: 60%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+}
+
+.volunteer_req_form input {
+  height: 45px;
+  margin-bottom: 60px;
+  padding: 0 20px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.volunteer_req_form_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.volunteer_req_form_row input {
+  width: 43%;
+  height: 45px;
+}
+.volunteer_req_form textarea {
+  height: 250px;
+  padding: 20px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer_req_form_bottom {
+  text-align: left;
+}
+
+.volunteer_check_group {
+  display: flex;
+  flex-direction: row;
+}
+.volunteer_check_group input {
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+
+.volunteer_req_form_bottom button {
+  border: none;
+  background-color: #fc6a01;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
