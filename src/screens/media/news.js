@@ -31,15 +31,17 @@ function News() {
           <img src={gallery1} alt="" />
           <div className="news_card_info">
             <p className="news_card_date">21 Feb, 2021</p>
-            <p>FJSS Group Food Support</p>
-            <p>Serving our community is core to FJSS Group’s goals</p>
-            <button>Read more</button>
+            <p className="news_card_title">FJSS Group Food Support</p>
+            <p className="news_card_body">
+              Serving our community is core to FJSS Group’s goals
+            </p>
+            <button className="news_card_button">Read more</button>
             <div className="news_card_hr" />
-            <div>
+            <div className="news_card_bottom">
               <div>
                 <p>Ignitious Ocansey</p>
               </div>
-              <div>
+              <div className="news_card_comments">
                 <p> 0</p>
                 <p>Comments</p>
               </div>
