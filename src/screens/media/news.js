@@ -1,7 +1,15 @@
+import "./news.css";
+import HeroImage from "../../assets/images/home_hero.jpg";
 function News() {
   return (
     <div className="news_container">
-      <h2>Welcome to News Screen</h2>
+      <div className="news_hero">
+        <img src={HeroImage} alt="" />
+        <div className="news_hero_text">
+          <h2>Podcast</h2>
+          <p>FJSS GROUP</p>
+        </div>
+      </div>
     </div>
   );
 }
