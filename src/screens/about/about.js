@@ -1,6 +1,8 @@
 import "./about.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
 import HomeAbout from "../../assets/images/homeAbout.png";
+import client1 from "../../assets/images/client1.png";
+import client2 from "../../assets/images/client2.png";
 
 const statements = [
   {
@@ -17,6 +19,24 @@ const statements = [
     title: "Our Values",
     body:
       "Our values are underpinned by our four C’s; Commitment to our cause, Competency in the field of our work, Consistency in our delivery of service and Continuity in terms of how we sustain our work and maintain our level of service."
+  }
+];
+
+const clients = [
+  {
+    url: client1
+  },
+  {
+    url: client2
+  },
+  {
+    url: client1
+  },
+  {
+    url: client2
+  },
+  {
+    url: client1
   }
 ];
 function About() {
@@ -69,9 +89,18 @@ function About() {
 
       <div className="about_statement_container">
         {statements.map((el, id) => (
-          <div className="about_statement_card">
+          <div className="about_statement_card" key={id}>
             <p className="about_statement_title">{el.title}</p>
             <p className="about_statement_body">{el.body}</p>
+          </div>
+        ))}
+      </div>
+
+      {/*CLIENTS SECTION */}
+      <div className="about_clients_container">
+        {clients.map((el, id) => (
+          <div key={id} className="about_clients">
+            <img src={el.url} alt="" />
           </div>
         ))}
       </div>
