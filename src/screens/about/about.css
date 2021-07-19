@@ -43,3 +43,48 @@
   width: 100%;
   object-fit: cover;
 }
+
+/* ABOUT INFO SECTION */
+.about_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 75px 100px;
+}
+.about_info p {
+  width: 90%;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* STATEMENT SECTION */
+
+.about_statement_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 90px 100px;
+}
+.about_statement_card {
+  width: 300px;
+  height: 220px;
+  border-radius: 18px;
+  background-color: #fc6a01;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+}
+
+.about_statement_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about_statement_body {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0;
+}
