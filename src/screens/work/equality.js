@@ -6,7 +6,7 @@ function Equality() {
       <div className="policy_hero">
         <img src={HeroImage} alt="" />
         <div className="policy_hero_text">
-          <h2>Eqaality Diversity and Inclusion</h2>
+          <h2>Equality Diversity and Inclusion</h2>
           <p>FJSS GROUP</p>
         </div>
       </div>
