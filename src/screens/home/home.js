@@ -10,7 +10,7 @@ function Home() {
     <div className="home_container">
       <div className="home_hero_container">
         <img src={HeroImage} alt="" className="home_hero" />
-        <h1>For A Fair Just And Inclusive Scotland</h1>
+        <h1>For a Fair, Just and Inclusive Scotland</h1>
 
         {/* COUNTDOWN SECTION*/}
         <div className="home_countdown">

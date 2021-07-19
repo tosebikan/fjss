@@ -62,7 +62,7 @@ function Contact() {
           </div>
           <input placeholder="How did you hear about us?" />
           <input placeholder="Subject*" />
-          <textArea placeholder="Messsage*" />
+          <textArea placeholder="Leave a Messsage*" />
           <button>Send Message</button>
         </form>
       </div>
