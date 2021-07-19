@@ -1,6 +1,6 @@
 import "./contact.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
-import gallery1 from "../../assets/images/gallery1.png";
+// import gallery1 from "../../assets/images/gallery1.png";
 import { FiChevronDown } from "react-icons/fi";
 function Contact() {
   return (
