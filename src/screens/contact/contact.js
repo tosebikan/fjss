@@ -1,7 +1,9 @@
 import "./contact.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
 // import gallery1 from "../../assets/images/gallery1.png";
-import { FiChevronDown } from "react-icons/fi";
+import { IoLocation } from "react-icons/io5";
+import { MdPhoneInTalk } from "react-icons/md";
+import { GrMail } from "react-icons/gr";
 function Contact() {
   return (
     <div className="contact_container">
@@ -13,11 +15,12 @@ function Contact() {
         </div>
       </div>
 
+      {/* CONTACT INFO SECTION*/}
       <div className="contact_info">
         <h2>Get in touch</h2>
         <div className="contact_cards">
           <div className="contact_card" style={{ backgroundColor: "#FC6A01" }}>
-            <FiChevronDown />
+            <IoLocation className="contact_icon" />
             <h4> Our Location</h4>
             <p className="contact_body">
               Justice House 24-26 Main Street, West Calder, West Lothain, EH55
@@ -25,12 +28,12 @@ function Contact() {
             </p>
           </div>
           <div className="contact_card" style={{ backgroundColor: "#E768FC" }}>
-            <FiChevronDown />
+            <MdPhoneInTalk className="contact_icon" />
             <h4>Phone Number</h4>
             <p className="contact_body">(+44) 131 2851 013</p>
           </div>
           <div className="contact_card" style={{ backgroundColor: "#62B1FA" }}>
-            <FiChevronDown />
+            <GrMail className="contact_icon" />
             <h4>Email Addresses</h4>
             <p className="contact_title">General enquiries: </p>
             <p className="contact_body">info@fjssgroup.org</p>
@@ -40,6 +43,28 @@ function Contact() {
             <p className="contact_body">foodsupport@fjssgroup.org</p>
           </div>
         </div>
+      </div>
+
+      {/* CONTACT INFO SECTION*/}
+      <div className="contact_form_container">
+        <p className="contact_form_title">Inquiry</p>
+        <h2 className="contact_form_subTitle">Leave A Message</h2>
+        <p className="contact_form_body">
+          {" "}
+          Please use this form to get in touch; your inquiry will be directed to
+          the right person.
+        </p>
+
+        <form className="contact_form">
+          <div className="contact_form_row">
+            <input placeholder="Your Name*" />
+            <input placeholder="Your Email*" />
+          </div>
+          <input placeholder="How did you hear about us?" />
+          <input placeholder="Subject*" />
+          <textArea placeholder="Subject*" />
+          <button>Send Message</button>
+        </form>
       </div>
     </div>
   );
