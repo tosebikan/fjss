@@ -18,9 +18,26 @@ function Nav() {
           </NavLink>
         </li>
         <li className="sub_title">
-          <NavLink to="/about" exact>
-            About
-          </NavLink>
+          <span className="sub_title_group">
+            About <FiChevronDown />
+          </span>
+          <ul className="sub_nav">
+            <NavLink to="/about" exact>
+              <li>
+                <p> About us</p>
+              </li>
+            </NavLink>
+            <NavLink to="approach" exact>
+              <li>
+                <p>Our Approach</p>
+              </li>
+            </NavLink>
+            <NavLink to="/people" exact>
+              <li>
+                <p>Our People</p>
+              </li>
+            </NavLink>
+          </ul>
         </li>
         <li className="sub_title">
           <span className="sub_title_group">
