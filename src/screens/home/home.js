@@ -1,3 +1,4 @@
+import * as React from "react";
 import "./home.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
 import HomeAbout from "../../assets/images/homeAbout.png";
@@ -6,6 +7,49 @@ import homeevent from "../../assets/images/homeevent.png";
 import homeevent2 from "../../assets/images/homeevent2.png";
 
 function Home() {
+  const calculateTimeLeft = () => {
+    let year = new Date().getFullYear();
+    let difference = +new Date(`10/01/${year}`) - +new Date();
+    console.log({ difference });
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60)
+      };
+    }
+
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = React.useState(calculateTimeLeft());
+  const [year] = React.useState(new Date().getFullYear());
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+  });
+
+  const timerComponents = [];
+
+  Object.keys(timeLeft).forEach(interval => {
+    if (!timeLeft[interval]) {
+      return;
+    }
+
+    timerComponents.push(
+      <span>
+        {timeLeft[interval]} {interval}{" "}
+      </span>
+    );
+  });
+
+  // console.log({ timerComponents });
+  console.log({ timeLeft });
   return (
     <div className="home_container">
       <div className="home_hero_container">
@@ -15,10 +59,11 @@ function Home() {
         {/* COUNTDOWN SECTION*/}
         <div className="home_countdown">
           <h3>Countdown to the next event: </h3>
+
           <div className="home_countdown_timer">
-            <p>20hrs</p>
-            <p>19mins</p>
-            <p>60secs</p>
+            <p>{timeLeft.hours}hrs</p>
+            <p>{timeLeft.minutes}mins</p>
+            <p>{timeLeft.seconds}secs</p>
           </div>
         </div>
       </div>
