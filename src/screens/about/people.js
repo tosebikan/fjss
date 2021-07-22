@@ -25,6 +25,24 @@ const data = [
     linkedin: "#",
     facebook: "#",
     twitter: "#"
+  },
+  {
+    id: 1,
+    url: people1,
+    name: "Silence Chihuri",
+    title: "CHIEF EXECUTIVE OFFICER",
+    linkedin: "#",
+    facebook: "#",
+    twitter: "#"
+  },
+  {
+    id: 2,
+    url: people2,
+    name: "Professor Sir Geoff Palmer OBE DSc",
+    title: "CHAIRMAN",
+    linkedin: "#",
+    facebook: "#",
+    twitter: "#"
   }
 ];
 function People() {
@@ -39,18 +57,20 @@ function People() {
       </div>
 
       <div className="people_images">
-        <div className="people_image">
-          <img src={people1} alt="" />
-          <div className="people_info">
-            <h4>Silence Chihuri</h4>
-            <p>CHIEF EXECUTIVE OFFICER</p>
-            <div className="people_socials">
-              <FaFacebook className="people_icon" />
-              <FaTwitter className="people_icon" />
-              <FaLinkedin className="people_icon" />
+        {data.map(el => (
+          <div className="people_card">
+            <img src={el.url} alt="" />
+            <div className="people_info">
+              <h4>{el.name}</h4>
+              <p>{el.title}</p>
+              <div className="people_socials">
+                <FaFacebook className="people_icon" />
+                <FaTwitter className="people_icon" />
+                <FaLinkedin className="people_icon" />
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

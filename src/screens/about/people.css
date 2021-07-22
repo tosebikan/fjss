@@ -43,3 +43,73 @@
   width: 100%;
   object-fit: cover;
 }
+
+/* PEOPLE SECTION */
+
+.people_images {
+  margin: 200px 0;
+}
+
+.people_card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 350px;
+  height: 400px;
+}
+.people_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.people_info {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  min-height: 100px;
+  bottom: -50px;
+  align-self: center;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.people_info h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.people_info p {
+  margin-top: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #696969;
+}
+
+.people_card:hover .people_socials {
+  display: block;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.people_card:hover .people_info {
+  background-color: #0d2439;
+  color: #fff;
+  cursor: pointer;
+}
+.people_card:hover .people_info p {
+  color: #fff;
+}
+
+.people_socials {
+  display: none;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.people_icon {
+  color: #fff;
+  font-size: 21px;
+  margin: 10px;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.people_icon:hover {
+  transform: translateY(-3px);
+  color: #fc6a01;
+}
