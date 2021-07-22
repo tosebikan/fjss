@@ -47,7 +47,11 @@
 /* PEOPLE SECTION */
 
 .people_images {
-  margin: 200px 0;
+  margin: 150px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .people_card {
@@ -56,6 +60,7 @@
   position: relative;
   width: 350px;
   height: 400px;
+  margin-bottom: 150px;
 }
 .people_card img {
   width: 100%;
@@ -76,7 +81,7 @@
 .people_info h4 {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin: 30px 20px 5px;
 }
 .people_info p {
   margin-top: 0;
