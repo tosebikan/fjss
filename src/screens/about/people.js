@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import HeroImage from "../../assets/images/home_hero.jpg";
 import people1 from "../../assets/images/people1.png";
 import people2 from "../../assets/images/people2.jpg";
+import getInvolved from "../../assets/images/getinvolved.jpg";
 
 const data = [
   {
@@ -71,6 +72,14 @@ function People() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="people_footer">
+        <img src={getInvolved} alt="" className="people_footer_image" />
+        <div className="people_footer_info">
+          <h2>Become a Volunteer</h2>
+          <button>Get involved</button>
+        </div>
       </div>
     </div>
   );
