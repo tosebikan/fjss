@@ -1,0 +1,116 @@
+.upcoming_events_hero {
+  position: relative;
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  margin-bottom: 150px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+
+.upcoming_events_hero_text {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upcoming_events_hero h2 {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+  /* align-self: center; */
+}
+.upcoming_events_hero p {
+  color: #fc6a01;
+
+  font-size: 23px;
+  font-weight: 600;
+  align-self: center;
+}
+
+.upcoming_events_hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* EVENT GROUP */
+.upcoming_events_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 100px auto;
+}
+
+/* EVENT CARD */
+.upcoming_events_card {
+  display: flex;
+  flex-direction: row;
+  /* margin-right: 40px; */
+}
+
+.upcoming_events_card_left {
+  width: 260px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.upcoming_events_date {
+  width: 109px;
+  height: 109px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fc6a01;
+  color: #fff;
+  text-align: center;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.upcoming_events_bold {
+  font-weight: 600;
+  margin-left: 5px;
+}
+.upcoming_events_text {
+  width: 230px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.event_icon {
+  color: #fc6a01;
+  margin-right: 5px;
+}
+
+.upcoming_events_card_button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  background-color: #fc6101;
+  color: #fff;
+  border: none;
+}
+
+.upcoming_events_card_right img {
+  /* height: 600px; */
+  width: 300px;
+  object-fit: contain;
+}
