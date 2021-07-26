@@ -434,24 +434,40 @@ function PrivacyPolicy() {
           To remove other cookies from your PC, you can use these guides:
         </p>
         <ul>
-          <li>https://support.google.com/chrome/answer/95647 (Chrome)</li>
           <li>
-            https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences
+            <a href="https://support.google.com/chrome/answer/95647">
+              https://support.google.com/chrome/answer/95647
+            </a>
+            (Chrome)
+          </li>
+          <li>
+            <a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences">
+              https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences
+            </a>
             (Firefox)
           </li>
           <li>
-            https://help.opera.com/en/latest/security-and-privacy/ (Opera)
+            <a href="https://help.opera.com/en/latest/security-and-privacy/">
+              https://help.opera.com/en/latest/security-and-privacy/
+            </a>{" "}
+            (Opera)
           </li>
           <li>
-            https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies
+            <a href="https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies">
+              https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies
+            </a>
             (Internet Explorer)
           </li>
           <li>
-            https://support.apple.com/en-gb/guide/safari/manage-cookies-and-website-data-sfri11471/mac
+            <a href="https://support.apple.com/en-gb/guide/safari/manage-cookies-and-website-data-sfri11471/mac">
+              https://support.apple.com/en-gb/guide/safari/manage-cookies-and-website-data-sfri11471/mac
+            </a>
             (Safari) and
           </li>
           <li>
-            https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy
+            <a href="https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy">
+              https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy
+            </a>
             (Edge).
           </li>
         </ul>
@@ -495,14 +511,18 @@ function PrivacyPolicy() {
           <strong>EH55 8DR</strong>
         </p>
         <p className="privacy_text">
-          <strong>Email</strong>: info@fjssgroup.org
+          <strong>Email</strong>:{" "}
+          <a href="mailto:info@fjssgroup.org">info@fjssgroup.org</a>
         </p>
         <p className="privacy_text">
           While we hope that we can resolve any complaints for you, you do have
           the option to complain to the ICO who can be contacted as follows:
         </p>
         <p className="privacy_text">
-          <strong>Website</strong>: https://www.ico.org.uk
+          <strong>Website</strong>:{" "}
+          <a href="https://www.ico.org.uk" target="_blank" rel="noreferrer">
+            https://www.ico.org.uk
+          </a>
         </p>
         <p className="privacy_text">
           Postal address: Information Commissioner’s Office, Wycliffe House,
