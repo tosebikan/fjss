@@ -435,37 +435,61 @@ function PrivacyPolicy() {
         </p>
         <ul>
           <li>
-            <a href="https://support.google.com/chrome/answer/95647">
+            <a
+              href="https://support.google.com/chrome/answer/95647"
+              target="_blank"
+              rel="noreferrer"
+            >
               https://support.google.com/chrome/answer/95647
             </a>
             (Chrome)
           </li>
           <li>
-            <a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences">
+            <a
+              href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences"
+              target="_blank"
+              rel="noreferrer"
+            >
               https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences
             </a>
             (Firefox)
           </li>
           <li>
-            <a href="https://help.opera.com/en/latest/security-and-privacy/">
+            <a
+              href="https://help.opera.com/en/latest/security-and-privacy/"
+              target="_blank"
+              rel="noreferrer"
+            >
               https://help.opera.com/en/latest/security-and-privacy/
             </a>{" "}
             (Opera)
           </li>
           <li>
-            <a href="https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies">
+            <a
+              href="https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies"
+              target="_blank"
+              rel="noreferrer"
+            >
               https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies
             </a>
             (Internet Explorer)
           </li>
           <li>
-            <a href="https://support.apple.com/en-gb/guide/safari/manage-cookies-and-website-data-sfri11471/mac">
+            <a
+              href="https://support.apple.com/en-gb/guide/safari/manage-cookies-and-website-data-sfri11471/mac"
+              target="_blank"
+              rel="noreferrer"
+            >
               https://support.apple.com/en-gb/guide/safari/manage-cookies-and-website-data-sfri11471/mac
             </a>
             (Safari) and
           </li>
           <li>
-            <a href="https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy">
+            <a
+              href="https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy"
+              target="_blank"
+              rel="noreferrer"
+            >
               https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy
             </a>
             (Edge).
