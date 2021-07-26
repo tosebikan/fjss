@@ -34,6 +34,7 @@ import Opportunity from "./screens/work/opportunity";
 import Policy from "./screens/work/policy";
 import Projects from "./screens/work/projects";
 import Strategic from "./screens/work/strategic";
+import PrivacyPolicy from "./screens/privacy/privacy_policy";
 
 import Nav from "./components/nav";
 import Footer from "./components/footer";
@@ -106,6 +107,9 @@ function App() {
           <Route path="/policy" component={Policy} exact={true} />
           <Route path="/projects" component={Projects} exact={true} />
           <Route path="/strategic" component={Strategic} exact={true} />
+
+          {/*PRIVACY POLICY*/}
+          <Route path="/privacy" component={PrivacyPolicy} exact={true} />
         </Switch>
       </div>
       <Footer />

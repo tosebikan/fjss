@@ -4,6 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -52,7 +53,9 @@ function Footer() {
 
       <div className="footer_bottom">
         <p>© 2020 FJSS Group. All rights reserved.</p>
-        <p>Privacy Policy</p>
+        <Link to="/privacy" style={{ color: "#fff" }}>
+          <p>Privacy Policy</p>
+        </Link>
       </div>
     </div>
   );
