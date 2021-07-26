@@ -81,7 +81,11 @@ function App() {
           {/*Media */}
           <Route path="/blog" component={Blog} exact={true} />
           <Route path="/gallery" component={Gallery} exact={true} />
-          <Route path="/news-details" component={NewsDetails} exact={true} />
+          <Route
+            path="/news-details/:id"
+            component={NewsDetails}
+            exact={true}
+          />
           <Route path="/news" component={News} exact={true} />
           <Route path="/podcast" component={Podcast} exact={true} />
 

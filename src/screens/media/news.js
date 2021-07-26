@@ -1,6 +1,7 @@
 import "./news.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
 import gallery1 from "../../assets/images/gallery1.png";
+import { Link } from "react-router-dom";
 function News() {
   return (
     <div className="news_container">
@@ -26,29 +27,32 @@ function News() {
         </div>
       </div>
 
-      <div className="news_card_container">
-        <div className="news_card">
-          <img src={gallery1} alt="" />
-          <div className="news_card_info">
-            <p className="news_card_date">21 Feb, 2021</p>
-            <p className="news_card_title">FJSS Group Food Support</p>
-            <p className="news_card_body">
-              Serving our community is core to FJSS Group’s goals
-            </p>
-            <button className="news_card_button">Read more</button>
-            <div className="news_card_hr" />
-            <div className="news_card_bottom">
-              <div>
-                <p>Ignitious Ocansey</p>
-              </div>
-              <div className="news_card_comments">
-                <p> 0</p>
-                <p>Comments</p>
+      <Link to="/news-details/1">
+        {" "}
+        <div className="news_card_container">
+          <div className="news_card">
+            <img src={gallery1} alt="" />
+            <div className="news_card_info">
+              <p className="news_card_date">21 Feb, 2021</p>
+              <p className="news_card_title">FJSS Group Food Support</p>
+              <p className="news_card_body">
+                Serving our community is core to FJSS Group’s goals
+              </p>
+              <button className="news_card_button">Read more</button>
+              <div className="news_card_hr" />
+              <div className="news_card_bottom">
+                <div>
+                  <p>Ignitious Ocansey</p>
+                </div>
+                <div className="news_card_comments">
+                  <p> 0</p>
+                  <p>Comments</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
