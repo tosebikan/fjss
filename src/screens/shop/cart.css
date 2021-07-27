@@ -72,7 +72,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 80%;
-  margin: 40px auto;
+  margin: 40px auto 100px;
 }
 
 th {
@@ -145,4 +145,63 @@ td {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   background: #fc6a01;
   color: #fff;
+}
+
+.cart_total {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.total_group {
+  margin-right: 140px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.total_table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: #696969;
+  margin-bottom: 40px;
+}
+.cart_total h2 {
+  text-align: left;
+}
+
+.total_table th {
+  background-color: #fff;
+  border: 1px solid #fc6a01;
+  color: #696969;
+  text-align: left;
+  padding: 8px;
+}
+
+.total_table td {
+  border: 1px solid #fc6a01;
+  text-align: left;
+  padding: 8px;
+  width: 120px;
+  height: 45px;
+}
+
+.subtotal {
+  width: 200px;
+}
+.shipping_row {
+  height: 200px;
+}
+
+.checkout_button {
+  border: none;
+  background-color: #fc6a01;
+
+  padding: 8px 20px;
+  color: #fff;
+  border-radius: 20px;
+  align-self: left;
+  width: 60%;
+  height: 40px;
+  font-size: 16px;
 }

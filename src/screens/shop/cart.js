@@ -1,7 +1,40 @@
 import HeroImage from "../../assets/images/home_hero.jpg";
 import "./cart.css";
 import prod1 from "../../assets/images/prod1.jpg";
+import prod2 from "../../assets/images/prod2.jpg";
 import { FaFacebook } from "react-icons/fa";
+
+const cart = [
+  {
+    id: 1,
+    title: "Scottish History: The West Lothian Connection",
+    type: "Ebook",
+    price: 5.0,
+    image: prod1,
+    quantity: 1
+  },
+  {
+    id: 2,
+    title: "Scottish History: The West Lothian Connection ",
+    type: "Ebook",
+    price: 5.0,
+    image: prod2,
+    quantity: 2
+  },
+  {
+    id: 3,
+    title: "Scottish History: The West Lothian Connection",
+    type: "Ebook",
+    price: 5.0,
+    image: prod1,
+    quantity: 1
+  }
+];
+
+let subtotal = cart.reduce((a, b) => a + b.price * b.quantity, 0);
+let shipping = 20;
+let total = subtotal + shipping;
+console.log({ total });
 
 function Cart() {
   return (
@@ -23,30 +56,54 @@ function Cart() {
             <th>Quantity</th>
             <th>Subtotal</th>
           </tr>
-          <tr>
-            <td>
-              <div className="cart_column">
-                <img src={prod1} alt="" className="cart_image" />
-                <button className="cart_button">
-                  <FaFacebook className="cart_button" />
-                </button>
-              </div>
-            </td>
-            <td className="card_title">
-              Scottish History: The West Lothian Connection
-            </td>
-            <td>$ 5.00</td>
-            <td>1</td>
-            <td>$ 5.00</td>
-          </tr>
+          {cart.map(el => {
+            let subtotal = el.quantity * el.price;
+            return (
+              <tr key={el.id}>
+                <td>
+                  <div className="cart_column">
+                    <img src={el.image} alt="" className="cart_image" />
+                    <button className="cart_button">
+                      <FaFacebook className="cart_button" />
+                    </button>
+                  </div>
+                </td>
+                <td className="card_title">{el.title}</td>
+                <td>$ {el.price.toFixed(2)}</td>
+                <td>{el.quantity}</td>
+                <td>$ {subtotal.toFixed(2)}</td>
+              </tr>
+            );
+          })}
 
           <tr>
-            <td colspan="5" className="coupon_row">
+            <td colSpan="5" className="coupon_row">
               <input placeholder="Coupon code" />
               <button> Apply coupon</button>
             </td>
           </tr>
         </table>
+      </div>
+
+      <div className="cart_total">
+        <div className="total_group">
+          <h2>Cart Totals</h2>
+          <table className="total_table">
+            <tr>
+              <th>Subtotal </th>
+              <th className="subtotal">$ {subtotal.toFixed(2)}</th>
+            </tr>
+            <tr className="shipping_row">
+              <td>Shipping</td>
+              <td>$ {shipping.toFixed(2)}</td>
+            </tr>
+            <tr className="total_row">
+              <td>Total</td>
+              <td>$ {total.toFixed(2)}</td>
+            </tr>
+          </table>
+          <button className="checkout_button">Proceed to checkout</button>
+        </div>
       </div>
     </div>
   );
