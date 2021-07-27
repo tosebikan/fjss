@@ -59,6 +59,9 @@ function Footer() {
         <Link to="/shop" style={{ color: "#fff" }}>
           <p>Shop</p>
         </Link>
+        <Link to="/cart" style={{ color: "#fff" }}>
+          <p>Cart</p>
+        </Link>
       </div>
     </div>
   );
