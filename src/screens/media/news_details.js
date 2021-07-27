@@ -60,12 +60,12 @@ function NewsDetails() {
       </div>
       {/*NEWS TAGS */}
       <div className="news_details_info_tags">
-        <div>
+        <div className="news_details_info_row">
           <p>Tags:</p>
           <p> Uncategorized</p>
         </div>
 
-        <div>
+        <div className="news_details_info_row">
           <p>Share</p>
           <div className="news_icons">
             <FaFacebook className="news_icon" />
@@ -89,20 +89,20 @@ function NewsDetails() {
                 support team is wonderful.
               </p>
             </div>
+            <button>Reply</button>
           </div>
-          <button>Reply</button>
         </div>
       </div>
 
-      <div className="news_details_form_container">
+      <div className="news_details_section">
         <h2>Leave a Reply</h2>
         <p>Your email address will not be published. *</p>
-        <form className="news_details_form">
+        <form className="news_details_section_form">
           <div className="news_form_row">
             <input placeholder="First Name *" type="text" />
             <input placeholder="Last Name *" type="text" />
           </div>
-          <textArea placeholder="Your comment *" />
+          <textarea placeholder="Your comment *" />
           <div className="news_details_check">
             <input type="checkbox" id="saveName" />
             <label htmlFor="saveName">

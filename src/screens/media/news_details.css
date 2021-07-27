@@ -136,3 +136,118 @@
   object-fit: cover;
   margin: 20px;
 }
+
+/*INFO */
+
+.news_details_info_tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  margin: 50px 100px;
+}
+
+.news_details_info_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.news_details_info_row p {
+  margin-right: 10px;
+}
+
+/* COMMENT */
+.news_details_comments h2 {
+  text-align: left;
+  margin-left: 100px;
+}
+
+.news_details_comment {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 50%;
+  margin-left: 100px;
+}
+.news_details_comment img {
+  height: 84px;
+  width: 84px;
+  border-radius: 42px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.news_details_comment_info {
+  text-align: left;
+}
+
+.news_details_comment_title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.news_details_comment_date {
+  font-size: 14px;
+  font-weight: 400;
+}
+.news_details_comment_text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.news_details_comment button {
+  padding: 8px 20px;
+  background: #fc6a01;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+}
+
+/* FORM SECTION */
+.news_details_section {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 20px 0 100px 100px;
+  width: 50%;
+  /* background-color: red; */
+}
+
+.news_form_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.news_form_row input {
+  height: 45px;
+  width: 40%;
+  padding: 0 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: none;
+}
+
+.news_details_section_form textarea {
+  width: 93%;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.news_details_section_form button {
+  padding: 12px 24px;
+  border-radius: 24px;
+  background-color: #fc6a01;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 30px;
+}
