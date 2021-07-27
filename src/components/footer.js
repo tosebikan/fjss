@@ -56,6 +56,9 @@ function Footer() {
         <Link to="/privacy" style={{ color: "#fff" }}>
           <p>Privacy Policy</p>
         </Link>
+        <Link to="/shop" style={{ color: "#fff" }}>
+          <p>Shop</p>
+        </Link>
       </div>
     </div>
   );
