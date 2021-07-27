@@ -17,6 +17,12 @@ const products = [
     type: "Ebook",
     price: 5.0,
     image: prod2
+  },
+  {
+    title: "Scottish History: The West Lothian Connection",
+    type: "Ebook",
+    price: 5.0,
+    image: prod1
   }
 ];
 
@@ -82,11 +88,13 @@ function Shop() {
           </div>
 
           <div className="shop_main_products">
-            <div className="shop_main_card">
-              <img src={prod2} alt="" />
-              <p>Scottish History: The West Lothian Connection</p>
-              <p>$5.00 </p>
-            </div>
+            {products.map(el => (
+              <div className="shop_main_card">
+                <img src={el.image} alt="" />
+                <p>{el.title}</p>
+                <p className="shop_main_price">${el.price.toFixed(2)} </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
