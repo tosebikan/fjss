@@ -5,6 +5,9 @@ import HomeAbout from "../../assets/images/homeAbout.png";
 import playLast from "../../assets/images/playlast.jpg";
 import homeevent from "../../assets/images/homeevent.png";
 import homeevent2 from "../../assets/images/homeevent2.png";
+import { Link } from "react-router-dom";
+
+import Slider from "react-slick";
 
 function Home() {
   const calculateTimeLeft = () => {
@@ -49,12 +52,37 @@ function Home() {
   });
 
   // console.log({ timerComponents });
-  console.log({ timeLeft });
+  // console.log({ timeLeft });
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    className: "slider_style",
+    vertical: true,
+    verticalSwiping: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: "linear"
+  };
+
   return (
     <div className="home_container">
       <div className="home_hero_container">
-        <img src={HeroImage} alt="" className="home_hero" />
-        <h1>For a Fair, Just and Inclusive Scotland</h1>
+        <div className="home_hero">
+          <Slider {...settings}>
+            <div className="home_hero_group">
+              <img src={HeroImage} alt="" className="hero_img" />
+              <h1>For a Fair, Just and Inclusive Scotland</h1>
+            </div>
+            <div className="home_hero_group">
+              <img src={HeroImage} alt="" className="hero_img" />
+              <h1>For a Fair, Just and Inclusive Ghana</h1>
+            </div>
+          </Slider>
+        </div>
 
         {/* COUNTDOWN SECTION*/}
         <div className="home_countdown">
@@ -83,7 +111,9 @@ function Home() {
             organisation works towards creating greater equality and diversity
             in the Scottish justice system.
           </p>
-          <button className="home_about_button">Read more</button>
+          <Link to="/about">
+            <button className="home_about_button">Read more</button>
+          </Link>
         </div>
 
         <div>
