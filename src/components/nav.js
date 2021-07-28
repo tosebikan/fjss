@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./nav.css";
 import { FiChevronDown } from "react-icons/fi";
-import Logo from "../assets/images/logo.png";
+import Logo from "../../assets/images/logo.png";
 
 function Nav() {
   return (
