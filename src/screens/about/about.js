@@ -3,6 +3,7 @@ import HeroImage from "../../assets/images/home_hero.jpg";
 import HomeAbout from "../../assets/images/homeAbout.png";
 import client1 from "../../assets/images/client1.png";
 import client2 from "../../assets/images/client2.png";
+import Slider from "react-slick";
 
 const statements = [
   {
@@ -40,6 +41,18 @@ const clients = [
   }
 ];
 function About() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    className: "slider_style",
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear"
+  };
+
   return (
     <div className="about_container">
       <div className="about_hero">
@@ -98,11 +111,13 @@ function About() {
 
       {/*CLIENTS SECTION */}
       <div className="about_clients_container">
-        {clients.map((el, id) => (
-          <div key={id} className="about_clients">
-            <img src={el.url} alt="" />
-          </div>
-        ))}
+        <Slider {...settings}>
+          {clients.map((el, id) => (
+            <div key={id} className="about_clients">
+              <img src={el.url} alt="" />
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

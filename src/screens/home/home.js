@@ -6,6 +6,7 @@ import playLast from "../../assets/images/playlast.jpg";
 import homeevent from "../../assets/images/homeevent.png";
 import homeevent2 from "../../assets/images/homeevent2.png";
 import { Link } from "react-router-dom";
+import { testimonials } from "../../helpers/data";
 
 import Slider from "react-slick";
 
@@ -13,7 +14,7 @@ function Home() {
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
     let difference = +new Date(`10/01/${year}`) - +new Date();
-    console.log({ difference });
+    // console.log({ difference });
     let timeLeft = {};
 
     if (difference > 0) {
@@ -54,6 +55,8 @@ function Home() {
   // console.log({ timerComponents });
   // console.log({ timeLeft });
 
+  const [currSlide, setCurrSlide] = React.useState(0);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -67,6 +70,21 @@ function Home() {
     autoplaySpeed: 3000,
     cssEase: "linear"
   };
+  const settingss = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    className: "slider2_style",
+    autoplay: true,
+    autoplaySpeed: 4000,
+    cssEase: "linear",
+    // rtl: true,
+    afterChange: current => setCurrSlide(current)
+  };
+
+  console.log(currSlide);
 
   return (
     <div className="home_container">
@@ -127,19 +145,33 @@ function Home() {
         <div className="home_testimonial_left">
           <h2>TESTIMONIALS</h2>
           <div className="home_testimonial_image_container">
-            <img src={HomeAbout} alt="" className="home_testimonial_image" />
-            <img src={HomeAbout} alt="" className="home_testimonial_image" />
-            <img
-              src={HomeAbout}
-              alt=""
-              className="home_testimonial_image_large"
-            />
+            <Slider {...settingss}>
+              {testimonials.map((el, id) => (
+                <div key={id}>
+                  <img
+                    src={el.image}
+                    alt=""
+                    className="home_testimonial_image"
+                  />
+                </div>
+              ))}
+            </Slider>
+
+            <div>
+              <img
+                src={testimonials[currSlide].image}
+                alt=""
+                className="home_testimonial_image_large"
+              />
+            </div>
           </div>
         </div>
         <div className="home_testimonial_right">
-          <p className="home_testimonial_name">Rodwell </p>
+          <p className="home_testimonial_name">
+            {testimonials[currSlide].name}
+          </p>
           <p className="home_testimonial_text">
-            “Fair Justice system for Scotland - The people’s voice”
+            {testimonials[currSlide].text}
           </p>
         </div>
       </div>
@@ -168,7 +200,10 @@ function Home() {
             <p>Virtual Event</p>
           </div>
 
-          <button className="home_event_button">Read more</button>
+          <Link to="/upcoming_events">
+            {" "}
+            <button className="home_event_button">Read more</button>
+          </Link>
         </div>
         <div className="home_events_right">
           <img src={homeevent} alt="" className="home_event_img1" />
@@ -199,7 +234,9 @@ function Home() {
             <br /> Hardback copies available on
           </p>
           <img src={homeevent2} alt="" />
-          <button className="home_shop_button">shop</button>
+          <Link to="/shop">
+            <button className="home_shop_button">shop</button>
+          </Link>
         </div>
       </div>
 
@@ -240,7 +277,9 @@ function Home() {
               food support team is wonderful. 🙏🙏 Ignitious Ocansey
             </p>
           </div>
-          <button>Read more</button>
+          <Link to="/news">
+            <button>Read more</button>
+          </Link>
         </div>
       </div>
     </div>

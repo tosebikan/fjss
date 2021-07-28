@@ -41,6 +41,9 @@
 .slider_style {
   overflow: hidden;
 }
+.slider2_style {
+  overflow: hidden;
+}
 
 /* COUNT DOWN */
 
@@ -162,10 +165,11 @@
 .home_testimonial_image {
   width: 180px;
   height: 220px;
+  object-fit: cover;
   margin: 0 20px;
 }
 .home_testimonial_image_large {
-  width: 180px;
+  width: 220px;
   height: 480px;
   margin: 0 20px;
   object-fit: cover;
