@@ -1,6 +1,7 @@
 import "./approach.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
 import approach1 from "../../assets/images/approach1.jpg";
+import heritage from "../../assets/images/heritage.jpg";
 function Approach() {
   return (
     <div className="approach_container">
@@ -86,7 +87,7 @@ function Approach() {
             </p>
           </div>
           <div className="approach_row_right">
-            <img src={approach1} alt="" />
+            <img src={heritage} alt="" />
           </div>
         </div>
       </div>
