@@ -7,6 +7,7 @@ import HeroImage from "../../assets/images/home_hero.jpg";
 import people1 from "../../assets/images/people1.png";
 import people2 from "../../assets/images/people2.jpg";
 import getInvolved from "../../assets/images/getinvolved.jpg";
+import { people } from "../../helpers/data";
 
 const data = [
   {
@@ -58,12 +59,12 @@ function People() {
       </div>
 
       <div className="people_images">
-        {data.map(el => (
+        {people.map(el => (
           <div className="people_card">
             <img src={el.url} alt="" />
             <div className="people_info">
               <h4>{el.name}</h4>
-              <p>{el.title}</p>
+              <p>{el.position}</p>
               <div className="people_socials">
                 <FaFacebook className="people_icon" />
                 <FaTwitter className="people_icon" />
