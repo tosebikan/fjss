@@ -5,6 +5,11 @@ import HomeAbout from "../../assets/images/homeAbout.png";
 import playLast from "../../assets/images/playlast.jpg";
 import homeevent from "../../assets/images/homeevent.png";
 import homeevent2 from "../../assets/images/homeevent2.png";
+import shop1 from "../../assets/images/shop1.png";
+import shop2 from "../../assets/images/shop2.png";
+import shop3 from "../../assets/images/shop3.png";
+import shop4 from "../../assets/images/shop4.png";
+import water from "../../assets/images/water.png";
 import { Link } from "react-router-dom";
 import { testimonials } from "../../helpers/data";
 
@@ -97,7 +102,7 @@ function Home() {
             </div>
             <div className="home_hero_group">
               <img src={HeroImage} alt="" className="hero_img" />
-              <h1>For a Fair, Just and Inclusive Ghana</h1>
+              <h1>For a Fair, Just and Inclusive Scotland</h1>
             </div>
           </Slider>
         </div>
@@ -214,12 +219,12 @@ function Home() {
       {/* HOME SHOP SECTION*/}
       <div className="home_shop_container">
         <div className="home_shop_left">
-          <img src={homeevent2} alt="" className="home_shop_main_img" />
+          <img src={shop1} alt="" className="home_shop_main_img" />
 
           <div className="home_shop_images">
-            <img src={homeevent2} alt="" />
-            <img src={homeevent2} alt="" />
-            <img src={homeevent2} alt="" />
+            <img src={shop2} alt="" />
+            <img src={shop3} alt="" />
+            <img src={shop4} alt="" />
           </div>
         </div>
 
@@ -233,7 +238,7 @@ function Home() {
             from slavery and enslavement of black people.
             <br /> Hardback copies available on
           </p>
-          <img src={homeevent2} alt="" />
+          <img src={water} alt="" />
           <Link to="/shop">
             <button className="home_shop_button">shop</button>
           </Link>
