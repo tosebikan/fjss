@@ -5,6 +5,8 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import footernews1 from "../assets/images/footernews1.png";
+import footernews2 from "../assets/images/footernews2.png";
 
 function Footer() {
   return (
@@ -34,14 +36,14 @@ function Footer() {
           <h2>Top News</h2>
           <div className="footer_news_section">
             <div className="footer_news_group">
-              <img src={Logo} alt="" />
+              <img src={footernews1} alt="" />
               <div>
                 <p className="footer_news_title">Global Refugee Forum Geneva</p>
                 <p className="footer_news_date">2019-12-18 12:16</p>
               </div>
             </div>
             <div className="footer_news_group">
-              <img src={Logo} alt="" />
+              <img src={footernews2} alt="" />
               <div>
                 <p className="footer_news_title">Global Refugee Forum Geneva</p>
                 <p className="footer_news_date">2019-12-18 12:16</p>

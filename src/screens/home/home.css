@@ -426,16 +426,19 @@
   height: 400px;
   /* width: 500px; */
   object-fit: contain;
+  margin-right: 10px;
 }
 
 .home_news_vertical_image {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .home_news_vertical_image img {
-  height: 200px;
-  width: 250px;
-  object-fit: contain;
+  height: 195px;
+  width: 200px;
+  object-fit: cover;
+  /* margin-bottom: 5px; */
 }
 
 .home_news_right {
@@ -458,11 +461,12 @@
   display: inline-block;
   color: #fff;
   padding-left: 10px;
-  width: 80px;
+  width: 120px;
 }
 .home_news_date p {
   font-size: 24px;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .home_news_body p {

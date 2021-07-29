@@ -10,6 +10,9 @@ import shop2 from "../../assets/images/shop2.png";
 import shop3 from "../../assets/images/shop3.png";
 import shop4 from "../../assets/images/shop4.png";
 import water from "../../assets/images/water.png";
+import news2 from "../../assets/images/news2.png";
+import news3 from "../../assets/images/news3.png";
+import news1 from "../../assets/images/news1.jpg";
 import { Link } from "react-router-dom";
 import { testimonials } from "../../helpers/data";
 
@@ -251,7 +254,10 @@ function Home() {
         <h3>How Can You Help?</h3>
         <p>Join the movement to make equality in the justice system reality</p>
         <div className="home_help_button_group">
-          <button>Donate now</button>
+          <Link to="/donate">
+            {" "}
+            <button>Donate now</button>
+          </Link>
           <button>Join up</button>
         </div>
       </div>
@@ -260,10 +266,10 @@ function Home() {
       <div className="home_news_container">
         <div className="home_news_left">
           <div className="home_news_images">
-            <img src={homeevent} alt="" />
+            <img src={news1} alt="" />
             <div className="home_news_vertical_image">
-              <img src={homeevent} alt="" />
-              <img src={homeevent} alt="" />
+              <img src={news2} alt="" />
+              <img src={news3} alt="" />
             </div>
           </div>
         </div>
