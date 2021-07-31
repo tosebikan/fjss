@@ -36,11 +36,24 @@ function Contact() {
             <GrMail className="contact_icon" />
             <h4>Email Addresses</h4>
             <p className="contact_title">General enquiries: </p>
-            <p className="contact_body">info@fjssgroup.org</p>
+            <p className="contact_body">
+              <a href="mailto:info@fjssgroup.org">info@fjssgroup.org</a>
+            </p>
             <p className="contact_title">Legal issues enquiries: </p>
-            <p className="contact_body">legalservices@fjssgroup.org</p>
-            <p className="contact_title">support enquiries: </p>
-            <p className="contact_body">foodsupport@fjssgroup.org</p>
+            <p className="contact_body">
+              {" "}
+              <a href="mailto:legalservices@fjssgroup.org">
+                legalservices@fjssgroup.org
+              </a>
+            </p>
+            <p className="contact_title">support enquiries:</p>
+
+            <p className="contact_body">
+              {" "}
+              <a href="mailto:foodsupport@fjssgroup.org">
+                foodsupport@fjssgroup.org{" "}
+              </a>
+            </p>
           </div>
         </div>
       </div>

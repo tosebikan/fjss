@@ -49,7 +49,7 @@ function About() {
     slidesToScroll: 1,
     className: "slider_style",
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 200,
     cssEase: "linear"
   };
 

@@ -149,12 +149,12 @@ function Nav() {
               </li>
             </NavLink>
 
-            <NavLink to="/fund-raising" exact>
+            {/*<NavLink to="/fund-raising" exact>
               <li>
                 {" "}
                 <p> Fundraising </p>
               </li>
-            </NavLink>
+            </NavLink>*/}
 
             <NavLink to="/jobs" exact>
               <li>
@@ -178,19 +178,19 @@ function Nav() {
               </li>
             </NavLink>
 
-            <NavLink to="/podcast" exact>
+            {/*<NavLink to="/podcast" exact>
               <li>
                 {" "}
                 <p> Podcast </p>{" "}
               </li>
-            </NavLink>
+            </NavLink>*/}
 
-            <NavLink to="/blog" exact>
+            {/*<NavLink to="/blog" exact>
               <li>
                 {" "}
                 <p> Blog </p>{" "}
               </li>
-            </NavLink>
+            </NavLink>*/}
 
             <NavLink to="/news" exact>
               <li>
