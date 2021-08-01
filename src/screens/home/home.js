@@ -86,6 +86,7 @@ function Home() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+
     className: "slider2_style",
     autoplay: true,
     autoplaySpeed: 4000,
