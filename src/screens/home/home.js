@@ -16,6 +16,7 @@ import news3 from "../../assets/images/news3.png";
 import news1 from "../../assets/images/news1.jpg";
 import { Link } from "react-router-dom";
 import { testimonials } from "../../helpers/data";
+import YoutubeEmbed from "../../components/youtube_embed";
 
 import Slider from "react-slick";
 
@@ -199,7 +200,8 @@ function Home() {
       {/* HOME VIDEO*/}
 
       <div className="home_video_container">
-        <img src={playLast} alt="" />
+        {/*<img src={playLast} alt="" />*/}
+        <YoutubeEmbed embedId="eH-zhYOPI2E" />
       </div>
 
       {/*Home Events */}
