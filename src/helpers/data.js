@@ -1,34 +1,61 @@
 import testimonial4 from "../assets/images/testimonial4.png";
 import testimonial1 from "../assets/images/testimonial1.png";
+import testimonial2 from "../assets/images/testimonial2.png";
+import testimonial3 from "../assets/images/testimonial3.png";
+import testimonial5 from "../assets/images/testimonial5.png";
+import testimonial6 from "../assets/images/testimonial6.jpg";
+import testimonial7 from "../assets/images/testimonial7.jpg";
 import people1 from "../assets/images/people1.png";
 import people2 from "../assets/images/people2.jpg";
 
 export const testimonials = [
   {
-    id: 1,
+    id: 6,
+    name: "Rodwell",
+    text: "Fair Justice System for Scotland - the people's voice",
+    image: testimonial7
+  },
+  {
+    id: 7,
     name: "Kinsey Ansah",
     text:
-      "FJSS group came recommended and haven’t disappointed so far. I'm very pleased with the way they are handling my case. They have been supporting me through a difficult time.",
+      "FJSS Group came recommended and haven’t disappointed so far. I’m very pleased with the way they are handling my case. They have been supporting me through a difficult time.",
+    image: testimonial6
+  },
+  {
+    id: 1,
+    name: "Eunice Banks",
+    text:
+      "An organisation that's passionate about increasing BAME communities's influence in policy and decision making processes that shape our lives thus enabling diversity and inclusion at the highest levels in our systems infrastructures",
     image: testimonial4
   },
   {
     id: 2,
-    name: "Rodwell",
-    text: "“Fair Justice system for Scotland - The people’s voice”",
-    image: testimonial1
+    name: "Bunmi Salako",
+    text:
+      "I'm using this medium to say a very big thank you for your kind gestures and hospitality towards us students. I am a student at Edinburgh Napier university (Craiglockhart Campus). I really appreciate this love and goodness .And I will never take it for granted . I pray God be with you today and forever. Amen ",
+    image: testimonial5
   },
   {
     id: 3,
-    name: "Ansah",
+    name: "Suweba",
     text:
-      "FJSS group came recommended and haven’t disappointed so far. I'm very pleased with the way they are handling my case. They have been supporting me through a difficult time.",
-    image: people1
+      "I write to humbly express my sincerest appreciation to the group for your advice, support and goodwill you extended to me recently through Ms Stephanie Onweni. I had some issues relating to my residence in the country and I was advised to seek assistance from your outfit. I am therefore profoundly grateful to the entire staff and management more especially to Kobby and Stephanie………”",
+    image: testimonial2
   },
   {
     id: 4,
-    name: "Kinsey",
-    text: "“Fair Justice system for Scotland - The people’s voice”",
-    image: people2
+    name: "Daniel Dayo ",
+    text:
+      "Working with the FJSS Group exposed me to the very real challenges that BAME communities do encounter in their everyday life thereby enhancing the urge in me to fight forward for a fairer Scotland",
+    image: testimonial3
+  },
+  {
+    id: 5,
+    name: "Bob",
+    text:
+      "Fair Justice System for Scotland (FJSS) is a new voice for the voiceless - providing advice, training, advocacy and legal support to all in need - especially minority communities in Scotland",
+    image: testimonial1
   }
 ];
 

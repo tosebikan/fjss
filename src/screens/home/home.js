@@ -167,7 +167,7 @@ function Home() {
           <div className="home_testimonial_image_container">
             <Slider {...settingss}>
               {testimonials.map((el, id) => (
-                <div key={id}>
+                <div key={id} className="home_testimonial_cover">
                   <img
                     src={el.image}
                     alt=""
