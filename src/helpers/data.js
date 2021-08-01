@@ -7,6 +7,12 @@ import testimonial6 from "../assets/images/testimonial6.jpg";
 import testimonial7 from "../assets/images/testimonial7.jpg";
 import people1 from "../assets/images/people1.png";
 import people2 from "../assets/images/people2.jpg";
+import equalitiesspeaker from "../assets/images/equalitiesspeakers.jpg";
+import equalitiesworkshop from "../assets/images/equalitiesworkshop.jpg";
+import heritageFlyer from "../assets/images/heritageFlyer.jpg";
+import independentPrison from "../assets/images/independentprison.jpg";
+import publicAppointment from "../assets/images/publicappointment.jpg";
+import scottishMeditation from "../assets/images/scottishmeditation.jpg";
 
 export const testimonials = [
   {
@@ -212,5 +218,120 @@ export const people = [
     facebook: "#",
     url:
       "https://res.cloudinary.com/oltostudios/image/upload/v1627510782/Mask_Group_mnqjmg.png"
+  }
+];
+
+export const events = [
+  {
+    id: 1,
+    title: "Insight Into Scottish Mediation",
+    text: "Check out “Insight Into Scottish Mediation” on Eventbrite!",
+    image: scottishMeditation,
+    status: "completed",
+    type: "Virtual Event"
+  },
+  {
+    id: 2,
+    title:
+      "The Heritage Debate Series Statues: To topple or to repurpose? The greatest question of our generation",
+    text:
+      "The FJSS Group in collaboration with Samuel Whitbread Academy and the Robert Bloomfield Academy is bringing together this great event to the public. This event is provoking discussion and conversation across some schools, and beyond. It is showing a great way to get students to talk about the fate of some statues, Scottish involvement in the slave trade, and also to take another look at the UK Imperial past. It has also opened the way to talk about race and racism today. The event is bringing together students and volunteers from schools to deliberate and debate on the subject. We are inviting the general public to this exciting event.",
+    image: heritageFlyer,
+    status: "completed",
+    type: "Virtual Event"
+  },
+  {
+    id: 3,
+    title: "The 2021 Equalities Workshop",
+    text:
+      "The Speakers for the event are experts in their fields who will be speaking on the Equalities Workshop. The FJSS Group is inviting the public to attend the much anticipated event which promises to be informative and educative.",
+    image: equalitiesspeaker,
+    status: "completed",
+    type: "Virtual Event"
+  },
+  {
+    id: 4,
+    title: "The 2021 Equalities Workshop",
+    text:
+      "The FJSS Group will be organising The Equalities Workshop which is slated for the 24th of March 2021. The event will be held via zoom. The FJSS Group is calling on the general public to engage in the event to bridge the gap in inequalities in our communities.",
+    image: equalitiesworkshop,
+    status: "completed",
+    type: "Virtual Event"
+  },
+  {
+    id: 5,
+    title: "THE PUBLIC APPOINTSMENT PROCESS",
+    text:
+      "The FJSS GROUP in collaboration with Public Appointments Scotland invites you to their scheduled virtual Zoom meeting.The event aims to create awareness through increasing BAME representation on Scotland’s Public Boards. This event is for everyone and especially those who want to make an impact in their communities through representation.",
+    image: publicAppointment,
+    status: "completed",
+    type: "Virtual Event",
+
+    zoom: {
+      topic: "The Public Appointments Process",
+      time: "Feb 4, 2021 01:00 PM London",
+      link:
+        "https://us02web.zoom.us/j/86708693521?pwd=ZkFCMXNlQjN6N3dORkpXQytYNTA3UT09",
+      meetingID: "867 0869 3521",
+      passcode: "425694",
+      onTapMobile: [
+        "+442039017895,,86708693521#,,,,*425694# United Kingdom",
+        "+441314601196,,86708693521#,,,,*425694# United Kingdom"
+      ],
+      dialByLocation: [
+        "+44 203 901 7895 United Kingdom",
+        "+44 131 460 1196 United Kingdom",
+        "+44 203 051 2874 United Kingdom",
+        "+44 203 481 5237 United Kingdom",
+        "+44 203 481 5240 United Kingdom",
+        "+1 929 205 6099 US (New York)",
+        "+1 253 215 8782 US (Tacoma)",
+        "+1 301 715 8592 US (Washington DC)",
+        "+1 312 626 6799 US (Chicago)",
+        "+1 346 248 7799 US (Houston)",
+        "+1 669 900 6833 US (San Jose)"
+      ],
+      dialByLocMeetId: "867 0869 3521",
+      dialByLocPasscode: "425694",
+      findYourLocalNumber: "https://us02web.zoom.us/u/kdmiUsMJ3m"
+    }
+  },
+  {
+    id: 6,
+    title: "The Role of the Independent Prison Monitor",
+    time: "Jan 26, 2021 01:30 PM London",
+    text:
+      "The FJSS Group in collaboration with Her Majesty’s Inspectorate of Prisons for Scotland (HMIPS) invites the public and especially the BAME community to the virtual event. It promises to be an eye opener and informative.",
+    image: independentPrison,
+    status: "completed",
+    type: "Virtual Event",
+    zoom: {
+      topic: "The Role of the Independent Prison Monitor",
+      time: "Jan 26, 2021 01:30 PM London",
+      link:
+        "https://us02web.zoom.us/j/81685918313?pwd=ZG50ak1mQjhMUVNDT3BmR1BMc29wUT09",
+      meetingID: "816 8591 8313",
+      passcode: "758532",
+      onTapMobile: [
+        "+442034815237,,81685918313#,,,,*758532# United Kingdom",
+        "+442034815240,,81685918313#,,,,*758532# United Kingdom"
+      ],
+      dialByLocation: [
+        "+44 203 481 5237 United Kingdom",
+        "+44 203 481 5240 United Kingdom",
+        "+44 203 901 7895 United Kingdom",
+        "+44 131 460 1196 United Kingdom",
+        "+44 203 051 2874 United Kingdom",
+        "+1 301 715 8592 US (Washington DC)",
+        "+1 312 626 6799 US (Chicago)",
+        "+1 346 248 7799 US (Houston)",
+        "+1 669 900 6833 US (San Jose)",
+        "+1 929 205 6099 US (New York)",
+        "+1 253 215 8782 US (Tacoma)"
+      ],
+      dialByLocMeetId: "816 8591 8313",
+      dialByLocPasscode: "758532",
+      findYourLocalNumber: "https://us02web.zoom.us/u/kuPAVkx0I"
+    }
   }
 ];
