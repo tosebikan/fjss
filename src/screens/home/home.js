@@ -75,7 +75,7 @@ function Home() {
     slidesToScroll: 1,
     className: "slider_style",
     vertical: true,
-    verticalSwiping: true,
+    verticalSwiping: false,
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear"

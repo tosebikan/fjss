@@ -1,5 +1,10 @@
 .home_container {
 }
+@media (max-width: 1024px) {
+  .home_container {
+    overflow: hidden;
+  }
+}
 .home_hero_container {
   position: relative;
   height: 100vh;
@@ -175,7 +180,7 @@
   /* transform: rotate(-90deg); */
 
   z-index: 99;
-  top: 90%;
+  top: 92%;
   left: 0;
   display: inline !important;
   width: 20%;
@@ -183,6 +188,24 @@
   padding: 0;
   list-style: none;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .slick-dots {
+    /* background-color: red; */
+    position: absolute;
+    /* transform: rotate(-90deg); */
+
+    z-index: 99;
+    top: 85%;
+    left: 0;
+    display: inline !important;
+    width: 20%;
+    height: 10%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
 }
 
 .slick-dots ul {
