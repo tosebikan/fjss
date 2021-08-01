@@ -101,11 +101,22 @@ function Home() {
           <Slider {...settings}>
             <div className="home_hero_group">
               <img src={HeroImage} alt="" className="hero_img" />
-              <h1>For a Fair, Just and Inclusive Scotland</h1>
+              <h1 className="hero_title1">
+                For a Fair, Just and Inclusive Scotland
+              </h1>
             </div>
             <div className="home_hero_group">
               <img src={HeroImage} alt="" className="hero_img" />
-              <h1>For a Fair, Just and Inclusive Scotland</h1>
+              <h1 className="hero_title2">
+                Creating a diverse and prosperous scotland
+              </h1>
+              <p className="hero_text">
+                Calling all key stakeholders in the Scottish justice system;
+                Senior HR executives and heads of policy and implementation with
+                remit on diversity and equality; minority community led
+                organisations with interest in diversity and equality in
+                Scottish Justice system and the Scottish Government
+              </p>
             </div>
           </Slider>
         </div>
