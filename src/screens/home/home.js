@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./home.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
+import HeroImage2 from "../../assets/images/homehero2.jpg";
 import HomeAbout from "../../assets/images/homeAbout.png";
 import playLast from "../../assets/images/playlast.jpg";
 import homeevent from "../../assets/images/homeevent.png";
@@ -101,16 +102,16 @@ function Home() {
           <Slider {...settings}>
             <div className="home_hero_group">
               <img src={HeroImage} alt="" className="hero_img" />
-              <h1 className="hero_title1">
+              <h1 className="hero_title1 slide-title">
                 For a Fair, Just and Inclusive Scotland
               </h1>
             </div>
             <div className="home_hero_group">
-              <img src={HeroImage} alt="" className="hero_img" />
-              <h1 className="hero_title2">
+              <img src={HeroImage2} alt="" className="hero_img" />
+              <h1 className="hero_title2 slide-title">
                 Creating a diverse and prosperous scotland
               </h1>
-              <p className="hero_text">
+              <p className="hero_text slide-text">
                 Calling all key stakeholders in the Scottish justice system;
                 Senior HR executives and heads of policy and implementation with
                 remit on diversity and equality; minority community led
