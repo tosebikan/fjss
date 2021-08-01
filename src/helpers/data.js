@@ -13,6 +13,15 @@ import heritageFlyer from "../assets/images/heritageFlyer.jpg";
 import independentPrison from "../assets/images/independentprison.jpg";
 import publicAppointment from "../assets/images/publicappointment.jpg";
 import scottishMeditation from "../assets/images/scottishmeditation.jpg";
+import scottishGov from "../assets/images/projects/scottisgov.jpg";
+import un from "../assets/images/projects/un.jpg";
+import windrush from "../assets/images/projects/windrush.jpg";
+import bame from "../assets/images/projects/bame.jpg";
+import covid19 from "../assets/images/projects/covid19.jpg";
+import history from "../assets/images/projects/history.jpg";
+import justicesector from "../assets/images/projects/justicesector.jpg";
+import refset from "../assets/images/projects/refset.jpg";
+import research from "../assets/images/projects/research.jpg";
 
 export const testimonials = [
   {
@@ -228,7 +237,11 @@ export const events = [
     text: "Check out “Insight Into Scottish Mediation” on Eventbrite!",
     image: scottishMeditation,
     status: "completed",
-    type: "Virtual Event"
+    type: "Virtual Event",
+    startDate: "Feb 4, 2021",
+    endDate: "",
+    startTime: "7:00 pm",
+    endTime: "8:00 pm"
   },
   {
     id: 2,
@@ -238,7 +251,11 @@ export const events = [
       "The FJSS Group in collaboration with Samuel Whitbread Academy and the Robert Bloomfield Academy is bringing together this great event to the public. This event is provoking discussion and conversation across some schools, and beyond. It is showing a great way to get students to talk about the fate of some statues, Scottish involvement in the slave trade, and also to take another look at the UK Imperial past. It has also opened the way to talk about race and racism today. The event is bringing together students and volunteers from schools to deliberate and debate on the subject. We are inviting the general public to this exciting event.",
     image: heritageFlyer,
     status: "completed",
-    type: "Virtual Event"
+    type: "Virtual Event",
+    startDate: "Feb 4, 2021",
+    endDate: "",
+    startTime: "7:00 pm",
+    endTime: "10:00 pm"
   },
   {
     id: 3,
@@ -247,7 +264,11 @@ export const events = [
       "The Speakers for the event are experts in their fields who will be speaking on the Equalities Workshop. The FJSS Group is inviting the public to attend the much anticipated event which promises to be informative and educative.",
     image: equalitiesspeaker,
     status: "completed",
-    type: "Virtual Event"
+    type: "Virtual Event",
+    startDate: "Feb 4, 2021",
+    endDate: "",
+    startTime: "9:00 am",
+    endTime: "11:30 am"
   },
   {
     id: 4,
@@ -256,7 +277,11 @@ export const events = [
       "The FJSS Group will be organising The Equalities Workshop which is slated for the 24th of March 2021. The event will be held via zoom. The FJSS Group is calling on the general public to engage in the event to bridge the gap in inequalities in our communities.",
     image: equalitiesworkshop,
     status: "completed",
-    type: "Virtual Event"
+    type: "Virtual Event",
+    startDate: "Feb 4, 2021",
+    endDate: "",
+    startTime: "9:00 am",
+    endTime: "11:30 am"
   },
   {
     id: 5,
@@ -266,6 +291,10 @@ export const events = [
     image: publicAppointment,
     status: "completed",
     type: "Virtual Event",
+    startDate: "Feb 4, 2021",
+    endDate: "",
+    startTime: "1:00 pm",
+    endTime: "2:30 pm",
 
     zoom: {
       topic: "The Public Appointments Process",
@@ -305,6 +334,10 @@ export const events = [
     image: independentPrison,
     status: "completed",
     type: "Virtual Event",
+    startDate: "Jan 26, 2021",
+    endDate: "",
+    startTime: "1:30 pm",
+    endTime: "2:30 pm",
     zoom: {
       topic: "The Role of the Independent Prison Monitor",
       time: "Jan 26, 2021 01:30 PM London",
@@ -333,5 +366,83 @@ export const events = [
       dialByLocPasscode: "758532",
       findYourLocalNumber: "https://us02web.zoom.us/u/kuPAVkx0I"
     }
+  }
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Windrush Scotland Project",
+    text: [
+      "The FJSS Group is conducting research to establish the full extent of Windrush impact in Scotland."
+    ],
+    status: "onGoing",
+    image: windrush
+  },
+  {
+    id: 2,
+    title: "UN Global Refugee Legal Support",
+    text: [
+      "The FJSS Group was part of the Global Refugee Forum that met in Geneva in 2019. More than 80 legal community organisations came together to collectively pledge to address the unmet legal needs of refugees and other forcibly displaced persons.",
+      "FJSS Group Working With Scottish Government",
+      "Effective 1st September 2020 the FJSS Group works with the Scottish Government Justice Department. This involves providing policy development input to some of the main directorates in the justice department such as Equalities, Civil Law and Legal System, Courts and Tribunal Services, Family Law, and Legal Aid. The FJSS Group provides specialist BAME advice that is essential to the teams developing policy and action plans within the Scottish Government.",
+      "This particular project runs from September 2020 to July 2021."
+    ],
+    status: "onGoing",
+    image: un
+  },
+  {
+    id: 3,
+    title: "Researching The Impact Of Covid-19 On BAME Community In Scotland",
+    text: [
+      "The Covid-19 virus has had a disproportionate impact on BAME communities in Scotland just like in other parts of the UK. The FJSS Group is conducting research to establish the full extent of the impact of Covid-19 both on health and social care professionals and the wider BAME community in Scotland. The research was originally earmarked for only some areas of Scotland, but this has since been scaled up to cover most parts of Scotland through an online survey that will enable the collection of information from a wider geographical spread. can be accessed from any part of the country.",
+      "This project is being funded through a small grant provided by Comic Relief and administered by the Next Step Initiative (NSI). A report will be produced with recommendations to policymakers."
+    ],
+    status: "completed",
+    image: covid19
+  },
+  {
+    id: 4,
+    title: "The BAME And Refugee Covid-19 Support Initiative",
+    text: [
+      "The Covid-19 virus has had a disproportionate impact on BAME communities across the world. The UK and Scotland have also seen cases of BAME people being similarly impacted and the FJSS Group is working on providing essential support to the BAME communities in West Lothian to ensure that they are aware of all the support available to them during the Covid-19 pandemic and necessary lockdown measures that have been introduced at various times. ",
+      "The lockdown has led to members of the BAME communities contracting the virus and losing jobs or getting on a reduced income. This project is funded through a small grant from the National Lottery fund."
+    ],
+    status: "completed",
+    image: bame
+  },
+  {
+    id: 5,
+    title: "Task Force For Justice Sector Reforms",
+    text: [
+      "The Task Force has now produced a Framework for Justice Sector Reforms in Scotland. The framework document has been submitted to the Scottish Government and other key justice sector organizations. The FJSS Group will await official responses."
+    ],
+    status: "completed",
+    image: justicesector
+  },
+  {
+    id: 6,
+    title: "History Book – The West Lothian Connection",
+    text: [
+      "The FJSS Group successfully completed the history book project and the book was launched virtually and colourfully on 29 October 2020. The history book is now available on Waterstone and from our offices subject to lockdown guidelines."
+    ],
+    status: "completed",
+    image: history
+  },
+  {
+    id: 7,
+    title: "History Research Project",
+    text: [
+      "The FJSS Group will work with the Samuel Whitbread Academy on a future history research project following the successful launch of the history book, the West Lothian Connection. The research project will focus on some of the main themes in the history book such as the process towards abolition, the delay to abolition and some of the key figures in the abolition."
+    ],
+    status: "upComing",
+    image: research
+  },
+  {
+    id: 8,
+    title: "Refugee Settlement Support",
+    text: ["More details to follow on this project."],
+    status: "upComing",
+    image: refset
   }
 ];
