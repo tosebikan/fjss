@@ -13,15 +13,15 @@ import heritageFlyer from "../assets/images/heritageFlyer.jpg";
 import independentPrison from "../assets/images/independentprison.jpg";
 import publicAppointment from "../assets/images/publicappointment.jpg";
 import scottishMeditation from "../assets/images/scottishmeditation.jpg";
-import scottishGov from "../assets/images/projects/scottisgov.jpg";
-import un from "../assets/images/projects/un.jpg";
-import windrush from "../assets/images/projects/windrush.jpg";
-import bame from "../assets/images/projects/bame.jpg";
-import covid19 from "../assets/images/projects/covid19.jpg";
-import history from "../assets/images/projects/history.jpg";
-import justicesector from "../assets/images/projects/justicesector.jpg";
-import refset from "../assets/images/projects/refset.jpg";
-import research from "../assets/images/projects/research.jpg";
+import scottishGov from "../assets/images/projects/scottishgov.png";
+import un from "../assets/images/projects/un.png";
+import windrush from "../assets/images/projects/windrush.png";
+import bame from "../assets/images/projects/bame.png";
+import covid19 from "../assets/images/projects/covid19.png";
+import history from "../assets/images/projects/history.png";
+import justicesector from "../assets/images/projects/justicesector.png";
+import refset from "../assets/images/projects/refset.png";
+import research from "../assets/images/projects/research.png";
 
 export const testimonials = [
   {

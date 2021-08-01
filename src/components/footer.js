@@ -16,10 +16,35 @@ function Footer() {
           <img src={Logo} alt="" />
           <p>For a Fair Just and Inclusive Scotland</p>
           <div className="footer_icons">
-            <FaFacebook className="footer_icon" />
-            <FaTwitter className="footer_icon" />
-            <FaInstagram className="footer_icon" />
-            <FaLinkedin className="footer_icon" />
+            <a
+              href="https://www.facebook.com/FJSSGroup/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaFacebook className="footer_icon" />
+            </a>
+            <a
+              href="https://twitter.com/fjssgroup"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaTwitter className="footer_icon" />
+            </a>
+            <a
+              href="https://www.instagram.com/fjssgroup/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaInstagram className="footer_icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/fjss-group-0b30941a9/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <FaLinkedin className="footer_icon" />
+            </a>
           </div>
         </div>
         <div className="footer_middle">
@@ -29,7 +54,9 @@ function Footer() {
             8DR
           </p>
           <p>+44 131 - 285 - 1013 </p>
-          <p>info@fjssgroup.org</p>
+          <a href="mailto:info@fjssgroup.org">
+            <p>info@fjssgroup.org</p>
+          </a>
           <p>Charity No. : SC042868</p>
         </div>
         <div className="footer_right">

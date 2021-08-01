@@ -29,6 +29,9 @@
   display: flex;
   justify-content: space-between;
 }
+.footer_icons a {
+  color: #fff;
+}
 
 .footer_icon {
   font-size: 21px;
@@ -40,6 +43,10 @@
 }
 
 /* FOOTER MIDDLE */
+
+.footer_middle a {
+  color: #fff;
+}
 
 .footer_middle h2 {
   font-size: 30px;
