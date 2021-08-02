@@ -2,6 +2,8 @@ import "./news.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
 import gallery1 from "../../assets/images/gallery1.png";
 import { Link } from "react-router-dom";
+import { news } from "../../helpers/data";
+import { FiSearch } from "react-icons/fi";
 function News() {
   return (
     <div className="news_container">
@@ -22,23 +24,26 @@ function News() {
         <div className="news_form_container">
           <form className="news_search_form">
             <input placeholder="search" />
-            <button>S</button>
+            <button>
+              <FiSearch className="footer_icon" />
+            </button>
           </form>
         </div>
       </div>
 
-      <Link to="/news-details/1">
-        {" "}
-        <div className="news_card_container">
+      <div className="news_card_container">
+        {news.map(el => (
           <div className="news_card">
-            <img src={gallery1} alt="" />
+            <img src={el.images[0]} alt="" />
             <div className="news_card_info">
               <p className="news_card_date">21 Feb, 2021</p>
               <p className="news_card_title">FJSS Group Food Support</p>
               <p className="news_card_body">
                 Serving our community is core to FJSS Group’s goals
               </p>
-              <button className="news_card_button">Read more</button>
+              <Link to="/news-details/1">
+                <button className="news_card_button">Read more</button>{" "}
+              </Link>
               <div className="news_card_hr" />
               <div className="news_card_bottom">
                 <div>
@@ -51,8 +56,8 @@ function News() {
               </div>
             </div>
           </div>
-        </div>
-      </Link>
+        ))}
+      </div>
     </div>
   );
 }
