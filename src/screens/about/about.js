@@ -1,9 +1,25 @@
 import "./about.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
 import HomeAbout from "../../assets/images/homeAbout.png";
-import client1 from "../../assets/images/client1.png";
-import client2 from "../../assets/images/client2.png";
+
 import Slider from "react-slick";
+
+import cjs from "../../assets/images/clients/cjs.png";
+import cyrenians from "../../assets/images/clients/cyrenians.jpg";
+import foodbank from "../../assets/images/clients/foodbank.png";
+import greatway from "../../assets/images/clients/greatway.png";
+import hmips from "../../assets/images/clients/hmips.png";
+import lawSociety from "../../assets/images/clients/law-society.png";
+import mgs from "../../assets/images/clients/mgs.jpg";
+import pilnet from "../../assets/images/clients/pilnet.jpg";
+import scoac from "../../assets/images/clients/scoac.png";
+import scotlandPolice from "../../assets/images/clients/scotland-police.png";
+import scottishGov from "../../assets/images/clients/Scottish_Government.png";
+import scottishPoliceAuth from "../../assets/images/clients/scottish-police-auth.png";
+import scotishRefugeCouncil from "../../assets/images/clients/scottish-refuge-council.jpg";
+import thelma from "../../assets/images/clients/thelma.png";
+import unhcr from "../../assets/images/clients/unhcr.jpg";
+import westLothian from "../../assets/images/clients/west-lothian-council.jpg";
 
 const statements = [
   {
@@ -24,21 +40,22 @@ const statements = [
 ];
 
 const clients = [
-  {
-    url: client1
-  },
-  {
-    url: client2
-  },
-  {
-    url: client1
-  },
-  {
-    url: client2
-  },
-  {
-    url: client1
-  }
+  cjs,
+  cyrenians,
+  foodbank,
+  greatway,
+  hmips,
+  lawSociety,
+  mgs,
+  pilnet,
+  scoac,
+  scotlandPolice,
+  scottishGov,
+  scottishPoliceAuth,
+  scotishRefugeCouncil,
+  thelma,
+  unhcr,
+  westLothian
 ];
 function About() {
   const settings = {
@@ -140,7 +157,7 @@ function About() {
         <Slider {...settings}>
           {clients.map((el, id) => (
             <div key={id} className="about_clients">
-              <img src={el.url} alt="" />
+              <img src={el} alt="" />
             </div>
           ))}
         </Slider>
