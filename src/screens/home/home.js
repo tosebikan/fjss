@@ -75,7 +75,7 @@ function Home() {
     slidesToScroll: 1,
     className: "slider_style",
     vertical: true,
-    verticalSwiping: true,
+    verticalSwiping: false,
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear"
@@ -273,7 +273,7 @@ function Home() {
             {" "}
             <button>Donate now</button>
           </Link>
-          <button>Join up</button>
+          {/*<button>Join up</button>*/}
         </div>
       </div>
 
