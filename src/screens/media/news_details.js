@@ -4,23 +4,22 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FiSearch } from "react-icons/fi";
 
 import "./news_details.css";
-import { useParams } from "react-router-dom";
-function NewsDetails() {
-  let { id } = useParams();
-  console.log(id);
+function NewsDetails(props) {
+  let news = props.location.state.el;
   return (
     <div className="newsDetails_container">
       <div className="news_details_hero">
         <img src={HeroImage} alt="" />
         <div className="news_details_hero_text">
-          <h2>News{id}</h2>
+          <h2>News</h2>
           <p>FJSS GROUP</p>
         </div>
       </div>
 
-      <div className="news_details_menu_container">
+      {/*<div className="news_details_menu_container">
         <div className="news_details_menu">
           <p>Categories</p>
           <p>Popular tags</p>
@@ -29,15 +28,17 @@ function NewsDetails() {
         <div className="news_details_form_container">
           <form className="news_details_search_form">
             <input placeholder="search" />
-            <button>S</button>
+            <button>
+              <FiSearch className="footer_icon" />
+            </button>
           </form>
         </div>
-      </div>
+      </div>*/}
 
       {/*NEWS DETAILS*/}
       <div className="news_details_info">
         <div className="news_details_info_top">
-          <img src={gallery1} alt="" />
+          <img src={news.images[0]} alt="" />
           <div className="news_details_info_text_group">
             <h2>FJSS Group Food Support</h2>
             <p>
@@ -52,11 +53,9 @@ function NewsDetails() {
       </div>
       {/*NEWS IMAGES*/}
       <div className="news_details_info_images">
-        <img src={gallery1} alt="" />
-        <img src={gallery1} alt="" />
-        <img src={gallery1} alt="" />
-        <img src={gallery1} alt="" />
-        <img src={gallery1} alt="" />
+        {news.images.map(el => (
+          <img src={el} alt="" />
+        ))}
       </div>
       {/*NEWS TAGS */}
       <div className="news_details_info_tags">

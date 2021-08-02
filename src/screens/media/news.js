@@ -41,7 +41,7 @@ function News() {
               <p className="news_card_body">
                 Serving our community is core to FJSS Group’s goals
               </p>
-              <Link to="/news-details/1">
+              <Link to={{ pathname: "/news-details", state: { el } }}>
                 <button className="news_card_button">Read more</button>{" "}
               </Link>
               <div className="news_card_hr" />
