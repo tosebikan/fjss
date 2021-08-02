@@ -1,6 +1,6 @@
 import "./news.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
-import gallery1 from "../../assets/images/gallery1.png";
+// import gallery1 from "../../assets/images/gallery1.png";
 import { Link } from "react-router-dom";
 import { news } from "../../helpers/data";
 import { FiSearch } from "react-icons/fi";
