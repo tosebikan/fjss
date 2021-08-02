@@ -33,6 +33,7 @@ import Legal from "./screens/work/legal";
 import Opportunity from "./screens/work/opportunity";
 import Policy from "./screens/work/policy";
 import Projects from "./screens/work/projects";
+import ProjectDetails from "./screens/work/project_details";
 import Strategic from "./screens/work/strategic";
 import PrivacyPolicy from "./screens/privacy/privacy_policy";
 
@@ -113,6 +114,11 @@ function App() {
           <Route path="/opportunity" component={Opportunity} exact={true} />
           <Route path="/policy" component={Policy} exact={true} />
           <Route path="/projects" component={Projects} exact={true} />
+          <Route
+            path="/project-details"
+            component={ProjectDetails}
+            exact={true}
+          />
           <Route path="/strategic" component={Strategic} exact={true} />
 
           {/*PRIVACY POLICY*/}

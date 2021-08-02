@@ -1,6 +1,40 @@
 import "./project.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
+import { projects } from "../../helpers/data";
+import Slider from "react-slick";
+import { Link } from "react-router-dom";
+
 function Projects() {
+  let completed = projects.filter(el => el.status === "completed");
+  let ongoing = projects.filter(el => el.status === "onGoing");
+  let upcoming = projects.filter(el => el.status === "upComing");
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    className: "project_slider",
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: "linear"
+  };
+
+  const settings2 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    className: "project_slider2",
+
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: "linear"
+  };
+
+  console.log({ completed });
   return (
     <div className="projects_container">
       <div className="policy_hero">
@@ -13,63 +47,50 @@ function Projects() {
 
       {/*PROJECTS COMPLETE SECTIOn*/}
 
-      <div className="project_complete">
-        <div className="project_complete_left">
-          <h2>Complete Projects</h2>
-          <p className="project_complete_title">
-            History Book - The West Lothian Connection
-          </p>
-          <p className="project_complete_body">
-            The FJSS Group successfully completed the history book project and
-            the book was launched virtually and colourfully on 29 October 2020.
-          </p>
-          <button>Read more </button>
-        </div>
+      <Slider {...settings}>
+        {completed.map((el, id) => (
+          <div className="project_complete" key={id}>
+            <div className="project_complete_left">
+              <h2>Completed Projects</h2>
 
-        <div className="project_complete_right">
-          <img src={HeroImage} alt="" />
-        </div>
-      </div>
+              <p className="project_complete_title">{el.title}</p>
+              <p className="project_complete_body">
+                {el.text.map(el => el.slice(0, 100))}...
+              </p>
+              <Link to={{ pathname: "project-details", state: { el } }}>
+                <button>Read more </button>
+              </Link>
+            </div>
+
+            <div className="project_complete_right">
+              <img src={el.image} alt="" />
+            </div>
+          </div>
+        ))}
+      </Slider>
 
       {/* ONGOING PROJECTS*/}
       <div className="ongoing_projects">
         <h2>Ongoing projects</h2>
 
-        <div className="ongoing_projects_section">
-          <div className="ongoing_projects_group">
-            <img src={HeroImage} alt="" />
-            <p className="ongoing_projects_title">
-              Task Force For Justice Sector Reforms
-            </p>
-            <p className="ongoing_projects_body">
-              The Task Force has now produced a Framework for Justice Sector
-              Reforms in Scotland.
-            </p>
-            <button>Read more</button>
-          </div>
-          <div className="ongoing_projects_group">
-            <img src={HeroImage} alt="" />
-            <p className="ongoing_projects_title">
-              Task Force For Justice Sector Reforms
-            </p>
-            <p className="ongoing_projects_body">
-              The Task Force has now produced a Framework for Justice Sector
-              Reforms in Scotland.
-            </p>
-            <button>Read more</button>
-          </div>
-          <div className="ongoing_projects_group">
-            <img src={HeroImage} alt="" />
-            <p className="ongoing_projects_title">
-              Task Force For Justice Sector Reforms
-            </p>
-            <p className="ongoing_projects_body">
-              The Task Force has now produced a Framework for Justice Sector
-              Reforms in Scotland.
-            </p>
-            <button>Read more</button>
-          </div>
-        </div>
+        <Slider {...settings2}>
+          {/*<div className="ongoing_projects_section">*/}
+          {ongoing.map((el, id) => (
+            <div className="ongoin_group">
+              <div className="ongoing_projects_group" key={id}>
+                <img src={el.image} alt="" />
+                <p className="ongoing_projects_title">{el.title}</p>
+                <p className="ongoing_projects_body">
+                  {el.text.map(el => el.slice(0, 30))}...
+                </p>
+                <Link to={{ pathname: "project-details", state: { el } }}>
+                  <button>Read more</button>
+                </Link>
+              </div>
+            </div>
+          ))}
+          {/*</div>*/}
+        </Slider>
       </div>
 
       {/* UPCOMING PROJECTS*/}
@@ -77,39 +98,18 @@ function Projects() {
         <h2>Upcoming projects</h2>
 
         <div className="ongoing_projects_section">
-          <div className="ongoing_projects_group">
-            <img src={HeroImage} alt="" />
-            <p className="ongoing_projects_title">
-              Task Force For Justice Sector Reforms
-            </p>
-            <p className="ongoing_projects_body">
-              The Task Force has now produced a Framework for Justice Sector
-              Reforms in Scotland.
-            </p>
-            <button>Read more</button>
-          </div>
-          <div className="ongoing_projects_group">
-            <img src={HeroImage} alt="" />
-            <p className="ongoing_projects_title">
-              Task Force For Justice Sector Reforms
-            </p>
-            <p className="ongoing_projects_body">
-              The Task Force has now produced a Framework for Justice Sector
-              Reforms in Scotland.
-            </p>
-            <button>Read more</button>
-          </div>
-          <div className="ongoing_projects_group">
-            <img src={HeroImage} alt="" />
-            <p className="ongoing_projects_title">
-              Task Force For Justice Sector Reforms
-            </p>
-            <p className="ongoing_projects_body">
-              The Task Force has now produced a Framework for Justice Sector
-              Reforms in Scotland.
-            </p>
-            <button>Read more</button>
-          </div>
+          {upcoming.map((el, id) => (
+            <div className="ongoing_projects_group" key={id}>
+              <img src={el.image} alt="" />
+              <p className="ongoing_projects_title">{el.title}</p>
+              <p className="ongoing_projects_body">
+                {el.text.map(el => el.slice(0, 100))}...
+              </p>
+              <Link to={{ pathname: "project-details", state: { el } }}>
+                <button>Read more</button>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </div>
