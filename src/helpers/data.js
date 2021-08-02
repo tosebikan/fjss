@@ -29,6 +29,37 @@ import food3 from "../assets/images/news/food3.jpeg";
 import bame1 from "../assets/images/news/bame1.jpg";
 import bame2 from "../assets/images/news/bame2.jpg";
 import bame3 from "../assets/images/news/bame3.jpg";
+import gh from "../assets/images/news/g&h.jpg";
+import geoff1 from "../assets/images/news/geoff1.jpg";
+import geoff2 from "../assets/images/news/geoff2.jpg";
+import geoff3 from "../assets/images/news/geoff3.jpg";
+import cyre from "../assets/images/news/cyre.png";
+import foodparcel from "../assets/images/news/foodparcel.png";
+import herilec1 from "../assets/images/news/herilec1.jpg";
+import herilec2 from "../assets/images/news/herilec2.jpg";
+import herilec3 from "../assets/images/news/herilec3.jpg";
+import geneva1 from "../assets/images/news/geneva1.jpg";
+import geneva2 from "../assets/images/news/geneva2.jpg";
+import geneva3 from "../assets/images/news/geneva3.jpg";
+import scotjust1 from "../assets/images/news/scotjust1.jpg";
+import scotjust2 from "../assets/images/news/scotjust2.jpg";
+import scotjust3 from "../assets/images/news/scotjust3.jpg";
+import berlin1 from "../assets/images/news/berlin1.jpg";
+import berlin2 from "../assets/images/news/berlin2.jpg";
+import berlin3 from "../assets/images/news/berlin3.jpg";
+import office1 from "../assets/images/news/office1.png";
+import office2 from "../assets/images/news/office2.png";
+import office3 from "../assets/images/news/office3.png";
+import chair1 from "../assets/images/news/chair1.jpg";
+import chair2 from "../assets/images/news/chair2.jpg";
+import chair3 from "../assets/images/news/chair3.jpg";
+import june1 from "../assets/images/news/20191.jpg";
+import june2 from "../assets/images/news/20192.jpg";
+import june3 from "../assets/images/news/20193.jpg";
+import brussels1 from "../assets/images/news/brussels1.png";
+import brussels2 from "../assets/images/news/brussels2.jpg";
+import brussels3 from "../assets/images/news/brussels3.jpg";
+import journey from "../assets/images/news/journey.jpg";
 
 export const testimonials = [
   {
@@ -474,5 +505,122 @@ export const news = [
     ],
     date: "Date: 6 February, 2021",
     images: [bame1, bame2, bame3]
+  },
+  {
+    title: "FJSS Group & HMIPS",
+    heading: "",
+    text: [
+      "The virtual workshop was held today and was designed to raise awareness on the role of the independent prison monitor, what it involves and the application and recruitments processes to becoming an independent prison monitor",
+      "At present people from a BAME background remain under-represented in applications and appointments to become independent prison monitors in Scotland. The Scottish Prison Service and the Scottish Prison Monitoring System are therefore missing a potential pool of talent and experience from the BAME community because of this under-representation. Representatives from HMIPS highlighted the importance of having representations from various ethnic backgrounds as Prison monitors to ensure fair justices as is the very aim of the FJSS Group.",
+      "The FJSS Group showcased the importance of hosting more of such events in the future to enlighten and create more awareness."
+    ],
+    date: "Date: 26 January, 2021",
+    images: [gh]
+  },
+  {
+    title: "Celebrating our own Sir Geoff Palmer OBE on his 80th birthday",
+    heading: "",
+    text: [],
+    date: "Date: 18 December, 2020",
+    images: [geoff1, geoff2, geoff3]
+  },
+  {
+    title: "Cyrenians FareShare Scheme",
+    heading: "",
+
+    text: [
+      "FJSS Group is now officially accredited under the Cyrenians FareShare scheme. The FareShare is an initiative that basically fights hunger and tackles food waste. FJSS Group is very pleased to be part of this and will be able to support our communities better."
+    ],
+    date: "Date: 14 August, 2020",
+    images: [cyre]
+  },
+  {
+    title: "Food Parcel Initiative",
+    heading: "",
+    date: "Date: 18 May, 2020",
+    text: [
+      "The FJSS Group is part of the West Lothian Food Network and through our Food Parcel Initiative, we provide food parcels to an average of 20 families every fortnight. The organisation also works with Cyrenians under their Cyrenians FoodShare scheme and we get other lines of food and sanitary wear that go to BAME communities across West Lothian. ",
+      "The FJSS Group decided to run the food parcel service because one in three of all our cases had problems with food security or income levels. The food parcel initiative is also part of our “Connecting with Our People” initiative that enables us to connect with and keep the otherwise “hard to reach” members of our community in our sights. No one should fall behind, and no one should be left behind.",
+      "The support provided is mainly food parcels and cooked meals depending on circumstances. If you need any support kindly complete our contact form and we will process your referral.",
+      "NB: When completing the form, please ensure you enter “Food Banks Support Referrals” for the subject."
+    ],
+    images: [foodparcel]
+  },
+  {
+    title: "The FJSS Group Inaugural Heritage Lecture in Pictures",
+    heading: "",
+    date: "Date: 27 February, 2020",
+    text: [],
+    images: [herilec1, herilec2, herilec3]
+  },
+  {
+    title: "Global Refugee Forum Geneva",
+    heading: "",
+    date: "Date: 18 December, 2019",
+    text: [
+      "The historic first ever Global Refugee Forum was held in Geneva in December 2019 and FJSS Group attended and became part of a global initiative bringing together 50 plus other organisations worldwide to mobilise legal support for Refugees. The FJSS Group is currently the only organisation from the UK at this point that is involved with this initiative. The UNHCR have committed some resources and technical support to allow this vital initiative to take off the ground because. After the adoption of the “Global Compact for Refugees” by the United Nations General Assembly on 17 December 2018 there the “Global Refugee Forum” that followed exactly a year after and was held at the UN in Geneva 17-18 December. Heads of State and governments, ministers and heads of NGO’s and corporate entities were there, and it was indeed a very high-level forum that was nevertheless, meant to involve a  broad range of stakeholders (i.e. civil society, private sector, refugees themselves), not just the government leaders."
+    ],
+    images: [geneva1, geneva2, geneva3]
+  },
+  {
+    title: "Scottish Justice Conference Report Launch",
+    heading: "",
+    date: "Date: 29 November, 2019",
+    text: [
+      "The Scottish Justice Conference 2019 Report was launched at a colourful event hosted by the FJSS Group at their offices in West Clader. The event brought together representatives of some of the key stakeholders in the Scottish justice system who attended the conference in June 2019.",
+      "One of the main highlights of the conference was the recommendation that a skills audit should be conducted to ascertain the skills base of BAME communities in Scotland and the establishment of the Justice Sector Reforms Task Force. The Task Force is now in place and is working on the framework for its work. More to follow of the Task Force."
+    ],
+    images: [scotjust1, scotjust2, scotjust3]
+  },
+  {
+    title: "Global Refugee And Immigration Summit Berlin",
+    heading: "",
+    date: "Date: 3 September, 2019",
+    text: [],
+    images: [berlin1, berlin2, berlin3]
+  },
+  {
+    title: "FJSS Group Home Office Community Stakeholders Meeting August 2019",
+    heading: "",
+    date: "Date: 22 August, 2019",
+    text: [
+      "The FJSS Group organised a well attended, extremely engaging and fruitful community stakeholders meeting with the Home Office. This brought together leaders and representatives of community organisations to meet with policy leaders, community leads and outreach officers from the Home Office."
+    ],
+    images: [office1, office2, office3]
+  },
+  {
+    title:
+      "FJSS Group Chairman’s presentation to the Ecre.org Advocacy Seminar in Brussels 10 July 2019",
+    heading: "",
+    date: "Date: 11 July, 2019",
+    text: [],
+    images: [chair1, chair2, chair3]
+  },
+  {
+    title: "Scottish Justice Conference June 2019",
+    heading: "",
+    date: "Date: 4 June, 2019",
+    text: [],
+    images: [june1, june2, june3]
+  },
+  {
+    title: "Global Refugee And Immigration Summit Brussels May 2019",
+    heading: "",
+    date: "Date: 22 May, 2019",
+    text: [
+      "The FJSS Group was part of the historic summit in Brussels as part of the preparation for the first UNHCR Global Refugee Forum in December 2019 in Geneva. NGOs and advocacy organisations from across the EU met in Brussels to prepare for the December summit."
+    ],
+    images: [brussels1, brussels2, brussels3]
+  },
+  {
+    title: "The Journey Begins!",
+    heading: "",
+    date: "Date: 4 April, 2019",
+    text: [
+      "The FJSS Group is a grassroots-led organisation that works towards a fair, just and inclusive justice system in Scotland. The organisation works with focus on equality of opportunity and inclusive employment and appointments to the boards and executive structures of the organisations that make up the Scottish justice system.",
+      "This is the official online publicity blog of the FJSS Group where news, information and updates about the organisation’s programs and activities will be published periodically.",
+      "From August 2019 the FJSS Group will be holding a monthly open forum where major topical issues to do with the Justice system in Scotland will be discussed.Good company in a journey makes the way seem shorter. — Izaak Walton"
+    ],
+    images: [journey]
   }
 ];
