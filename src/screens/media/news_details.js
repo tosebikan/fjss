@@ -4,7 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FiSearch } from "react-icons/fi";
+// import { FiSearch } from "react-icons/fi";
 
 import "./news_details.css";
 function NewsDetails(props) {
