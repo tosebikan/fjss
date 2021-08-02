@@ -2,7 +2,7 @@ import HeroImage from "../../assets/images/home_hero.jpg";
 import homeevent from "../../assets/images/homeevent.png";
 import { FaInstagram } from "react-icons/fa";
 import "./upcoming_events.css";
-import { events } from "../../helpers/data";
+// import { events } from "../../helpers/data";
 function UpcomingEvents() {
   // let upcoming = events.filter(el => el.status === "upcoming");
   return (
