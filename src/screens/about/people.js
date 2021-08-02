@@ -65,11 +65,11 @@ function People() {
             <div className="people_info">
               <h4>{el.name}</h4>
               <p>{el.position}</p>
-              <div className="people_socials">
+              {/*<div className="people_socials">
                 <FaFacebook className="people_icon" />
                 <FaTwitter className="people_icon" />
                 <FaLinkedin className="people_icon" />
-              </div>
+              </div>*/}
             </div>
           </div>
         ))}
