@@ -4,7 +4,32 @@ import HeroImage from "../../assets/images/home_hero.jpg";
 import { IoLocation } from "react-icons/io5";
 import { MdPhoneInTalk } from "react-icons/md";
 import { GrMail } from "react-icons/gr";
+import axios from "axios";
+import emailjs from "emailjs-com";
+
 function Contact() {
+  const sendMail = async e => {
+    e.preventDefault();
+
+    let template_params = {
+      from_name: "Tolu",
+      to_name: "FJSS GROUP",
+      message: "testing emailjs, the template has been updated",
+      to: "tosebikan@gmail.com",
+      from_mail: "oltostudios@gmail.com"
+    };
+
+    window.emailjs
+      .send("service_fvgdzom", "template_8nhhvzo", template_params)
+      .then(
+        function(response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function(error) {
+          console.log("FAILED...", error);
+        }
+      );
+  };
   return (
     <div className="contact_container">
       <div className="contact_hero">
@@ -70,13 +95,13 @@ function Contact() {
 
         <form className="contact_form">
           <div className="contact_form_row">
-            <input placeholder="Your Name*" />
-            <input placeholder="Your Email*" />
+            <input placeholder="Your Name*" name="user_name" />
+            <input placeholder="Your Email*" name="user_email" />
           </div>
           <input placeholder="How did you hear about us?" />
           <input placeholder="Subject*" />
-          <textArea placeholder="Leave a Messsage*" />
-          <button>Send Message</button>
+          <textArea placeholder="Leave a Messsage*" name="message" />
+          <button onClick={sendMail}>Send Message</button>
         </form>
       </div>
     </div>

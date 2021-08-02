@@ -24,7 +24,6 @@ ul li {
 
 @media (max-width: 1024px) {
   .nav_group {
-    background-color: red;
     display: none;
   }
 }
