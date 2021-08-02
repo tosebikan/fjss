@@ -75,18 +75,17 @@ function Contact() {
               8DR{" "}
             </p>
           </div>
-          <div className="contact_card" style={{ backgroundColor: "#E768FC" }}>
-            <MdPhoneInTalk className="contact_icon" />
-            <h4>Phone Number</h4>
-            <p className="contact_body">(+44) 131 2851 013</p>
-          </div>
-          <div className="contact_card" style={{ backgroundColor: "#62B1FA" }}>
+          <div
+            className="contact_card_mid"
+            style={{ backgroundColor: "#62B1FA" }}
+          >
             <GrMail className="contact_icon" />
             <h4>Email Addresses</h4>
             <p className="contact_title">General enquiries: </p>
             <p className="contact_body">
               <a href="mailto:info@fjssgroup.org">info@fjssgroup.org</a>
             </p>
+
             <p className="contact_title">Legal issues enquiries: </p>
             <p className="contact_body">
               {" "}
@@ -94,14 +93,39 @@ function Contact() {
                 legalservices@fjssgroup.org
               </a>
             </p>
-            <p className="contact_title">support enquiries:</p>
 
+            <p className="contact_title">Events: </p>
+            <p className="contact_body">
+              {" "}
+              <a href="mailto:Events@fjssgroup.org">Events@fjssgroup.org</a>
+            </p>
+
+            <p className="contact_title">Volunteer service: </p>
+            <p className="contact_body">
+              {" "}
+              <a href="mailto:volunteerservices@fjssgroup.org">
+                volunteerservices@fjssgroup.org
+              </a>
+            </p>
+
+            <p className="contact_title">Projects: </p>
+            <p className="contact_body">
+              {" "}
+              <a href="mailto:Projects@fjssgroup.org">Projects@fjssgroup.org</a>
+            </p>
+
+            <p className="contact_title">support enquiries:</p>
             <p className="contact_body">
               {" "}
               <a href="mailto:foodsupport@fjssgroup.org">
                 foodsupport@fjssgroup.org{" "}
               </a>
             </p>
+          </div>
+          <div className="contact_card" style={{ backgroundColor: "#E768FC" }}>
+            <MdPhoneInTalk className="contact_icon" />
+            <h4>Phone Number</h4>
+            <p className="contact_body">(+44) 131 2851 013</p>
           </div>
         </div>
       </div>
