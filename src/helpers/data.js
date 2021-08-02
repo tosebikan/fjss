@@ -23,6 +23,13 @@ import justicesector from "../assets/images/projects/justicesector.png";
 import refset from "../assets/images/projects/refset.png";
 import research from "../assets/images/projects/research.png";
 
+import food1 from "../assets/images/news/food1.jpeg";
+import food2 from "../assets/images/news/food2.jpeg";
+import food3 from "../assets/images/news/food3.jpeg";
+import bame1 from "../assets/images/news/bame1.jpg";
+import bame2 from "../assets/images/news/bame2.jpg";
+import bame3 from "../assets/images/news/bame3.jpg";
+
 export const testimonials = [
   {
     id: 6,
@@ -444,5 +451,28 @@ export const projects = [
     text: ["More details to follow on this project."],
     status: "upComing",
     image: refset
+  }
+];
+
+export const news = [
+  {
+    title: "FJSS Group Food Support",
+    heading: "",
+    text: [
+      "Serving our community is core to FJSS Group’s goals. Our food support program has been waxing strong. We have and continue to serve those in need during this challenging times. Our food support brings hope to all those that have been affected by the corona virus."
+    ],
+    date: "Date: 21 February, 2021",
+    images: [food1, food2, food3]
+  },
+  {
+    title: "Increasing BAME Representation on Scotland’s Public Board",
+    heading: "FJSS Group& Public Appointments Scotland",
+    text: [
+      "The event was held on the 4th January 2021. The workshop was designed to raise awareness of regulated public appointments, what this involves and the process of applying for a regulated public appointment and how the recruitment is done.",
+      "Presently people from BME background remain under-represented in applications and appointments to regulated public body Boards in Scotland. Public bodies are therefore missing a potential pool of talent and experience because of this under-representation.",
+      "During the session, the public appointments team joined by current Board members Hellen Miller and Amanda Pringle shared their personal experience of being a member of a public body Board in Scotland. It was very helpful for the participants to know what possibilities there are for representations on Scottish boards."
+    ],
+    date: "Date: 6 February, 2021",
+    images: [bame1, bame2, bame3]
   }
 ];
