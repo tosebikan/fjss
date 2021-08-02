@@ -2,7 +2,7 @@ import HeroImage from "../../assets/images/home_hero.jpg";
 import "./shop.css";
 import prod1 from "../../assets/images/prod1.jpg";
 import prod2 from "../../assets/images/prod2.jpg";
-import gallery1 from "../../assets/images/gallery1.png";
+// import gallery1 from "../../assets/images/gallery1.png";
 import { FaFacebook } from "react-icons/fa";
 
 const products = [

@@ -32,8 +32,6 @@ function Volunteer() {
       return;
     }
 
-    let dobString = dob.replace("/", "-");
-
     setLoading(true);
 
     let template_params = {

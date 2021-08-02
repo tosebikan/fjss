@@ -1,52 +1,12 @@
 import "./people.css";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+// import { FaFacebook } from "react-icons/fa";
+// import { FaTwitter } from "react-icons/fa";
+// import { FaLinkedin } from "react-icons/fa";
 
 import HeroImage from "../../assets/images/home_hero.jpg";
-import people1 from "../../assets/images/people1.png";
-import people2 from "../../assets/images/people2.jpg";
 import getInvolved from "../../assets/images/getinvolved.jpg";
 import { people } from "../../helpers/data";
 
-const data = [
-  {
-    id: 1,
-    url: people1,
-    name: "Silence Chihuri",
-    title: "CHIEF EXECUTIVE OFFICER",
-    linkedin: "#",
-    facebook: "#",
-    twitter: "#"
-  },
-  {
-    id: 2,
-    url: people2,
-    name: "Professor Sir Geoff Palmer OBE DSc",
-    title: "CHAIRMAN",
-    linkedin: "#",
-    facebook: "#",
-    twitter: "#"
-  },
-  {
-    id: 1,
-    url: people1,
-    name: "Silence Chihuri",
-    title: "CHIEF EXECUTIVE OFFICER",
-    linkedin: "#",
-    facebook: "#",
-    twitter: "#"
-  },
-  {
-    id: 2,
-    url: people2,
-    name: "Professor Sir Geoff Palmer OBE DSc",
-    title: "CHAIRMAN",
-    linkedin: "#",
-    facebook: "#",
-    twitter: "#"
-  }
-];
 function People() {
   return (
     <div className="people_container">

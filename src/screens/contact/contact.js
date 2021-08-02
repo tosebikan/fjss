@@ -5,8 +5,8 @@ import HeroImage from "../../assets/images/home_hero.jpg";
 import { IoLocation } from "react-icons/io5";
 import { MdPhoneInTalk } from "react-icons/md";
 import { GrMail } from "react-icons/gr";
-import axios from "axios";
-import emailjs from "emailjs-com";
+// import axios from "axios";
+// import emailjs from "emailjs-com";
 
 function Contact() {
   const [name, setName] = React.useState("");
@@ -43,12 +43,14 @@ function Contact() {
           setMessage("");
           setName("");
           setEmail("");
-          setResponse("SUCCESS!");
+          setResponse("Mail sent successfully!");
+          setTimeout(() => setResponse(""), 3000);
         },
         function(error) {
           console.log("FAILED...", error);
           setLoading(false);
           setResponse("FAILED..., please try again later");
+          setTimeout(() => setResponse(""), 3000);
         }
       );
   };
@@ -183,6 +185,7 @@ function Contact() {
           ) : (
             <button>Send Message</button>
           )}
+          {response && <p>{response}</p>}
         </form>
       </div>
     </div>

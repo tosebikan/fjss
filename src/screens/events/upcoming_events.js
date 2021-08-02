@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import "./upcoming_events.css";
 import { events } from "../../helpers/data";
 function UpcomingEvents() {
-  let upcoming = events.filter(el => el.status === "upcoming");
+  // let upcoming = events.filter(el => el.status === "upcoming");
   return (
     <div className="upcomingEvents_container">
       <div className="upcoming_events_hero">
