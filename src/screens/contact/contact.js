@@ -116,17 +116,21 @@ function Contact() {
           the right person.
         </p>
 
-        <form className="contact_form">
+        <form className="contact_form" onSubmit={sendMail}>
           <div className="contact_form_row">
             <input
               placeholder="Your Name*"
+              required
               name="user_name"
               value={name}
+              type="text"
               onChange={e => setName(e.target.value)}
             />
             <input
               placeholder="Your Email*"
+              required
               name="user_email"
+              type="email"
               value={email}
               onChange={e => setEmail(e.target.value)}
             />
@@ -135,8 +139,10 @@ function Contact() {
           <input placeholder="Subject*" />
           <textarea
             placeholder="Leave a Messsage*"
+            required
             name="message"
             value={message}
+            type="text"
             onChange={e => setMessage(e.target.value)}
           />
           {loading ? (
@@ -151,7 +157,7 @@ function Contact() {
               }}
             />
           ) : (
-            <button onClick={sendMail}>Send Message</button>
+            <button>Send Message</button>
           )}
         </form>
       </div>

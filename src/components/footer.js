@@ -4,6 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+// import { FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import footernews1 from "../assets/images/footernews1.png";
 import footernews2 from "../assets/images/footernews2.png";
@@ -45,6 +46,14 @@ function Footer() {
               {" "}
               <FaLinkedin className="footer_icon" />
             </a>
+            {/*<a
+              href="https://www.linkedin.com/in/fjss-group-0b30941a9/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <FaYoutube className="footer_icon" />
+            </a>*/}
           </div>
         </div>
         <div className="footer_middle">
