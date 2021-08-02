@@ -57,6 +57,14 @@
 .upcoming_events_card {
   display: flex;
   flex-direction: row;
+  margin-bottom: 80px;
+  /* margin-right: 40px; */
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  padding: 10px;
+}
+.upcoming_events_card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
   /* margin-right: 40px; */
 }
 
@@ -107,10 +115,19 @@
   background-color: #fc6101;
   color: #fff;
   border: none;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.upcoming_events_card_button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  /* background-color: #000; */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 .upcoming_events_card_right img {
   /* height: 600px; */
   width: 300px;
-  object-fit: contain;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }

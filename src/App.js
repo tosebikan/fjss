@@ -8,6 +8,7 @@ import Login from "./screens/auth/login";
 import Register from "./screens/auth/register";
 import Contact from "./screens/contact/contact";
 import Events from "./screens/events/events";
+import EventDetails from "./screens/events/event_details";
 import PastEvents from "./screens/events/past_events";
 import UpcomingEvents from "./screens/events/upcoming_events";
 import Speak from "./screens/events/speak";
@@ -67,6 +68,7 @@ function App() {
 
           {/* Events */}
           <Route path="/events" component={Events} exact={true} />
+          <Route path="/event-details" component={EventDetails} exact={true} />
           <Route path="/past-events" component={PastEvents} exact={true} />
           <Route
             path="/upcoming_events"
