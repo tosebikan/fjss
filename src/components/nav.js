@@ -222,12 +222,12 @@ function Nav() {
               </li>
             </NavLink>
 
-            <NavLink to="/speak" exact>
+            {/*<NavLink to="/speak" exact>
               <li>
                 {" "}
                 <p> Speak at our Events </p>{" "}
               </li>
-            </NavLink>
+            </NavLink>*/}
           </ul>
         </li>
       </ul>
