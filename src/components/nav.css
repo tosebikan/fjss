@@ -104,3 +104,17 @@ a {
   flex-direction: row;
   align-items: center;
 }
+.sub_title_donate {
+  background-color: #fc6a01;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: #fff;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.sub_title_donate:hover {
+  color: #000;
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}

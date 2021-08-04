@@ -230,6 +230,16 @@ function Nav() {
             </NavLink>*/}
           </ul>
         </li>
+        <li className="sub_title">
+          <NavLink to="/shop" exact>
+            <span className="sub_title_group">Shop</span>
+          </NavLink>
+        </li>
+        <li className="sub_title">
+          <NavLink to="/donate" exact>
+            <span className="sub_title_donate">Donate</span>
+          </NavLink>
+        </li>
       </ul>
     </div>
   );
