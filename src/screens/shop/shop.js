@@ -8,6 +8,7 @@ import { products, news } from "../../helpers/data";
 import { Link } from "react-router-dom";
 import ShopModal from "../../components/shop_modal";
 import { FaShoppingBag, FaSearch } from "react-icons/fa";
+import { IoBagRemove } from "react-icons/io5";
 import { CartContext } from "../../context/cart_context";
 
 let placeholder = products;
@@ -32,11 +33,27 @@ function Shop() {
 
   const addToCart = (e, product) => {
     e.preventDefault();
-    let present = cart.filter(el => el.id === product.id);
-    console.log({ present });
+    let present = checkCart(product);
 
-    if (present.length === 0) {
+    if (!present) {
       setCart([...cart, product]);
+    }
+  };
+
+  const remove = (e, product) => {
+    e.preventDefault();
+
+    let filter = cart.filter(el => el.id !== product.id);
+    setCart(filter);
+  };
+
+  // check if product in cart
+  const checkCart = product => {
+    let present = cart.filter(el => el.id === product.id);
+    if (present.length > 0) {
+      return true;
+    } else {
+      return false;
     }
   };
 
@@ -132,9 +149,16 @@ function Shop() {
               <div className="shop_main_card" key={id}>
                 <div className="shop_img_cont">
                   <div className="shop_hover">
-                    <div onClick={e => addToCart(e, el)}>
-                      <FaShoppingBag className="shop_card_icon" />
-                    </div>
+                    {checkCart(el) === true ? (
+                      <div onClick={e => remove(e, el)}>
+                        <IoBagRemove className="shop_card_icon remove " />
+                      </div>
+                    ) : (
+                      <div onClick={e => addToCart(e, el)}>
+                        <FaShoppingBag className="shop_card_icon" />
+                      </div>
+                    )}
+
                     <div
                       onClick={() => {
                         setShopModal(!shopModal);

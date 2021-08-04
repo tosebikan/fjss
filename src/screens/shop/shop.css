@@ -302,6 +302,10 @@
   margin: 0 20px;
   transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
+
+.remove {
+  color: #ff0000;
+}
 .shop_card_icon:hover {
   background-color: #fc6a01;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
