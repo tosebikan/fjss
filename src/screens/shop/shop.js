@@ -17,8 +17,9 @@ function Shop() {
   const [shopProducts, setShopProduct] = React.useState(products);
   const [shopModal, setShopModal] = React.useState(false);
   const [currentProduct, setCurrentProduct] = React.useState({});
+  const [productQuantity, setProductQuantity] = React.useState(1);
   const { cart, setCart } = React.useContext(CartContext);
-  console.log({ cart });
+  // console.log({ cart, productQuantity });
 
   const handleSearch = e => {
     let prod = placeholder.filter(el => {
@@ -27,22 +28,36 @@ function Shop() {
         .includes(e.target.value.toLowerCase());
     });
 
-    console.log(prod);
+    // console.log(prod);
     setShopProduct(prod);
   };
 
   const addToCart = (e, product) => {
     e.preventDefault();
+    console.log("PRODUCT", product);
+    // add product quantity
+    product.quantity = productQuantity;
+
     let present = checkCart(product);
 
     if (!present) {
       setCart([...cart, product]);
     }
+
+    if (present) {
+      let update = cart.map(el => {
+        if (el.id === product.id) {
+          el.quantity = productQuantity;
+        }
+        return el;
+      });
+
+      setCart(update);
+    }
   };
 
   const remove = (e, product) => {
     e.preventDefault();
-
     let filter = cart.filter(el => el.id !== product.id);
     setCart(filter);
   };
@@ -72,6 +87,8 @@ function Shop() {
           <ShopModal
             onClose={() => setShopModal(!shopModal)}
             data={currentProduct}
+            onChange={e => setProductQuantity(e.target.value)}
+            onAdd={e => addToCart(e, currentProduct)}
           />
         </div>
       )}
