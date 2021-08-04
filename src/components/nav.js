@@ -242,7 +242,7 @@ function Nav() {
           </NavLink>
         </li>
         <li className="sub_title">
-          <NavLink to="/shop" exact>
+          <NavLink to="/cart" exact>
             <span className="sub_title_cart">
               <FaShoppingBag className="nav_cart_icon" />
               <p>{cart.length}</p>

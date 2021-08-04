@@ -1,42 +1,44 @@
+import * as React from "react";
 import HeroImage from "../../assets/images/home_hero.jpg";
 import "./cart.css";
-import prod1 from "../../assets/images/prod1.jpg";
-import prod2 from "../../assets/images/prod2.jpg";
 import { FaFacebook } from "react-icons/fa";
 
-const cart = [
-  {
-    id: 1,
-    title: "Scottish History: The West Lothian Connection",
-    type: "Ebook",
-    price: 5.0,
-    image: prod1,
-    quantity: 1
-  },
-  {
-    id: 2,
-    title: "Scottish History: The West Lothian Connection ",
-    type: "Ebook",
-    price: 5.0,
-    image: prod2,
-    quantity: 2
-  },
-  {
-    id: 3,
-    title: "Scottish History: The West Lothian Connection",
-    type: "Ebook",
-    price: 5.0,
-    image: prod1,
-    quantity: 1
-  }
-];
+import { CartContext } from "../../context/cart_context";
 
-let subtotal = cart.reduce((a, b) => a + b.price * b.quantity, 0);
-let shipping = 20;
-let total = subtotal + shipping;
-console.log({ total });
+// const cart = [
+//   {
+//     id: 1,
+//     title: "Scottish History: The West Lothian Connection",
+//     type: "Ebook",
+//     price: 5.0,
+//     image: prod1,
+//     quantity: 1
+//   },
+//   {
+//     id: 2,
+//     title: "Scottish History: The West Lothian Connection ",
+//     type: "Ebook",
+//     price: 5.0,
+//     image: prod2,
+//     quantity: 2
+//   },
+//   {
+//     id: 3,
+//     title: "Scottish History: The West Lothian Connection",
+//     type: "Ebook",
+//     price: 5.0,
+//     image: prod1,
+//     quantity: 1
+//   }
+// ];
 
 function Cart() {
+  const { cart, setCart } = React.useContext(CartContext);
+
+  let subtotal = cart.reduce((a, b) => a + b.price * b.quantity, 0);
+  let shipping = 20;
+  let total = subtotal + shipping;
+  console.log({ total });
   return (
     <div className="cart_container">
       <div className="cart_hero">
