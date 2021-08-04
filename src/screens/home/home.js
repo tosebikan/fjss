@@ -15,7 +15,7 @@ import news2 from "../../assets/images/news2.png";
 import news3 from "../../assets/images/news3.png";
 import news1 from "../../assets/images/news1.jpg";
 import { Link } from "react-router-dom";
-import { testimonials } from "../../helpers/data";
+import { testimonials, events } from "../../helpers/data";
 import YoutubeEmbed from "../../components/youtube_embed";
 
 import Slider from "react-slick";
@@ -62,10 +62,9 @@ function Home() {
     );
   });
 
-  // console.log({ timerComponents });
-  // console.log({ timeLeft });
-
   const [currSlide, setCurrSlide] = React.useState(0);
+  const [currentEvent, setCurrentEvent] = React.useState(0);
+  // console.log({ currentEvent });
 
   const settings = {
     dots: true,
@@ -86,7 +85,6 @@ function Home() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-
     className: "slider2_style",
     autoplay: true,
     autoplaySpeed: 4000,
@@ -95,7 +93,23 @@ function Home() {
     afterChange: current => setCurrSlide(current)
   };
 
-  console.log(currSlide);
+  const eventsSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    className: "events_slider",
+    autoplay: true,
+    autoplaySpeed: 4000,
+    cssEase: "linear",
+    afterChange: current => {
+      setCurrentEvent(current);
+      console.log({ currentEvent });
+    }
+  };
+
+  // console.log(currSlide);
 
   return (
     <div className="home_container">
@@ -214,13 +228,12 @@ function Home() {
             <p>13</p>
             <p>April</p>
           </div>
-          <p className="home_event_text">
-            The Heritage Debate Series Statues: To topple or to repurpose? The
-            greatest question of our generation
-          </p>
+          <p className="home_event_text">{events[currentEvent].title}</p>
           <div className="home_events_schedule">
-            <p>7:00pm - 10:00pm</p>
-            <p>Virtual Event</p>
+            <p>
+              {events[currentEvent].startTime} - {events[currentEvent].endTime}
+            </p>
+            <p>{events[currentEvent].type}</p>
           </div>
 
           <Link to="/upcoming_events">
@@ -229,8 +242,19 @@ function Home() {
           </Link>
         </div>
         <div className="home_events_right">
-          <img src={homeevent} alt="" className="home_event_img1" />
-          <img src={homeevent2} alt="" className="home_event_img2" />
+          <img
+            src={events[currentEvent].image}
+            alt=""
+            className="home_event_img1"
+          />
+
+          <Slider {...eventsSettings}>
+            {events.map((el, id) => (
+              <div key={id}>
+                <img src={el.image} alt="" className="home_event_img2" />
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
 
