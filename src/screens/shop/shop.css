@@ -178,6 +178,10 @@
   flex-direction: row;
   align-items: flex-start;
 }
+.shop_menu_news_card:hover {
+  cursor: pointer;
+}
+
 .shop_menu_news_card img {
   height: 150px;
   width: 140px;

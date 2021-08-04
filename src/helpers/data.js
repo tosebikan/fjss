@@ -60,6 +60,8 @@ import brussels1 from "../assets/images/news/brussels1.png";
 import brussels2 from "../assets/images/news/brussels2.jpg";
 import brussels3 from "../assets/images/news/brussels3.jpg";
 import journey from "../assets/images/news/journey.jpg";
+import prod1 from "../assets/images/shop/5.png";
+import prod2 from "../assets/images/shop/The-West-Lothian-Connection.jpg";
 
 export const testimonials = [
   {
@@ -622,5 +624,20 @@ export const news = [
       "From August 2019 the FJSS Group will be holding a monthly open forum where major topical issues to do with the Justice system in Scotland will be discussed.Good company in a journey makes the way seem shorter. — Izaak Walton"
     ],
     images: [journey]
+  }
+];
+
+export const products = [
+  {
+    title: "Scottish History: The West Lothian Connection",
+    type: "Ebook",
+    price: 5.0,
+    image: prod2
+  },
+  {
+    title: "Scottish History: The West Lothian Connection (EBOOK)",
+    type: "Ebook",
+    price: 3.5,
+    image: prod1
   }
 ];
