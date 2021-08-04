@@ -1,0 +1,67 @@
+.shop_modal_container {
+  position: absolute;
+  bottom: 40px;
+  width: 65%;
+  height: 70%;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 40px 0 0 40px;
+}
+
+.shop_modal_left img {
+  width: 350px;
+  height: 450px;
+  object-fit: contain;
+}
+
+.shop_modal_right {
+  text-align: left;
+  width: 40%;
+  margin-left: 20px;
+}
+.price {
+  color: #fc6a01;
+}
+
+.shop_modal_form input {
+  width: 40px;
+}
+.shop_modal_form button {
+  padding: 8px 20px;
+  background-color: #fc6a01;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  margin-left: 20px;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.shop_modal_form button:hover {
+  color: #000;
+  transform: translateY(-3px);
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.shop_modal_close {
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.shop_modal_close:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  color: #ff0000;
+}

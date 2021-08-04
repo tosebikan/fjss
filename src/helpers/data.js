@@ -629,15 +629,19 @@ export const news = [
 
 export const products = [
   {
+    id: 1,
     title: "Scottish History: The West Lothian Connection",
-    type: "Ebook",
+    type: "Book",
     price: 5.0,
-    image: prod2
+    image: prod2,
+    categories: ["Book"]
   },
   {
+    id: 2,
     title: "Scottish History: The West Lothian Connection (EBOOK)",
     type: "Ebook",
     price: 3.5,
-    image: prod1
+    image: prod1,
+    categories: ["Ebook", "Virtual Products & Downloads"]
   }
 ];
