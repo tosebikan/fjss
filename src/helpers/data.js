@@ -645,3 +645,132 @@ export const products = [
     categories: ["Ebook", "Virtual Products & Downloads"]
   }
 ];
+
+export const images = [
+  {
+    id: 1,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096639/img_20190709_1045462683927358929891859-scaled_1_nojpt3.jpg",
+    type: "photo"
+  },
+  {
+    id: 2,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096639/wp-15829793583309210386161091735271_hrprlt.jpg",
+    type: "photo"
+  },
+  {
+    id: 3,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096639/fb_img_15627600030613995299958770531447_nocqfg.jpg",
+    type: "photo"
+  },
+  {
+    id: 4,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096639/img-20190922-wa00244169701711433386891_pga9rv.jpg",
+    type: "photo"
+  },
+  {
+    id: 5,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096638/wp-15829793583268820548812982269740_wojru6.jpg",
+    type: "photo"
+  },
+  {
+    id: 6,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096638/33334e6c-0ec6-408e-bac7-b2582ac61613_hfrt18.jpg",
+    type: "photo"
+  },
+  {
+    id: 7,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096639/img-20190922-wa00244169701711433386891_pga9rv.jpg",
+    type: "photo"
+  },
+  {
+    id: 8,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096638/wp-15829793583268820548812982269740_wojru6.jpg",
+    type: "photo"
+  },
+  {
+    id: 9,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096638/33334e6c-0ec6-408e-bac7-b2582ac61613_hfrt18.jpg",
+    type: "photo"
+  },
+  {
+    id: 10,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096638/a786177a-a647-4c48-ab77-b3228427ae5f-1_ohgta2.jpg",
+    type: "photo"
+  },
+  {
+    id: 11,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096638/baffdfa1-4801-4322-ab30-d9b50717933d_sxqiq7.jpg",
+    type: "photo"
+  },
+  {
+    id: 12,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096638/img_20190504_1546447070754389847730018-scaled_zaetxf.jpg",
+    type: "photo"
+  },
+  {
+    id: 13,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096638/img_20190709_1047361398612627677926642-scaled_s2ri8j.jpg",
+    type: "photo"
+  },
+  {
+    id: 14,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096637/IMG_3-scaled_l9wgkc.jpg",
+    type: "photo"
+  },
+  {
+    id: 15,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096637/372a5c10-b28a-425f-b6ee-2ff1372caec5_qr2rjo.jpg",
+    type: "photo"
+  },
+  {
+    id: 16,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096637/IMG_36-scaled_a5rbnm.jpg",
+    type: "photo"
+  },
+  {
+    id: 17,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096637/PHOTO-2020-12-24-10-07-59-3_flutlt.jpg",
+    type: "photo"
+  },
+  {
+    id: 18,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096637/PHOTO-2020-12-24-10-07-59-4_xbphp0.jpg",
+    type: "photo"
+  },
+  {
+    id: 19,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096636/PHOTO-2020-12-23-19-04-07-3_qkknt8.jpg",
+    type: "photo"
+  },
+  {
+    id: 20,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096636/PHOTO-2020-12-24-10-07-56_powir7.jpg",
+    type: "photo"
+  },
+  {
+    id: 21,
+    url:
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096636/25c58f51-5802-4399-b2ff-9357dbec2e10_guxx6c.jpg",
+    type: "photo"
+  }
+];

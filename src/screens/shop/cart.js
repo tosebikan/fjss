@@ -4,33 +4,7 @@ import "./cart.css";
 import { FaFacebook } from "react-icons/fa";
 
 import { CartContext } from "../../context/cart_context";
-
-// const cart = [
-//   {
-//     id: 1,
-//     title: "Scottish History: The West Lothian Connection",
-//     type: "Ebook",
-//     price: 5.0,
-//     image: prod1,
-//     quantity: 1
-//   },
-//   {
-//     id: 2,
-//     title: "Scottish History: The West Lothian Connection ",
-//     type: "Ebook",
-//     price: 5.0,
-//     image: prod2,
-//     quantity: 2
-//   },
-//   {
-//     id: 3,
-//     title: "Scottish History: The West Lothian Connection",
-//     type: "Ebook",
-//     price: 5.0,
-//     image: prod1,
-//     quantity: 1
-//   }
-// ];
+import { IoBagRemove } from "react-icons/io5";
 
 function Cart() {
   const { cart, setCart } = React.useContext(CartContext);
@@ -39,6 +13,12 @@ function Cart() {
   let shipping = 20;
   let total = subtotal + shipping;
   console.log({ total });
+
+  const handleRemove = (e, product) => {
+    e.preventDefault();
+    let filter = cart.filter(el => el.id !== product.id);
+    setCart(filter);
+  };
   return (
     <div className="cart_container">
       <div className="cart_hero">
@@ -65,9 +45,12 @@ function Cart() {
                 <td>
                   <div className="cart_column">
                     <img src={el.image} alt="" className="cart_image" />
-                    <button className="cart_button">
-                      <FaFacebook className="cart_button" />
-                    </button>
+                    <div
+                      className="cart_card_icon_cont"
+                      onClick={e => handleRemove(el)}
+                    >
+                      <IoBagRemove className="cart_card_icon remove " />
+                    </div>
                   </div>
                 </td>
                 <td className="card_title">{el.title}</td>
