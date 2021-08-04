@@ -1,9 +1,15 @@
+import * as React from "react";
 import { NavLink } from "react-router-dom";
 import "./nav.css";
 import { FiChevronDown } from "react-icons/fi";
 import Logo from "../assets/images/logo.png";
+import { FaShoppingBag } from "react-icons/fa";
+import { CartContext } from "../context/cart_context";
 
 function Nav() {
+  const { cart } = React.useContext(CartContext);
+
+  console.log("NAV CART", cart.length);
   return (
     <div className="nav">
       <ul className="nav_group">
@@ -233,6 +239,14 @@ function Nav() {
         <li className="sub_title">
           <NavLink to="/shop" exact>
             <span className="sub_title_group">Shop</span>
+          </NavLink>
+        </li>
+        <li className="sub_title">
+          <NavLink to="/shop" exact>
+            <span className="sub_title_cart">
+              <FaShoppingBag className="nav_cart_icon" />
+              <p>{cart.length}</p>
+            </span>
           </NavLink>
         </li>
         <li className="sub_title">

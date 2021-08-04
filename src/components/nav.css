@@ -112,6 +112,31 @@ a {
   transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
+/* CART SECTION */
+.sub_title_cart {
+  position: relative;
+}
+.sub_title_cart p {
+  position: absolute;
+  background-color: #fc6a01;
+  height: 18px;
+  width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 12px;
+  top: -25px;
+  right: -10px;
+  color: #fff;
+}
+.nav_cart_icon {
+  /* background-color: red; */
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.nav_cart_icon:hover {
+  transform: translateY(-3px);
+}
 .sub_title_donate:hover {
   color: #000;
   cursor: pointer;
