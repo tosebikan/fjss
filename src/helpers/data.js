@@ -650,37 +650,37 @@ export const images = [
   {
     id: 1,
     url:
-      "https://res.cloudinary.com/oltostudios/image/upload/v1628096639/img_20190709_1045462683927358929891859-scaled_1_nojpt3.jpg",
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096638/4f2de3cf-1e94-43f5-90c2-9187ea7fcce7_wvorj8.jpg",
     type: "photo"
   },
   {
     id: 2,
     url:
-      "https://res.cloudinary.com/oltostudios/image/upload/v1628096639/wp-15829793583309210386161091735271_hrprlt.jpg",
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096639/img_20190504_1144127915655345563583691-scaled_d56aav.jpg",
     type: "photo"
   },
   {
     id: 3,
     url:
-      "https://res.cloudinary.com/oltostudios/image/upload/v1628096639/fb_img_15627600030613995299958770531447_nocqfg.jpg",
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096638/wp-15829793583206456999189832260052_vmmegf.jpg",
     type: "photo"
   },
   {
     id: 4,
     url:
-      "https://res.cloudinary.com/oltostudios/image/upload/v1628096639/img-20190922-wa00244169701711433386891_pga9rv.jpg",
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096639/img_20190709_1045462683927358929891859-scaled_1_nojpt3.jpg",
     type: "photo"
   },
   {
     id: 5,
     url:
-      "https://res.cloudinary.com/oltostudios/image/upload/v1628096638/wp-15829793583268820548812982269740_wojru6.jpg",
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096639/wp-15829793583309210386161091735271_hrprlt.jpg",
     type: "photo"
   },
   {
     id: 6,
     url:
-      "https://res.cloudinary.com/oltostudios/image/upload/v1628096638/33334e6c-0ec6-408e-bac7-b2582ac61613_hfrt18.jpg",
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628096639/fb_img_15627600030613995299958770531447_nocqfg.jpg",
     type: "photo"
   },
   {
