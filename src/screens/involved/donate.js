@@ -5,6 +5,7 @@ import give from "../../assets/images/give.jpg";
 function Donate() {
   const [amount, setAmount] = React.useState(0);
   const amounts = [5, 10, 15, 20];
+  const inputRef = React.createRef(null);
   return (
     <div className="donate_container">
       <div className="donate_hero">
@@ -24,19 +25,28 @@ function Donate() {
       {/* DONATE AMOUNT SECTION*/}
       <div className="donate_amount_container">
         <div className="donate_amount_group">
-          {amounts.map(el => (
+          {amounts.map((el, id) => (
             <button
-              onClick={() => setAmount(el)}
+              onClick={() => {
+                setAmount(el);
+                inputRef.current.value = "";
+              }}
               className={amount === el ? "selected" : "amount_button"}
+              key={id}
             >
-              {" "}
               ${el}
             </button>
           ))}
         </div>
 
         <form className="donate_form">
-          <input placeholder="custom amount" />
+          <input
+            placeholder="custom amount"
+            type="number"
+            min="1"
+            onChange={e => setAmount(e.target.value)}
+            ref={inputRef}
+          />
         </form>
       </div>
 
