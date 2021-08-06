@@ -1,16 +1,14 @@
+import * as React from "react";
 import "./donate.css";
 import give from "../../assets/images/give.jpg";
 
-const amounts = [5, 10, 15, 20];
 function Donate() {
+  const [amount, setAmount] = React.useState(0);
+  const amounts = [5, 10, 15, 20];
   return (
     <div className="donate_container">
       <div className="donate_hero">
         <img src={give} alt="" />
-        {/*<div className="donate_hero_text">
-          <h2>Legal Services</h2>
-          <p>FJSS GROUP</p>
-        </div>*/}
       </div>
       <div className="donate_title">
         <h2>
@@ -27,7 +25,13 @@ function Donate() {
       <div className="donate_amount_container">
         <div className="donate_amount_group">
           {amounts.map(el => (
-            <button> ${el}</button>
+            <button
+              onClick={() => setAmount(el)}
+              className={amount === el ? "selected" : "amount_button"}
+            >
+              {" "}
+              ${el}
+            </button>
           ))}
         </div>
 

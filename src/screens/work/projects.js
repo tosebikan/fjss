@@ -10,7 +10,7 @@ function Projects() {
   let upcoming = projects.filter(el => el.status === "upComing");
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -22,7 +22,7 @@ function Projects() {
   };
 
   const settings2 = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
@@ -76,7 +76,7 @@ function Projects() {
         <Slider {...settings2}>
           {/*<div className="ongoing_projects_section">*/}
           {ongoing.map((el, id) => (
-            <div className="ongoin_group">
+            <div className="ongoin_group" key={id}>
               <div className="ongoing_projects_group" key={id}>
                 <img src={el.image} alt="" />
                 <p className="ongoing_projects_title">{el.title}</p>

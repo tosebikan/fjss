@@ -84,7 +84,7 @@
 .donate_amount_group {
   margin-left: 30px;
 }
-.donate_amount_container button {
+.amount_button {
   border: none;
   width: 80px;
   height: 45px;
@@ -94,7 +94,22 @@
   margin-right: 20px;
   font-size: 18px;
 }
+.amount_button:hover {
+  cursor: pointer;
+  color: #fc6a01;
+}
 
+.selected {
+  background-color: #fc6a01;
+  color: #fff;
+  border: none;
+  width: 80px;
+  height: 45px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  font-size: 18px;
+}
 .donate_form input {
   width: 470px;
   height: 45px;

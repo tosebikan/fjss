@@ -155,8 +155,9 @@
 .ongoing_projects_section {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   /* background-color: red; */
+  margin: 0 80px;
   width: 100vw;
 }
 
@@ -173,10 +174,12 @@
   padding-left: 100px;
   /* margin: 20; */
   outline: none;
+  /* width: 350px; */
 }
 
 .ongoing_projects_group {
   outline: none;
+  height: 470px;
   width: 350px;
   display: flex;
   flex-direction: column;
