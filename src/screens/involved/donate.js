@@ -3,9 +3,18 @@ import "./donate.css";
 import give from "../../assets/images/give.jpg";
 
 function Donate() {
+  const inputRef = React.createRef(null);
   const [amount, setAmount] = React.useState(0);
   const amounts = [5, 10, 15, 20];
-  const inputRef = React.createRef(null);
+  const [fName, setFName] = React.useState("");
+  const [lName, setLName] = React.useState("");
+  const [address, setAddress] = React.useState("");
+  const [address2, setAddress2] = React.useState("");
+  const [country, setCountry] = React.useState("");
+  const [city, setCity] = React.useState("");
+  const [state, setState] = React.useState("");
+  const [postal, setPostal] = React.useState("");
+
   return (
     <div className="donate_container">
       <div className="donate_hero">
@@ -61,7 +70,7 @@ function Donate() {
           </div>
           <div className="donate_form_column">
             <input placeholder="Address" />
-            <input placeholder="Address" />
+            <input placeholder="Address2" />
           </div>
           <div className="donate_form_row">
             <input placeholder="Country" />
@@ -81,11 +90,11 @@ function Donate() {
         <p>Choose your payment method</p>
         <form className="donate_method_form">
           <div className="donate_method_row">
-            <input type="radio" />
+            <input type="radio" name="donate" />
             <p>Offline Donation</p>
           </div>
           <div className="donate_method_row">
-            <input type="radio" />
+            <input type="radio" name="donate" />
             <p>Paypal</p>
           </div>
         </form>
