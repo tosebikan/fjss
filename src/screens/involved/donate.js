@@ -14,6 +14,30 @@ function Donate() {
   const [city, setCity] = React.useState("");
   const [state, setState] = React.useState("");
   const [postal, setPostal] = React.useState("");
+  const [paymentType, setPaymentType] = React.useState("");
+  const [paymentError, setPaymentError] = React.useState("");
+
+  const donate = e => {
+    e.preventDefault();
+    if (amount === "") return;
+    if (paymentType === "") {
+      setPaymentError("Please enter all required fields*");
+      return;
+    }
+
+    let payload = {
+      fName,
+      lName,
+      address,
+      address2,
+      country,
+      city,
+      state,
+      postal
+    };
+
+    console.log(payload);
+  };
 
   return (
     <div className="donate_container">
@@ -38,6 +62,7 @@ function Donate() {
             <button
               onClick={() => {
                 setAmount(el);
+                setPaymentError("");
                 inputRef.current.value = "";
               }}
               className={amount === el ? "selected" : "amount_button"}
@@ -53,7 +78,10 @@ function Donate() {
             placeholder="custom amount"
             type="number"
             min="1"
-            onChange={e => setAmount(e.target.value)}
+            onChange={e => {
+              setAmount(e.target.value);
+              setPaymentError("");
+            }}
             ref={inputRef}
           />
         </form>
@@ -61,62 +89,128 @@ function Donate() {
 
       {/*DONATE DETAILS SECTION */}
 
-      <div className="donate_details_container">
-        <h2>Donate</h2>
-        <form className="donate_details_form">
-          <div className="donate_form_row">
-            <input placeholder="FirstName" className="required" />
-            <input placeholder="Last Name" />
+      <form>
+        <div className="donate_details_container">
+          <h2>Donate</h2>
+          <div className="donate_details_form">
+            <div className="donate_form_row">
+              <input
+                placeholder="FirstName"
+                value={fName}
+                required
+                onChange={e => {
+                  setFName(e.target.value);
+                  setPaymentError("");
+                }}
+              />
+              <input
+                placeholder="Last Name"
+                value={lName}
+                required
+                onChange={e => {
+                  setLName(e.target.value);
+                  setPaymentError("");
+                }}
+              />
+            </div>
+            <div className="donate_form_column">
+              <input
+                placeholder="Address"
+                value={address}
+                required
+                onChange={e => {
+                  setAddress(e.target.value);
+                  setPaymentError("");
+                }}
+              />
+              <input
+                placeholder="Address2"
+                value={address2}
+                onChange={e => {
+                  setAddress2(e.target.value);
+                  setPaymentError("");
+                }}
+              />
+            </div>
+            <div className="donate_form_row">
+              <input
+                placeholder="Country"
+                value={country}
+                required
+                onChange={e => {
+                  setCountry(e.target.value);
+                  setPaymentError("");
+                }}
+              />
+              <input
+                placeholder="City"
+                value={city}
+                required
+                onChange={e => {
+                  setCity(e.target.value);
+                  setPaymentError("");
+                }}
+              />
+            </div>
+            <div className="donate_form_row">
+              <input
+                placeholder="State / Province / Region"
+                value={state}
+                required
+                onChange={e => {
+                  setState(e.target.value);
+                  setPaymentError("");
+                }}
+              />
+              <input
+                placeholder="Postal / Zip code"
+                value={postal}
+                required
+                onChange={e => {
+                  setPostal(e.target.value);
+                  setPaymentError("");
+                }}
+              />
+            </div>
           </div>
-          <div className="donate_form_column">
-            <input placeholder="Address" />
-            <input placeholder="Address2" />
-          </div>
-          <div className="donate_form_row">
-            <input placeholder="Country" />
-            <input placeholder="City" />
-          </div>
-          <div className="donate_form_row">
-            <input placeholder="State / Province / Region" />
-            <input placeholder="Postal / Zip code" />
-          </div>
-        </form>
-      </div>
+        </div>
 
-      {/* DONATE PAYMENT METHOD*/}
-
-      <div className="donate_method">
-        <h2>Payment</h2>
-        <p>Choose your payment method</p>
-        <form className="donate_method_form">
-          <div className="donate_method_row">
-            <input type="radio" name="donate" />
-            <p>Offline Donation</p>
+        {/* DONATE PAYMENT METHOD*/}
+        <div className="donate_method">
+          <h2>Payment</h2>
+          <p>Choose your payment method</p>
+          <div className="donate_method_form">
+            <div className="donate_method_row">
+              <input type="radio" name="donate" />
+              <p>Offline Donation</p>
+            </div>
+            <div className="donate_method_row">
+              <input type="radio" name="donate" />
+              <p>Paypal</p>
+            </div>
           </div>
-          <div className="donate_method_row">
-            <input type="radio" name="donate" />
-            <p>Paypal</p>
-          </div>
-        </form>
-      </div>
+        </div>
 
-      {/*DONATE TERMS SECTION */}
-      <div className="donate_terms">
-        <h2>Terms and Conditions</h2>
-        <p>
-          Your personal data will be used to process your donation, support your
-          experience throughout this website, and for other purposes described
-          in our privacy policy.
-        </p>
-        <form className="donate_terms_form">
-          <div className="donate_terms_row">
-            <input type="radio" />
-            <p> Yes, I am happy for you to contact me via email or phone.</p>
+        {/*DONATE TERMS SECTION */}
+        <div className="donate_terms">
+          <h2>Terms and Conditions</h2>
+          <p>
+            Your personal data will be used to process your donation, support
+            your experience throughout this website, and for other purposes
+            described in our privacy policy.
+          </p>
+          <div className="donate_terms_form">
+            <div className="donate_terms_row">
+              <input type="radio" />
+              <p> Yes, I am happy for you to contact me via email or phone.</p>
+            </div>
           </div>
-        </form>
-      </div>
-
-      <button className="donate_button">Donate Now</button>
+        </div>
+        {paymentError.length > 0 && <p className="error">{paymentError}</p>}
+        <button className="donate_button" onClick={donate}>
+          Donate Now
+        </button>
+      </form>
     </div>
   );
 }
