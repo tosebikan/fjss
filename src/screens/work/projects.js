@@ -17,7 +17,7 @@ function Projects() {
     slidesToScroll: 1,
     className: "project_slider",
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     cssEase: "linear"
   };
 
@@ -27,19 +27,44 @@ function Projects() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      }
+    ],
     className: "project_slider2",
-
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     cssEase: "linear"
   };
 
   console.log({ completed });
   return (
     <div className="projects_container">
-      <div className="policy_hero">
+      <div className="project_hero">
         <img src={HeroImage} alt="" />
-        <div className="policy_hero_text">
+        <div className="project_hero_text">
           <h2>Projects</h2>
           <p>FJSS GROUP</p>
         </div>
@@ -55,7 +80,7 @@ function Projects() {
 
               <p className="project_complete_title">{el.title}</p>
               <p className="project_complete_body">
-                {el.text.map(el => el.slice(0, 100))}...
+                {el.text?.[0].slice(0, 100)}...
               </p>
               <Link to={{ pathname: "project-details", state: { el } }}>
                 <button>Read more </button>

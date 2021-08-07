@@ -1,4 +1,4 @@
-.policy_hero {
+.project_hero {
   position: relative;
   height: 500px;
   width: 100vw;
@@ -10,7 +10,7 @@
   margin-bottom: 70px;
 }
 
-.policy_hero_text {
+.project_hero_text {
   position: absolute;
   top: 30%;
   left: 0;
@@ -24,13 +24,13 @@
   align-items: center;
 }
 
-.policy_hero h2 {
+.project_hero h2 {
   color: #fff;
   font-size: 72px;
   font-weight: 700;
   /* align-self: center; */
 }
-.policy_hero p {
+.project_hero p {
   color: #fc6a01;
 
   font-size: 23px;
@@ -38,10 +38,52 @@
   align-self: center;
 }
 
-.policy_hero img {
+.project_hero img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .project_hero {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    margin-bottom: 150px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+    margin-bottom: 70px;
+  }
+
+  .project_hero_text {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project_hero h2 {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    /* align-self: center; */
+  }
+  .project_hero p {
+    margin-top: 0;
+    color: #fc6a01;
+    font-size: 21px;
+    font-weight: 600;
+    align-self: center;
+  }
 }
 
 /* PROJECT INFO */

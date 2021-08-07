@@ -44,6 +44,48 @@
   object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+  .approach_hero {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    margin-bottom: 150px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+    margin-bottom: 70px;
+  }
+
+  .approach_hero_text {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .approach_hero h2 {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    /* align-self: center; */
+  }
+  .approach_hero p {
+    margin-top: 0;
+    color: #fc6a01;
+    font-size: 21px;
+    font-weight: 600;
+    align-self: center;
+  }
+}
+
 /* APPROACH TOP */
 
 .approach_top {
@@ -90,4 +132,36 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .approach {
+    margin: 30px;
+  }
+  .approach_top {
+    margin: 30px 30px 100px;
+  }
+
+  .approach_top p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 28px;
+  }
+
+  .approach_row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+
+  .approach_row_left {
+    width: 100%;
+  }
+
+  .approach_row_right {
+    width: 100%;
+  }
 }

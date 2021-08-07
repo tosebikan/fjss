@@ -44,6 +44,48 @@
   object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+  .report_hero {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    margin-bottom: 150px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+    margin-bottom: 70px;
+  }
+
+  .report_hero_text {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .report_hero h2 {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    /* align-self: center; */
+  }
+  .report_hero p {
+    margin-top: 0;
+    color: #fc6a01;
+    font-size: 21px;
+    font-weight: 600;
+    align-self: center;
+  }
+}
+
 /* REPORTS DOWNLOAD */
 
 .reports_download {
@@ -52,6 +94,7 @@
   align-items: center;
   margin-bottom: 100px;
 }
+
 .report_group {
   display: flex;
   flex-direction: row;
@@ -69,6 +112,20 @@
 }
 .reports_download h2 {
   margin-right: 20px;
+}
+
+@media (max-width: 1024px) {
+  .reports_download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px 100px;
+  }
+
+  .reports_download h2 {
+    margin-right: 20px;
+    font-size: 18px;
+  }
 }
 .reports_download button {
   border: none;

@@ -9,9 +9,9 @@ const ProjectDetails = props => {
   console.log({ data });
   return (
     <div className="project_details_container">
-      <div className="policy_hero">
+      <div className="project_hero">
         <img src={HeroImage} alt="" />
-        <div className="policy_hero_text">
+        <div className="project_hero_text">
           <h2>Projects</h2>
           <p>FJSS GROUP</p>
         </div>

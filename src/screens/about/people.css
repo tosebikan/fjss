@@ -44,6 +44,48 @@
   object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+  .people_hero {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    margin-bottom: 150px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+    margin-bottom: 70px;
+  }
+
+  .people_hero_text {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .people_hero h2 {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    /* align-self: center; */
+  }
+  .people_hero p {
+    margin-top: 0;
+    color: #fc6a01;
+    font-size: 21px;
+    font-weight: 600;
+    align-self: center;
+  }
+}
+
 /* PEOPLE SECTION */
 
 .people_images {
@@ -118,6 +160,17 @@
 .people_icon:hover {
   transform: translateY(-3px);
   color: #fc6a01;
+}
+
+@media (max-width: 1024px) {
+  .people_card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 0 30px 150px;
+  }
 }
 
 /* PEOPLE FOOTER */
