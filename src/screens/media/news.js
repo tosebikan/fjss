@@ -16,6 +16,7 @@ function News() {
   let placeholder = news;
 
   const searchNews = e => {
+    setMenuData({ title: "", data: [] });
     let text = e.target.value;
     let searched = placeholder.filter(
       el =>
@@ -71,11 +72,33 @@ function News() {
   };
 
   const filterNews = e => {
-    let filtered = placeholder.filter(el =>
-      el.categories.filter(el => el === e)
-    );
-    setData(filtered);
+    if (menuData.title === "Categories") {
+      let filtered = placeholder.filter(el =>
+        el.category.join(",").includes(e)
+      );
+      setData(filtered);
+      setNewsModal(!newsModal);
+      return;
+    }
+
+    if (menuData.title === "Popular Tags") {
+      let filtered = placeholder.filter(el =>
+        el.category.join(",").includes(e)
+      );
+      setData(filtered);
+      setNewsModal(!newsModal);
+      return;
+    }
+
+    if (menuData.title === "Archives") {
+      let filtered = placeholder.filter(el => el.date.includes(e));
+      setData(filtered);
+      setNewsModal(!newsModal);
+      return;
+    }
   };
+
+  console.log(menuData);
 
   return (
     <div className="news_container">
@@ -114,11 +137,24 @@ function News() {
 
       <div className="news_menu_container">
         <div className="news_menu">
-          <p onClick={e => menu("categories")} className="active_menu">
+          <p
+            onClick={e => menu("categories")}
+            className={menuData.title === "Categories" ? "active_menu" : ""}
+          >
             Categories
           </p>
-          <p onClick={e => menu("popular")}>Popular tags</p>
-          <p onClick={e => menu("archives")}>Archives</p>
+          <p
+            onClick={e => menu("popular")}
+            className={menuData.title === "Popular Tags" ? "active_menu" : ""}
+          >
+            Popular tags
+          </p>
+          <p
+            onClick={e => menu("archives")}
+            className={menuData.title === "Archives" ? "active_menu" : ""}
+          >
+            Archives
+          </p>
         </div>
         <div className="news_form_container">
           <form className="news_search_form">
@@ -131,8 +167,8 @@ function News() {
       </div>
 
       <div className="news_card_container">
-        {data.map(el => (
-          <div className="news_card">
+        {data.map((el, id) => (
+          <div className="news_card" key={id}>
             <img src={el.images[0]} alt="" />
             <div className="news_card_info">
               <p className="news_card_date">{el.date}</p>
