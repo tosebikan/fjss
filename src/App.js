@@ -53,7 +53,7 @@ function App() {
       <ScrollToTop>
         <div className="App">
           <header className="App-header"></header>
-          {/*<Nav />*/}
+          <Nav />
           <Aside />
 
           <Switch className="routes">

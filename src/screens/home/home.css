@@ -1,4 +1,6 @@
 .home_container {
+  /* background-color: #000; */
+  /* padding-top: 0; */
 }
 @media (max-width: 1024px) {
   .home_container {
@@ -23,7 +25,7 @@
 .slider_style {
   /* background-color: blue; */
   /* background-color: #000; */
-  height: 100vh;
+  /* height: 100vh; */
   /* overflow: hidden; */
 }
 
@@ -34,7 +36,7 @@
   border-bottom-right-radius: 180px;
   overflow: hidden;
   height: 100vh;
-  width: 101%;
+  width: 100%;
   margin-left: -2px;
   outline: none;
 }
@@ -135,7 +137,7 @@
     border-bottom-right-radius: 0;
     overflow: hidden;
     height: 100vh;
-    width: 101%;
+    width: 100%;
     margin-left: -2px;
     outline: none;
   }
