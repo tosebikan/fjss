@@ -10,7 +10,7 @@ function News() {
   const [data, setData] = React.useState(news);
   const [newsModal, setNewsModal] = React.useState(false);
   const [menuData, setMenuData] = React.useState({
-    title: "",
+    title: "All",
     data: []
   });
   let placeholder = news;
@@ -100,6 +100,14 @@ function News() {
 
   console.log(menuData);
 
+  const showAll = () => {
+    setMenuData({
+      title: "All",
+      data: []
+    });
+    setData(placeholder);
+  };
+
   return (
     <div className="news_container">
       <div className="news_hero">
@@ -137,6 +145,12 @@ function News() {
 
       <div className="news_menu_container">
         <div className="news_menu">
+          <p
+            onClick={showAll}
+            className={menuData.title === "All" ? "active_menu" : ""}
+          >
+            All
+          </p>
           <p
             onClick={e => menu("categories")}
             className={menuData.title === "Categories" ? "active_menu" : ""}

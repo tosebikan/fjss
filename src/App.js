@@ -39,6 +39,7 @@ import Strategic from "./screens/work/strategic";
 import PrivacyPolicy from "./screens/privacy/privacy_policy";
 
 import Nav from "./components/nav";
+import Aside from "./components/aside";
 import Footer from "./components/footer";
 
 import "slick-carousel/slick/slick.css";
@@ -52,7 +53,8 @@ function App() {
       <ScrollToTop>
         <div className="App">
           <header className="App-header"></header>
-          <Nav />
+          {/*<Nav />*/}
+          <Aside />
 
           <Switch className="routes">
             <Route path="/" component={Home} exact={true} />
