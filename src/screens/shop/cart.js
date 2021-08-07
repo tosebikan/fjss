@@ -1,7 +1,6 @@
 import * as React from "react";
 import HeroImage from "../../assets/images/home_hero.jpg";
 import "./cart.css";
-import { FaFacebook } from "react-icons/fa";
 
 import { CartContext } from "../../context/cart_context";
 import { IoBagRemove } from "react-icons/io5";

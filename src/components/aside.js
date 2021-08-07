@@ -9,7 +9,6 @@ import { CartContext } from "../context/cart_context";
 
 function Aside() {
   const [aside, setAside] = React.useState(false);
-  const [openSUb, setOPenSub] = React.useState(false);
   const { cart } = React.useContext(CartContext);
 
   console.log("NAV CART", cart.length);

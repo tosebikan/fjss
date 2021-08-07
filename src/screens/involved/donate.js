@@ -181,11 +181,19 @@ function Donate() {
           <p>Choose your payment method</p>
           <div className="donate_method_form">
             <div className="donate_method_row">
-              <input type="radio" name="donate" />
+              <input
+                type="radio"
+                name="donate"
+                onChange={() => setPaymentType("offline")}
+              />
               <p>Offline Donation</p>
             </div>
             <div className="donate_method_row">
-              <input type="radio" name="donate" />
+              <input
+                type="radio"
+                name="donate"
+                onChange={() => setPaymentType("donate")}
+              />
               <p>Paypal</p>
             </div>
           </div>

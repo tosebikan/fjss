@@ -4,8 +4,6 @@ import HeroImage from "../../assets/images/home_hero.jpg";
 import { images } from "../../helpers/data";
 import Slider from "react-slick";
 
-import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
-
 function Gallery() {
   const [modal, setModal] = React.useState(false);
   const [initialSlide, setInitialSlide] = React.useState(0);
