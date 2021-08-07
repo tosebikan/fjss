@@ -54,6 +54,9 @@
   width: 40%;
   margin: 0 auto 40px;
 }
+.gallery_menu p {
+  cursor: pointer;
+}
 
 .gallery_active_menu {
   background-color: #fc9801;
@@ -99,8 +102,6 @@
 .media_cont {
   width: 700px;
   height: 500px;
-  /* background-color: red; */
-  /* margin-top: 50%; */
 }
 .media_cont img {
   width: 100%;
@@ -130,7 +131,7 @@
 }
 
 .gallery_img img:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .gallery_close_icon {

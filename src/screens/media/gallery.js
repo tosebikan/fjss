@@ -9,6 +9,10 @@ import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 function Gallery() {
   const [modal, setModal] = React.useState(false);
   const [initialSlide, setInitialSlide] = React.useState(0);
+  const [filteredData, setFilteredData] = React.useState({
+    active: "all",
+    data: images
+  });
 
   const settings = {
     // dots: true,
@@ -19,6 +23,25 @@ function Gallery() {
     className: "gallery_slider",
     initialSlide: initialSlide
   };
+
+  const filter = e => {
+    if (e === "all") {
+      setFilteredData({ active: "all", data: images });
+      return;
+    }
+
+    if (e === "photos") {
+      setFilteredData({ active: "photos", data: images });
+      return;
+    }
+    if (e === "graphics") {
+      setFilteredData({ active: "graphics", data: [] });
+      return;
+    }
+
+    console.log(e);
+  };
+
   return (
     <div className="gallery_container">
       <div className="gallery_hero">
@@ -45,9 +68,28 @@ function Gallery() {
         </div>
       )}
       <div className="gallery_menu">
-        <p className="gallery_active_menu">All</p>
-        <p>Photos</p>
-        <p>Visual Identity Graphics design</p>
+        <p
+          className={filteredData.active === "all" ? "gallery_active_menu" : ""}
+          onClick={() => filter("all")}
+        >
+          All
+        </p>
+        <p
+          className={
+            filteredData.active === "photos" ? "gallery_active_menu" : ""
+          }
+          onClick={() => filter("photos")}
+        >
+          Photos
+        </p>
+        <p
+          className={
+            filteredData.active === "graphics" ? "gallery_active_menu" : ""
+          }
+          onClick={() => filter("graphics")}
+        >
+          Visual Identity Graphics design
+        </p>
       </div>
 
       <div className="gallery_images">
