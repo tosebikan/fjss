@@ -111,7 +111,7 @@ ul li {
     height: 100%;
     padding-left: 0;
     margin-top: 0;
-    margin-left: 150px;
+    margin-left: 100px;
     z-index: 10;
     background-color: #000;
     overflow-x: scroll;
@@ -145,7 +145,7 @@ ul li {
     align-items: center;
     justify-content: space-between;
     padding-left: 20px;
-    height: 40px;
+    height: 50px;
   }
 
   a {
@@ -154,36 +154,19 @@ ul li {
   }
 
   .aside_sub_title:hover .aside_sub_nav {
-    display: block;
+    /* display: block; */
     /* margin-top: 5px; */
   }
 
   .aside_sub_nav {
-    /* position: absolute; */
-    /* top: 50px; */
-    /* text-align: left; */
-    /* padding-left: 0; */
-    /* background-color: #fff; */
-    /* min-width: 120px; */
-    /* border-radius: 8px; */
-    /* overflow: hidden; */
-    /* z-index: 10; */
     display: none;
     padding-left: 0;
-    /* background-color: red; */
   }
 
   .aside_sub_nav li {
     width: 100%;
     border-top: 0.1px solid rgba(255, 255, 255, 0.1);
     padding-left: 40px;
-    /* font-size: 12px;
-    color: #000;
-    width: 100%;
-    height: 30px;
-    display: flex;
-    align-items: center; */
-    /* padding-left: 5px; */
   }
 
   .aside_sub_title_donate {

@@ -9,12 +9,22 @@ import { CartContext } from "../context/cart_context";
 
 function Aside() {
   const [aside, setAside] = React.useState(false);
+  const [openSUb, setOPenSub] = React.useState(false);
   const { cart } = React.useContext(CartContext);
 
   console.log("NAV CART", cart.length);
 
   const asideMenu = () => {
     setAside(!aside);
+  };
+
+  const openSub = e => {
+    console.log(document.getElementById(e).style.display);
+    if (document.getElementById(e).style.display === "block") {
+      document.getElementById(e).style.display = "none";
+    } else {
+      document.getElementById(e).style.display = "block";
+    }
   };
   return (
     <div className="aside">
@@ -36,11 +46,11 @@ function Aside() {
               <span className="aside_sub_title_group">Contact</span>
             </NavLink>
           </li>
-          <li className="aside_sub_title">
+          <li className="aside_sub_title" onClick={() => openSub("about")}>
             <span className="aside_sub_title_group">
               About <FiChevronDown />
             </span>
-            <ul className="sub_nav">
+            <ul className="aside_sub_nav" id="about">
               <NavLink to="/about" exact>
                 <li>
                   <p> About us</p>
@@ -58,11 +68,11 @@ function Aside() {
               </NavLink>
             </ul>
           </li>
-          <li className="aside_sub_title">
+          <li className="aside_sub_title" onClick={() => openSub("work")}>
             <span className="aside_sub_title_group">
               Our work <FiChevronDown />
             </span>
-            <ul className="aside_sub_nav">
+            <ul className="aside_sub_nav" id="work">
               <NavLink to="/policy" exact>
                 <li>
                   <p> Policy Development Input Support </p>
@@ -111,13 +121,13 @@ function Aside() {
               </NavLink>
             </ul>
           </li>
-          <li className="aside_sub_title">
+          <li className="aside_sub_title" onClick={() => openSub("resources")}>
             <span className="aside_sub_title_group">
               Resources
               <FiChevronDown />
             </span>
 
-            <ul className="aside_sub_nav">
+            <ul className="aside_sub_nav" id="resources">
               <NavLink to="/reports" exact>
                 <li>
                   {" "}
@@ -147,13 +157,13 @@ function Aside() {
               </NavLink>
             </ul>
           </li>
-          <li className="aside_sub_title">
+          <li className="aside_sub_title" onClick={() => openSub("involved")}>
             <span className="aside_sub_title_group">
               Get involved
               <FiChevronDown />
             </span>
 
-            <ul className="aside_sub_nav">
+            <ul className="aside_sub_nav" id="involved">
               <NavLink to="/donate" exact>
                 <li>
                   {" "}
@@ -183,13 +193,13 @@ function Aside() {
               </NavLink>
             </ul>
           </li>
-          <li className="aside_sub_title">
+          <li className="aside_sub_title" onClick={() => openSub("media")}>
             <span className="aside_sub_title_group">
               Media
               <FiChevronDown />
             </span>
 
-            <ul className="aside_sub_nav">
+            <ul className="aside_sub_nav" id="media">
               <NavLink to="/gallery" exact>
                 <li>
                   {" "}
@@ -219,14 +229,14 @@ function Aside() {
               </NavLink>
             </ul>
           </li>
-          <li className="aside_sub_title">
+          <li className="aside_sub_title" onClick={() => openSub("events")}>
             <NavLink to="/events" exact>
               <span className="aside_sub_title_group">
                 Events
                 <FiChevronDown />
               </span>
             </NavLink>
-            <ul className="aside_sub_nav">
+            <ul className="aside_sub_nav" id="events">
               <NavLink to="/upcoming_events" exact>
                 <li>
                   {" "}
