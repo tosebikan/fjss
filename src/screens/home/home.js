@@ -67,7 +67,7 @@ function Home() {
   // console.log({ currentEvent });
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -80,7 +80,7 @@ function Home() {
     cssEase: "linear"
   };
   const settingss = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
@@ -94,7 +94,7 @@ function Home() {
   };
 
   const eventsSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 2,

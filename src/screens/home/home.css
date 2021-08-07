@@ -669,6 +669,43 @@
     height: 250px;
     object-fit: contain;
   }
+
+  .home_events_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background-color: blue; */
+  }
+
+  .home_event_img1 {
+    width: 50vw;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    right: 25vw;
+    margin-top: -40px;
+    /* align-self: center; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .events_slider {
+    width: 450px;
+    height: 300px;
+  }
+
+  .home_event_button {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: #fc6a01;
+    color: #fff;
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    margin-bottom: 30px;
+  }
 }
 
 /* HOME SHOP SECTION */
