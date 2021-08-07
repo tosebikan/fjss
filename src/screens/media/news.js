@@ -9,6 +9,19 @@ import { FiSearch } from "react-icons/fi";
 function News() {
   const [data, setData] = React.useState(news);
   const [newsModal, setNewsModal] = React.useState(false);
+  const [menuData, setMenuData] = React.useState({
+    title: "Categories",
+    data: [
+      "Community",
+      "Covid",
+      "Lectures",
+      "Forums",
+      "Conference",
+      "Summits",
+      "Meetings",
+      "Seminar"
+    ]
+  });
   let placeholder = news;
 
   const searchNews = e => {
@@ -49,17 +62,16 @@ function News() {
             X
           </div>
           <div className="news_modal_group">
-            <h2>Categories</h2>
-            <ul className="news_filter_list">
-              <li>Community</li>
-              <li>Covid</li>
-              <li>Lectures</li>
-              <li>Forums</li>
-              <li>Conference</li>
-              <li>Summits</li>
-              <li>Meetings</li>
-              <li>Seminar</li>
-            </ul>
+            {menuData && (
+              <div>
+                <h2>{menuData.title}</h2>
+                <ul className="news_filter_list">
+                  {menuData.data.map((el, id) => (
+                    <li key={id}>{el}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       )}

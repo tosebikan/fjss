@@ -66,7 +66,7 @@
 .news_modal_group {
   background-color: #fff;
   border-radius: 10px;
-  width: 30%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,18 +75,26 @@
 
 .news_filter_list {
   padding-left: 0;
-  width: 80%;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: red; */
 }
 .news_filter_list li {
-  /* width: 100%; */
+  padding: 8px 20px;
   color: gray;
-  height: 40px;
   border: 1px solid #fc6a01;
   margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+}
+.news_filter_list li:hover {
+  cursor: pointer;
+  background-color: #fc6a01;
+  color: #fff;
 }
 
 /* NEWS MENU */
