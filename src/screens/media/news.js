@@ -53,11 +53,14 @@ function News() {
           <div className="news_card">
             <img src={el.images[0]} alt="" />
             <div className="news_card_info">
-              <p className="news_card_date">21 Feb, 2021</p>
+              <p className="news_card_date">{el.date}</p>
               <p className="news_card_title">{el.title}</p>
+
               <p className="news_card_body">
-                Serving our community is core to FJSS Group’s goals
+                {el.text[0]?.slice(0, 100)}
+                {el.text[0]?.length > 0 ? "..." : ""}
               </p>
+
               <Link to={{ pathname: "/news-details", state: { el } }}>
                 <button className="news_card_button">Read more</button>{" "}
               </Link>
