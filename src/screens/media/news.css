@@ -190,3 +190,8 @@
   font-size: 12px;
   font-weight: 400;
 }
+
+.news_empty {
+  color: gray;
+  margin: 50px 0 100px;
+}

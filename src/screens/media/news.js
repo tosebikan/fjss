@@ -12,10 +12,11 @@ function News() {
   let placeholder = news;
 
   const searchNews = e => {
+    let text = e.target.value;
     let searched = placeholder.filter(
       el =>
-        el.title.toLowerCase().includes(e.toLowerCase()) ||
-        el.date.toLowerCase().includes(e.toLowerCase())
+        el.title.toLowerCase().includes(text.toLowerCase()) ||
+        el.date.toLowerCase().includes(text.toLowerCase())
     );
 
     setData(searched);
@@ -74,6 +75,10 @@ function News() {
           </div>
         ))}
       </div>
+
+      {data.length === 0 && (
+        <p className="news_empty">There are no available news</p>
+      )}
     </div>
   );
 }
