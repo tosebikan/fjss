@@ -25,13 +25,13 @@ function Aside() {
       </div>
 
       <ul className="aside_group">
-        <li className="sub_title">
+        <li className="aside_sub_title">
           <NavLink to="/contact" exact>
-            Contact
+            <span className="aside_sub_title_group">Contact</span>
           </NavLink>
         </li>
-        <li className="sub_title">
-          <span className="sub_title_group">
+        <li className="aside_sub_title">
+          <span className="aside_sub_title_group">
             About <FiChevronDown />
           </span>
           <ul className="sub_nav">
@@ -52,11 +52,11 @@ function Aside() {
             </NavLink>
           </ul>
         </li>
-        <li className="sub_title">
-          <span className="sub_title_group">
+        <li className="aside_sub_title">
+          <span className="aside_sub_title_group">
             Our work <FiChevronDown />
           </span>
-          <ul className="sub_nav">
+          <ul className="aside_sub_nav">
             <NavLink to="/policy" exact>
               <li>
                 <p> Policy Development Input Support </p>
@@ -105,13 +105,13 @@ function Aside() {
             </NavLink>
           </ul>
         </li>
-        <li className="sub_title">
-          <span className="sub_title_group">
+        <li className="aside_sub_title">
+          <span className="aside_sub_title_group">
             Resources
             <FiChevronDown />
           </span>
 
-          <ul className="sub_nav">
+          <ul className="aside_sub_nav">
             <NavLink to="/reports" exact>
               <li>
                 {" "}
@@ -141,13 +141,13 @@ function Aside() {
             </NavLink>
           </ul>
         </li>
-        <li className="sub_title">
-          <span className="sub_title_group">
+        <li className="aside_sub_title">
+          <span className="aside_sub_title_group">
             Get involved
             <FiChevronDown />
           </span>
 
-          <ul className="sub_nav">
+          <ul className="aside_sub_nav">
             <NavLink to="/donate" exact>
               <li>
                 {" "}
@@ -177,13 +177,13 @@ function Aside() {
             </NavLink>
           </ul>
         </li>
-        <li className="sub_title">
-          <span className="sub_title_group">
+        <li className="aside_sub_title">
+          <span className="aside_sub_title_group">
             Media
             <FiChevronDown />
           </span>
 
-          <ul className="sub_nav">
+          <ul className="aside_sub_nav">
             <NavLink to="/gallery" exact>
               <li>
                 {" "}
@@ -213,14 +213,14 @@ function Aside() {
             </NavLink>
           </ul>
         </li>
-        <li className="sub_title">
+        <li className="aside_sub_title">
           <NavLink to="/events" exact>
-            <span className="sub_title_group">
+            <span className="aside_sub_title_group">
               Events
               <FiChevronDown />
             </span>
           </NavLink>
-          <ul className="sub_nav">
+          <ul className="aside_sub_nav">
             <NavLink to="/upcoming_events" exact>
               <li>
                 {" "}
@@ -243,22 +243,22 @@ function Aside() {
             </NavLink>*/}
           </ul>
         </li>
-        <li className="sub_title">
+        <li className="aside_sub_title">
           <NavLink to="/shop" exact>
-            <span className="sub_title_group">Shop</span>
+            <span className="aside_sub_title_group">Shop</span>
           </NavLink>
         </li>
-        <li className="sub_title">
+        <li className="aside_sub_title">
           <NavLink to="/cart" exact>
-            <span className="sub_title_cart">
+            <span className="aside_sub_title_cart">
               <FaShoppingBag className="nav_cart_icon" />
               <p>{cart.length}</p>
             </span>
           </NavLink>
         </li>
-        <li className="sub_title">
+        <li className="aside_sub_title">
           <NavLink to="/donate" exact>
-            <span className="sub_title_donate">Donate</span>
+            <span className="aside_sub_title_donate">Donate</span>
           </NavLink>
         </li>
       </ul>
