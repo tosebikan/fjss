@@ -51,17 +51,17 @@ function Aside() {
               About <FiChevronDown />
             </span>
             <ul className="aside_sub_nav" id="about">
-              <NavLink to="/about" exact>
+              <NavLink to="/about" exact onClick={asideMenu}>
                 <li>
                   <p> About us</p>
                 </li>
               </NavLink>
-              <NavLink to="approach" exact>
+              <NavLink to="approach" exact onClick={asideMenu}>
                 <li>
                   <p>Our Approach</p>
                 </li>
               </NavLink>
-              <NavLink to="/people" exact>
+              <NavLink to="/people" exact onClick={asideMenu}>
                 <li>
                   <p>Our People</p>
                 </li>
@@ -73,47 +73,47 @@ function Aside() {
               Our work <FiChevronDown />
             </span>
             <ul className="aside_sub_nav" id="work">
-              <NavLink to="/policy" exact>
+              <NavLink to="/policy" exact onClick={asideMenu}>
                 <li>
                   <p> Policy Development Input Support </p>
                 </li>
               </NavLink>
 
-              <NavLink to="/equality" exact>
+              <NavLink to="/equality" exact onClick={asideMenu}>
                 <li>
                   <p> Equality Diversity and Inclusion </p>{" "}
                 </li>
               </NavLink>
 
-              <NavLink to="/legal" exact>
+              <NavLink to="/legal" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Legal Services </p>
                 </li>
               </NavLink>
 
-              <NavLink to="/projects" exact>
+              <NavLink to="/projects" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Projects </p>
                 </li>
               </NavLink>
 
-              <NavLink to="/strategic" exact>
+              <NavLink to="/strategic" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Strategic Partnerships </p>{" "}
                 </li>
               </NavLink>
 
-              <NavLink to="/community" exact>
+              <NavLink to="/community" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Community Engagements </p>{" "}
                 </li>
               </NavLink>
 
-              <NavLink to="/opportunity" exact>
+              <NavLink to="/opportunity" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Creating Opportunities </p>
@@ -128,28 +128,28 @@ function Aside() {
             </span>
 
             <ul className="aside_sub_nav" id="resources">
-              <NavLink to="/reports" exact>
+              <NavLink to="/reports" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p>Reports </p>
                 </li>
               </NavLink>
 
-              <NavLink to="/links" exact>
+              <NavLink to="/links" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Links </p>
                 </li>
               </NavLink>
 
-              <NavLink to="/info" exact>
+              <NavLink to="/info" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Helpful information </p>{" "}
                 </li>
               </NavLink>
 
-              <NavLink to="/financial-accounts" exact>
+              <NavLink to="/financial-accounts" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Financial Accounts </p>{" "}
@@ -164,28 +164,28 @@ function Aside() {
             </span>
 
             <ul className="aside_sub_nav" id="involved">
-              <NavLink to="/donate" exact>
+              <NavLink to="/donate" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Donate </p>
                 </li>
               </NavLink>
 
-              <NavLink to="/volunteer" exact>
+              <NavLink to="/volunteer" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Volunteer </p>{" "}
                 </li>
               </NavLink>
 
-              {/*<NavLink to="/fund-raising" exact>
+              {/*<NavLink to="/fund-raising" exact onClick={asideMenu}>
               <li>
                 {" "}
                 <p> Fundraising </p>
               </li>
             </NavLink>*/}
 
-              <NavLink to="/jobs" exact>
+              <NavLink to="/jobs" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Jobs </p>{" "}
@@ -200,28 +200,28 @@ function Aside() {
             </span>
 
             <ul className="aside_sub_nav" id="media">
-              <NavLink to="/gallery" exact>
+              <NavLink to="/gallery" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Gallery (Photo and videos) </p>{" "}
                 </li>
               </NavLink>
 
-              {/*<NavLink to="/podcast" exact>
+              {/*<NavLink to="/podcast" exact onClick={asideMenu}>
               <li>
                 {" "}
                 <p> Podcast </p>{" "}
               </li>
             </NavLink>*/}
 
-              {/*<NavLink to="/blog" exact>
+              {/*<NavLink to="/blog" exact onClick={asideMenu}>
               <li>
                 {" "}
                 <p> Blog </p>{" "}
               </li>
             </NavLink>*/}
 
-              <NavLink to="/news" exact>
+              <NavLink to="/news" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> News </p>
@@ -230,28 +230,28 @@ function Aside() {
             </ul>
           </li>
           <li className="aside_sub_title" onClick={() => openSub("events")}>
-            <NavLink to="/events" exact>
+            <NavLink to="/events" exact onClick={asideMenu}>
               <span className="aside_sub_title_group">
                 Events
                 <FiChevronDown />
               </span>
             </NavLink>
             <ul className="aside_sub_nav" id="events">
-              <NavLink to="/upcoming_events" exact>
+              <NavLink to="/upcoming_events" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Upcoming Events </p>
                 </li>
               </NavLink>
 
-              <NavLink to="/past-events" exact>
+              <NavLink to="/past-events" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Past Events </p>{" "}
                 </li>
               </NavLink>
 
-              {/*<NavLink to="/speak" exact>
+              {/*<NavLink to="/speak" exact onClick={asideMenu}>
               <li>
                 {" "}
                 <p> Speak at our Events </p>{" "}
@@ -260,12 +260,12 @@ function Aside() {
             </ul>
           </li>
           <li className="aside_sub_title">
-            <NavLink to="/shop" exact>
+            <NavLink to="/shop" exact onClick={asideMenu}>
               <span className="aside_sub_title_group">Shop</span>
             </NavLink>
           </li>
           <li className="aside_sub_title">
-            <NavLink to="/cart" exact>
+            <NavLink to="/cart" exact onClick={asideMenu}>
               <span className="aside_sub_title_group">
                 <div className="aside_sub_title_cart">
                   <FaShoppingBag className="aside_cart_icon" />
@@ -275,7 +275,7 @@ function Aside() {
             </NavLink>
           </li>
           <li className="aside_sub_title">
-            <NavLink to="/donate" exact>
+            <NavLink to="/donate" exact onClick={asideMenu}>
               <span className="aside_sub_title_group">
                 <button className="aside_sub_title_donate">Donate</button>
               </span>
