@@ -7,8 +7,8 @@ import { news } from "../../helpers/data";
 import { FiSearch } from "react-icons/fi";
 
 function News() {
-  // const [search, setSearch] = React.useState('')
   const [data, setData] = React.useState(news);
+  const [newsModal, setNewsModal] = React.useState(false);
   let placeholder = news;
 
   const searchNews = e => {
@@ -29,6 +29,22 @@ function News() {
         <div className="news_hero_text">
           <h2>News</h2>
           <p>FJSS GROUP</p>
+        </div>
+      </div>
+
+      <div className="news_modal">
+        <div className="news_modal_group">
+          <h2>Categories</h2>
+          <ul className="news_filter_list">
+            <li>Community</li>
+            <li>Covid</li>
+            <li>Lectures</li>
+            <li>Forums</li>
+            <li>Conference</li>
+            <li>Summits</li>
+            <li>Meetings</li>
+            <li>Seminar</li>
+          </ul>
         </div>
       </div>
 
