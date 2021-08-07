@@ -44,6 +44,48 @@
   object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+  .volunteer_hero {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    margin-bottom: 150px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+    margin-bottom: 70px;
+  }
+
+  .volunteer_hero_text {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .volunteer_hero h2 {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    /* align-self: center; */
+  }
+  .volunteer_hero p {
+    margin-top: 0;
+    color: #fc6a01;
+    font-size: 21px;
+    font-weight: 600;
+    align-self: center;
+  }
+}
+
 /* VOLUNTEER REQ SECTION */
 
 .volunteer_req_form {
@@ -53,6 +95,7 @@
   display: flex;
   flex-direction: column;
 }
+
 input {
   font-size: 16px;
   outline: none;
@@ -78,6 +121,29 @@ textarea {
 .volunteer_req_form_row input {
   width: 43%;
   height: 45px;
+}
+
+@media (max-width: 1024px) {
+  .volunteer_req_form {
+    margin: 40px auto 80px;
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .volunteer_req_form_row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .volunteer_req_form_row input {
+    width: 360px;
+    height: 45px;
+  }
+  .volunteer_check_group input {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
 .volunteer_req_form textarea {
   height: 250px;
