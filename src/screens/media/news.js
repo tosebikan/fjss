@@ -22,6 +22,14 @@ function News() {
     setData(searched);
   };
 
+  const submit = e => {
+    e.preventDefault();
+  };
+
+  const menu = e => {
+    setNewsModal(true);
+  };
+
   return (
     <div className="news_container">
       <div className="news_hero">
@@ -32,32 +40,40 @@ function News() {
         </div>
       </div>
 
-      <div className="news_modal">
-        <div className="news_modal_group">
-          <h2>Categories</h2>
-          <ul className="news_filter_list">
-            <li>Community</li>
-            <li>Covid</li>
-            <li>Lectures</li>
-            <li>Forums</li>
-            <li>Conference</li>
-            <li>Summits</li>
-            <li>Meetings</li>
-            <li>Seminar</li>
-          </ul>
+      {newsModal && (
+        <div className="news_modal">
+          <div
+            className="gallery_close_icon"
+            onClick={() => setNewsModal(!newsModal)}
+          >
+            X
+          </div>
+          <div className="news_modal_group">
+            <h2>Categories</h2>
+            <ul className="news_filter_list">
+              <li>Community</li>
+              <li>Covid</li>
+              <li>Lectures</li>
+              <li>Forums</li>
+              <li>Conference</li>
+              <li>Summits</li>
+              <li>Meetings</li>
+              <li>Seminar</li>
+            </ul>
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="news_menu_container">
         <div className="news_menu">
-          <p>Categories</p>
-          <p>Popular tags</p>
-          <p>Archives</p>
+          <p onClick={e => menu("categories")}>Categories</p>
+          <p onClick={e => menu("popular")}>Popular tags</p>
+          <p onClick={e => menu("archives")}>Archives</p>
         </div>
         <div className="news_form_container">
           <form className="news_search_form">
             <input placeholder="search" onChange={e => searchNews(e)} />
-            <button>
+            <button onClick={submit}>
               <FiSearch className="footer_icon" />
             </button>
           </form>

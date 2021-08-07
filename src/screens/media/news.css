@@ -112,6 +112,11 @@
 .news_menu p {
   font-size: 18px;
   font-weight: 600;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.news_menu p:hover {
+  cursor: pointer;
+  color: #000;
 }
 
 .news_form_container {
