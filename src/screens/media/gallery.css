@@ -88,12 +88,19 @@
   background-color: #0009;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.gallery_slider {
+  width: 70%;
+  height: 70%;
 }
 
 .media_cont {
-  width: 70%;
-  height: 70%;
+  width: 700px;
+  height: 500px;
+  /* background-color: red; */
+  /* margin-top: 50%; */
 }
 .media_cont img {
   width: 100%;
@@ -143,9 +150,4 @@
   transform: translateY(-3px);
   cursor: pointer;
   color: #ff0000;
-}
-
-.gallery_slider {
-  width: 70%;
-  height: 70%;
 }
