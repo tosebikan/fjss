@@ -58,6 +58,7 @@ ul li {
 
 @media (max-width: 1024px) {
   .aside {
+    display: block;
     position: fixed;
     right: 0;
     top: 0;
@@ -179,12 +180,14 @@ ul li {
     border-radius: 20px;
     color: #fff;
     transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    margin-top: 20px;
+    border: none;
   }
 
   /* CART SECTION */
   .aside_sub_title_cart {
-    background-color: red;
+    /* background-color: red; */
     position: relative;
   }
   .aside_sub_title_cart p {
@@ -197,8 +200,8 @@ ul li {
     justify-content: center;
     border-radius: 100%;
     font-size: 12px;
-    top: -25px;
-    right: -10px;
+    top: -18px;
+    right: -12px;
     color: #fff;
   }
   .aside_nav_cart_icon {

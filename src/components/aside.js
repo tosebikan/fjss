@@ -250,15 +250,19 @@ function Aside() {
         </li>
         <li className="aside_sub_title">
           <NavLink to="/cart" exact>
-            <span className="aside_sub_title_cart">
-              <FaShoppingBag className="nav_cart_icon" />
-              <p>{cart.length}</p>
+            <span className="aside_sub_title_group">
+              <div className="aside_sub_title_cart">
+                <FaShoppingBag className="aside_cart_icon" />
+                <p>{cart.length}</p>
+              </div>
             </span>
           </NavLink>
         </li>
         <li className="aside_sub_title">
           <NavLink to="/donate" exact>
-            <span className="aside_sub_title_donate">Donate</span>
+            <span className="aside_sub_title_group">
+              <button className="aside_sub_title_donate">Donate</button>
+            </span>
           </NavLink>
         </li>
       </ul>
