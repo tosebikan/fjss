@@ -495,7 +495,8 @@ export const news = [
       "Serving our community is core to FJSS Group’s goals. Our food support program has been waxing strong. We have and continue to serve those in need during this challenging times. Our food support brings hope to all those that have been affected by the corona virus."
     ],
     date: "21 Feb, 2021",
-    images: [food1, food2, food3]
+    images: [food1, food2, food3],
+    category: ["Community"]
   },
   {
     title: "Increasing BAME Representation on Scotland’s Public Board",
@@ -506,7 +507,8 @@ export const news = [
       "During the session, the public appointments team joined by current Board members Hellen Miller and Amanda Pringle shared their personal experience of being a member of a public body Board in Scotland. It was very helpful for the participants to know what possibilities there are for representations on Scottish boards."
     ],
     date: "6 Feb, 2021",
-    images: [bame1, bame2, bame3]
+    images: [bame1, bame2, bame3],
+    category: ["Event", "Scotland"]
   },
   {
     title: "FJSS Group & HMIPS",
@@ -517,14 +519,16 @@ export const news = [
       "The FJSS Group showcased the importance of hosting more of such events in the future to enlighten and create more awareness."
     ],
     date: "26 Jan, 2021",
-    images: [gh]
+    images: [gh],
+    category: ["Event"]
   },
   {
     title: "Celebrating our own Sir Geoff Palmer OBE on his 80th birthday",
     heading: "",
     text: [],
     date: "18 Dec, 2020",
-    images: [geoff1, geoff2, geoff3]
+    images: [geoff1, geoff2, geoff3],
+    category: ["Event", "FJSS"]
   },
   {
     title: "Cyrenians FareShare Scheme",
@@ -534,7 +538,8 @@ export const news = [
       "FJSS Group is now officially accredited under the Cyrenians FareShare scheme. The FareShare is an initiative that basically fights hunger and tackles food waste. FJSS Group is very pleased to be part of this and will be able to support our communities better."
     ],
     date: "14 Aug, 2020",
-    images: [cyre]
+    images: [cyre],
+    category: ["Community"]
   },
   {
     title: "Food Parcel Initiative",
@@ -546,14 +551,16 @@ export const news = [
       "The support provided is mainly food parcels and cooked meals depending on circumstances. If you need any support kindly complete our contact form and we will process your referral.",
       "NB: When completing the form, please ensure you enter “Food Banks Support Referrals” for the subject."
     ],
-    images: [foodparcel]
+    images: [foodparcel],
+    category: ["Community"]
   },
   {
     title: "The FJSS Group Inaugural Heritage Lecture in Pictures",
     heading: "",
     date: "27 Feb, 2020",
     text: [],
-    images: [herilec1, herilec2, herilec3]
+    images: [herilec1, herilec2, herilec3],
+    category: ["Lecture"]
   },
   {
     title: "Global Refugee Forum Geneva",
@@ -562,7 +569,8 @@ export const news = [
     text: [
       "The historic first ever Global Refugee Forum was held in Geneva in December 2019 and FJSS Group attended and became part of a global initiative bringing together 50 plus other organisations worldwide to mobilise legal support for Refugees. The FJSS Group is currently the only organisation from the UK at this point that is involved with this initiative. The UNHCR have committed some resources and technical support to allow this vital initiative to take off the ground because. After the adoption of the “Global Compact for Refugees” by the United Nations General Assembly on 17 December 2018 there the “Global Refugee Forum” that followed exactly a year after and was held at the UN in Geneva 17-18 December. Heads of State and governments, ministers and heads of NGO’s and corporate entities were there, and it was indeed a very high-level forum that was nevertheless, meant to involve a  broad range of stakeholders (i.e. civil society, private sector, refugees themselves), not just the government leaders."
     ],
-    images: [geneva1, geneva2, geneva3]
+    images: [geneva1, geneva2, geneva3],
+    category: ["Forum"]
   },
   {
     title: "Scottish Justice Conference Report Launch",
@@ -572,14 +580,16 @@ export const news = [
       "The Scottish Justice Conference 2019 Report was launched at a colourful event hosted by the FJSS Group at their offices in West Clader. The event brought together representatives of some of the key stakeholders in the Scottish justice system who attended the conference in June 2019.",
       "One of the main highlights of the conference was the recommendation that a skills audit should be conducted to ascertain the skills base of BAME communities in Scotland and the establishment of the Justice Sector Reforms Task Force. The Task Force is now in place and is working on the framework for its work. More to follow of the Task Force."
     ],
-    images: [scotjust1, scotjust2, scotjust3]
+    images: [scotjust1, scotjust2, scotjust3],
+    category: ["Scotland", "Conference"]
   },
   {
     title: "Global Refugee And Immigration Summit Berlin",
     heading: "",
     date: "3 Sept, 2019",
     text: [],
-    images: [berlin1, berlin2, berlin3]
+    images: [berlin1, berlin2, berlin3],
+    category: ["Summit"]
   },
   {
     title: "FJSS Group Home Office Community Stakeholders Meeting August 2019",
@@ -588,7 +598,8 @@ export const news = [
     text: [
       "The FJSS Group organised a well attended, extremely engaging and fruitful community stakeholders meeting with the Home Office. This brought together leaders and representatives of community organisations to meet with policy leaders, community leads and outreach officers from the Home Office."
     ],
-    images: [office1, office2, office3]
+    images: [office1, office2, office3],
+    category: ["Meeting"]
   },
   {
     title:
@@ -596,14 +607,16 @@ export const news = [
     heading: "",
     date: "11 Jul, 2019",
     text: [],
-    images: [chair1, chair2, chair3]
+    images: [chair1, chair2, chair3],
+    category: ["Seminar"]
   },
   {
     title: "Scottish Justice Conference June 2019",
     heading: "",
     date: "4 Jun, 2019",
     text: [],
-    images: [june1, june2, june3]
+    images: [june1, june2, june3],
+    category: ["Scotland", "Conference", "Event"]
   },
   {
     title: "Global Refugee And Immigration Summit Brussels May 2019",
@@ -612,7 +625,8 @@ export const news = [
     text: [
       "The FJSS Group was part of the historic summit in Brussels as part of the preparation for the first UNHCR Global Refugee Forum in December 2019 in Geneva. NGOs and advocacy organisations from across the EU met in Brussels to prepare for the December summit."
     ],
-    images: [brussels1, brussels2, brussels3]
+    images: [brussels1, brussels2, brussels3],
+    category: ["Summit", "Event"]
   },
   {
     title: "The Journey Begins!",
@@ -623,7 +637,8 @@ export const news = [
       "This is the official online publicity blog of the FJSS Group where news, information and updates about the organisation’s programs and activities will be published periodically.",
       "From August 2019 the FJSS Group will be holding a monthly open forum where major topical issues to do with the Justice system in Scotland will be discussed.Good company in a journey makes the way seem shorter. — Izaak Walton"
     ],
-    images: [journey]
+    images: [journey],
+    category: ["FJSS"]
   }
 ];
 

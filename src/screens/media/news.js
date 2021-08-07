@@ -10,17 +10,8 @@ function News() {
   const [data, setData] = React.useState(news);
   const [newsModal, setNewsModal] = React.useState(false);
   const [menuData, setMenuData] = React.useState({
-    title: "Categories",
-    data: [
-      "Community",
-      "Covid",
-      "Lectures",
-      "Forums",
-      "Conference",
-      "Summits",
-      "Meetings",
-      "Seminar"
-    ]
+    title: "",
+    data: []
   });
   let placeholder = news;
 
@@ -41,6 +32,49 @@ function News() {
 
   const menu = e => {
     setNewsModal(true);
+
+    if (e === "categories") {
+      setMenuData({
+        title: "Categories",
+        data: [
+          "Scotland",
+          "Event",
+          "Community",
+          "FJSS",
+          "Lecture",
+          "Forum",
+          "Conference",
+          "Summit",
+          "Meeting",
+          "Seminar"
+        ]
+      });
+
+      return;
+    }
+
+    if (e === "popular") {
+      setMenuData({
+        title: "Popular Tags",
+        data: ["Scotland", "Event", "Community", "FJSS", "Conference", "Summit"]
+      });
+      return;
+    }
+
+    if (e === "archives") {
+      setMenuData({
+        title: "Archives",
+        data: ["2021", "2020", "2019"]
+      });
+      return;
+    }
+  };
+
+  const filterNews = e => {
+    let filtered = placeholder.filter(el =>
+      el.categories.filter(el => el === e)
+    );
+    setData(filtered);
   };
 
   return (
@@ -67,7 +101,9 @@ function News() {
                 <h2>{menuData.title}</h2>
                 <ul className="news_filter_list">
                   {menuData.data.map((el, id) => (
-                    <li key={id}>{el}</li>
+                    <li key={id} onClick={() => filterNews(el)}>
+                      {el}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -78,7 +114,9 @@ function News() {
 
       <div className="news_menu_container">
         <div className="news_menu">
-          <p onClick={e => menu("categories")}>Categories</p>
+          <p onClick={e => menu("categories")} className="active_menu">
+            Categories
+          </p>
           <p onClick={e => menu("popular")}>Popular tags</p>
           <p onClick={e => menu("archives")}>Archives</p>
         </div>
