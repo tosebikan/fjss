@@ -93,8 +93,9 @@ function Gallery() {
       </div>
 
       <div className="gallery_images">
-        {images.map((el, id) => (
+        {filteredData.data.map((el, id) => (
           <div
+            key={id}
             onClick={() => {
               setModal(!modal);
               setInitialSlide(id);
@@ -104,6 +105,10 @@ function Gallery() {
             <img src={el.url} alt="" />
           </div>
         ))}
+
+        {filteredData.data.length === 0 && (
+          <p className="empty_media_text">There are no available images </p>
+        )}
       </div>
     </div>
   );

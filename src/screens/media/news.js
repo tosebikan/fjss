@@ -1,10 +1,26 @@
+import * as React from "react";
 import "./news.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
 // import gallery1 from "../../assets/images/gallery1.png";
 import { Link } from "react-router-dom";
 import { news } from "../../helpers/data";
 import { FiSearch } from "react-icons/fi";
+
 function News() {
+  // const [search, setSearch] = React.useState('')
+  const [data, setData] = React.useState(news);
+  let placeholder = news;
+
+  const searchNews = e => {
+    let searched = placeholder.filter(
+      el =>
+        el.title.toLowerCase().includes(e.toLowerCase()) ||
+        el.date.toLowerCase().includes(e.toLowerCase())
+    );
+
+    setData(searched);
+  };
+
   return (
     <div className="news_container">
       <div className="news_hero">
@@ -23,7 +39,7 @@ function News() {
         </div>
         <div className="news_form_container">
           <form className="news_search_form">
-            <input placeholder="search" />
+            <input placeholder="search" onChange={e => searchNews(e)} />
             <button>
               <FiSearch className="footer_icon" />
             </button>
@@ -32,12 +48,12 @@ function News() {
       </div>
 
       <div className="news_card_container">
-        {news.map(el => (
+        {data.map(el => (
           <div className="news_card">
             <img src={el.images[0]} alt="" />
             <div className="news_card_info">
               <p className="news_card_date">21 Feb, 2021</p>
-              <p className="news_card_title">FJSS Group Food Support</p>
+              <p className="news_card_title">{el.title}</p>
               <p className="news_card_body">
                 Serving our community is core to FJSS Group’s goals
               </p>
