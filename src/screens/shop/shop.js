@@ -169,7 +169,14 @@ function Shop() {
 
           <div className="shop_main_products">
             {shopProducts.map((el, id) => (
-              <div className="shop_main_card" key={id}>
+              <div
+                className="shop_main_card"
+                key={id}
+                onClick={() => {
+                  setShopModal(!shopModal);
+                  setCurrentProduct(el);
+                }}
+              >
                 <div className="shop_img_cont">
                   <div className="shop_hover">
                     {checkCart(el) === true ? (
