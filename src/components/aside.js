@@ -29,7 +29,7 @@ function Aside() {
     <div className="aside">
       <div className="mobile_header_top">
         <div className="aside_logo_container">
-          <NavLink to="/" exact onClick={asideMenu}>
+          <NavLink to="/" exact onClick={() => setAside(false)}>
             <img src={Logo} alt="" className="logo" />
           </NavLink>
         </div>
