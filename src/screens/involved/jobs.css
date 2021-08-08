@@ -136,6 +136,17 @@
     background-color: #0d2439;
     color: #fff;
   }
+
+  .jobs_opp_left h2 {
+    margin: 0 30px;
+    margin-bottom: 40px;
+  }
+
+  .jobs_opp_left img {
+    width: 400px;
+    height: 500px;
+    object-fit: contain;
+  }
 }
 
 .jobs_opp_right_title {
