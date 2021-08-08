@@ -71,20 +71,28 @@ function Footer() {
         <div className="footer_right">
           <h2>Top News</h2>
           <div className="footer_news_section">
-            <div className="footer_news_group">
-              <img src={footernews1} alt="" />
-              <div>
-                <p className="footer_news_title">Global Refugee Forum Geneva</p>
-                <p className="footer_news_date">2019-12-18 12:16</p>
+            <Link to="/news">
+              <div className="footer_news_group">
+                <img src={footernews1} alt="" />
+                <div>
+                  <p className="footer_news_title">
+                    Global Refugee Forum Geneva
+                  </p>
+                  <p className="footer_news_date">2019-12-18 12:16</p>
+                </div>
               </div>
-            </div>
-            <div className="footer_news_group">
-              <img src={footernews2} alt="" />
-              <div>
-                <p className="footer_news_title">Global Refugee Forum Geneva</p>
-                <p className="footer_news_date">2019-12-18 12:16</p>
+            </Link>
+            <Link to="/news">
+              <div className="footer_news_group">
+                <img src={footernews2} alt="" />
+                <div>
+                  <p className="footer_news_title">
+                    Global Refugee Forum Geneva
+                  </p>
+                  <p className="footer_news_date">2019-12-18 12:16</p>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
