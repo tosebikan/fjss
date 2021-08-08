@@ -1,6 +1,4 @@
 .home_container {
-  /* background-color: #000; */
-  /* padding-top: 0; */
 }
 @media (max-width: 1024px) {
   .home_container {
@@ -12,26 +10,19 @@
   height: 100vh;
   width: 100vw;
   margin-bottom: 150px;
-  /* background-color: green; */
 }
 .home_hero {
   height: 100vh;
   width: 100vw;
   position: relative;
-  /* background-color: red; */
   overflow: hidden;
 }
 
 .slider_style {
-  /* background-color: blue; */
-  /* background-color: #000; */
-  /* height: 100vh; */
-  /* overflow: hidden; */
 }
 
 .home_hero_group {
   position: relative;
-  /* background-color: yellow; */
   border-bottom-left-radius: 180px;
   border-bottom-right-radius: 180px;
   overflow: hidden;
@@ -160,7 +151,7 @@
     font-weight: 700;
     margin: auto 40px;
     align-self: center;
-    top: 35%;
+    top: 27%;
     opacity: 1;
   }
   .hero_text {
@@ -171,7 +162,7 @@
     font-weight: 400;
     margin: auto 40px;
     align-self: center;
-    bottom: 25%;
+    bottom: 28%;
   }
 }
 
@@ -316,7 +307,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    margin: 0 20px;
+    margin-right: 5px;
+    margin-left: 5px;
     color: #fff;
     font-size: 16px;
   }
