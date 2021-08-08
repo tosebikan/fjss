@@ -114,7 +114,7 @@ ul li {
     margin-left: 100px;
     z-index: 10;
     background-color: #000;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     color: #fff;
     text-align: left;
     /* position: absolute; */
@@ -167,6 +167,7 @@ ul li {
     width: 100%;
     border-top: 0.1px solid rgba(255, 255, 255, 0.1);
     padding-left: 40px;
+    width: 60vw;
   }
 
   .aside_sub_title_donate {

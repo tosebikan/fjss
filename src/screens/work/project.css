@@ -207,12 +207,12 @@
   .project_complete_right {
     /* background: yellow; */
     position: absolute;
-    top: 380px;
-    right: 30px;
+    top: 490px;
+    right: 15vw;
   }
 
   .project_complete_right img {
-    width: 250px;
+    width: 70vw;
     height: 200px;
     border-radius: 20px;
     object-fit: cover;
@@ -269,19 +269,15 @@
 @media (max-width: 1024px) {
   .ongoing_projects_section {
     display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
-    /* background-color: red; */
-    margin: 0 30px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
     width: 100vw;
     overflow-x: scroll;
   }
   .ongoin_group {
-    /* background-color: #000; */
-    padding-left: 50px;
-    /* margin: 20; */
+    padding-left: 0;
     outline: none;
-    /* width: 350px; */
   }
 }
 
