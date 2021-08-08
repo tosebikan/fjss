@@ -234,7 +234,12 @@ function Home() {
             <p>{events[currentEvent].type}</p>
           </div>
 
-          <Link to="/upcoming_events">
+          <Link
+            to={{
+              pathname: "/event-details",
+              state: { el: events[currentEvent] }
+            }}
+          >
             {" "}
             <button className="home_event_button">Read more</button>
           </Link>

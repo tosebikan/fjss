@@ -18,7 +18,7 @@ const EventDetails = props => {
       </div>
 
       {/*project info*/}
-      <div className="project_details_info">
+      <div className="event_details_info">
         <div className="event_details_info_left">
           <img src={data.image} alt="" />
         </div>

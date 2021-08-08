@@ -46,7 +46,7 @@
 
 /* PROJECT INFO */
 
-.project_details_info {
+.event_details_info {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -68,4 +68,35 @@
 
 .event_details_info_right p {
   line-height: 24px;
+}
+
+@media (max-width: 1024px) {
+  .event_details_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .event_details_info_left img {
+    height: 350px;
+    width: 300px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin: 40px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .event_details_info_right {
+    width: 100vw;
+    text-align: center;
+    /* margin: 0 20px; */
+  }
+
+  .event_details_info_right h2 {
+    margin: 0 30px;
+  }
+  .event_details_info_right p {
+    line-height: 24px;
+    margin: 20px 30px;
+  }
 }
