@@ -124,6 +124,9 @@ textarea {
 }
 
 @media (max-width: 1024px) {
+  .volunteer_sec_text {
+    margin: 0 30px;
+  }
   .volunteer_req_form {
     margin: 40px auto 80px;
     width: 80%;
@@ -138,18 +141,22 @@ textarea {
     justify-content: space-between;
   }
   .volunteer_req_form_row input {
-    width: 360px;
+    width: 280px;
     height: 45px;
   }
   .volunteer_check_group input {
+    /* -webkit-appearance: none; */
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    /* -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0); */
   }
 }
 .volunteer_req_form textarea {
   height: 250px;
   padding: 20px;
   border: none;
+  -webkit-appearance: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .volunteer_req_form_bottom {
