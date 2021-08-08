@@ -151,7 +151,7 @@
     font-weight: 700;
     margin: auto 40px;
     align-self: center;
-    top: 27%;
+    top: 25%;
     opacity: 1;
   }
   .hero_text {
@@ -162,7 +162,7 @@
     font-weight: 400;
     margin: auto 40px;
     align-self: center;
-    bottom: 28%;
+    bottom: 25%;
   }
 }
 
@@ -498,7 +498,7 @@
   }
 
   .home_testimonial_image_large {
-    width: 250px;
+    width: 200px;
     height: 300px;
     margin: 0 10px;
     object-fit: cover;
