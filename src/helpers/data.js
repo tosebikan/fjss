@@ -185,7 +185,7 @@ export const people = [
     linkedin: "#",
     facebook: "#",
     url:
-      "https://res.cloudinary.com/oltostudios/image/upload/v1627510781/Mask_Group-8_qnrmox.png"
+      "https://res.cloudinary.com/oltostudios/image/upload/v1628390022/allison_g0yosz.jpg"
   },
   {
     name: "Duran Rapozo",
