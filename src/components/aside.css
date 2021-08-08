@@ -51,7 +51,7 @@ ul li {
   top: 0;
   z-index: 9999;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: none;
 }
 
@@ -62,9 +62,9 @@ ul li {
     right: 0;
     top: 0;
     z-index: 9999;
-    /* background-color: #0009; */
+    background-color: #0009;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .mobile_header_top {
