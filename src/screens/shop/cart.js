@@ -13,8 +13,7 @@ function Cart() {
   let total = subtotal + shipping;
   console.log({ total });
 
-  const handleRemove = (e, product) => {
-    e.preventDefault();
+  const handleRemove = product => {
     let filter = cart.filter(el => el.id !== product.id);
     setCart(filter);
   };
@@ -46,16 +45,16 @@ function Cart() {
                     <img src={el.image} alt="" className="cart_image" />
                     <div
                       className="cart_card_icon_cont"
-                      onClick={e => handleRemove(el)}
+                      onClick={() => handleRemove(el)}
                     >
                       <IoBagRemove className="cart_card_icon remove " />
                     </div>
                   </div>
                 </td>
                 <td className="card_title">{el.title}</td>
-                <td>$ {el.price.toFixed(2)}</td>
-                <td>{el.quantity}</td>
-                <td>$ {subtotal.toFixed(2)}</td>
+                <td>${el.price.toFixed(2)}</td>
+                <td className="cart_quantity">{el.quantity}</td>
+                <td>${subtotal.toFixed(2)}</td>
               </tr>
             );
           })}
