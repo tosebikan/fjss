@@ -17,7 +17,7 @@ const ShopModal = props => (
       <p className="price">${props.data.price.toFixed(2)}</p>
       <form className="shop_modal_form">
         <input type="number" defaultValue={1} onChange={props.onChange} />
-        <button onClick={props.onAdd}>Add to cart</button>
+        <button onClick={props.onAdd}>{props.buttonTitle}</button>
       </form>
       <p> Category: {props.category}</p>
     </div>

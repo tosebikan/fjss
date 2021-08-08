@@ -87,7 +87,14 @@ function Shop() {
             onClose={() => setShopModal(!shopModal)}
             data={currentProduct}
             onChange={e => setProductQuantity(e.target.value)}
-            onAdd={e => addToCart(e, currentProduct)}
+            onAdd={e => {
+              if (checkCart(currentProduct)) {
+                remove(e, currentProduct);
+              } else {
+                addToCart(e, currentProduct);
+              }
+            }}
+            buttonTitle={checkCart(currentProduct) ? "remove" : "Add to cart"}
           />
         </div>
       )}

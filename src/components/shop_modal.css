@@ -22,6 +22,33 @@
   width: 40%;
   margin-left: 20px;
 }
+
+@media (max-width: 1024px) {
+  .shop_modal_container {
+    position: absolute;
+    bottom: 40px;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .shop_modal_left img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+  }
+
+  .shop_modal_right {
+    text-align: left;
+    width: 100%;
+    margin-left: 20px;
+  }
+}
 .price {
   color: #fc6a01;
 }
