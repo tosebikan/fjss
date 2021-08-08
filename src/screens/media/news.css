@@ -47,6 +47,48 @@
   object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+  .news_hero {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    margin-bottom: 150px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+    margin-bottom: 70px;
+  }
+
+  .news_hero_text {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .news_hero h2 {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    /* align-self: center; */
+  }
+  .news_hero p {
+    margin-top: 0;
+    color: #fc6a01;
+    font-size: 21px;
+    font-weight: 600;
+    align-self: center;
+  }
+}
+
  {
   /*NEWS MODAL*/
 }
@@ -101,7 +143,7 @@
 .news_menu_container {
   background-color: #fc6a01;
   width: 80%;
-  height: 150px;
+  height: 160px;
   margin: 0 auto;
   border-radius: 30px;
   display: flex;
@@ -118,11 +160,13 @@
   width: 50%;
   color: #fff;
 }
+
 .news_menu p {
   font-size: 18px;
   font-weight: 600;
   transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
+
 .news_menu p:hover {
   cursor: pointer;
   color: #000;
@@ -147,6 +191,44 @@
   /* border-radius: 40px; */
   border: none;
   padding: 0 20px;
+}
+
+@media (max-width: 1024px) {
+  .news_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 35%;
+    height: 150px;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    padding: 30px;
+  }
+  .news_menu p {
+    font-size: 18px;
+    font-weight: 600;
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    text-align: left;
+    margin: 0;
+  }
+
+  .news_form_container {
+    background-color: red;
+    width: 350px;
+    height: 45px;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+
+  .news_form_container input {
+    height: 45px;
+    width: 200px;
+    border: none;
+    padding: 0 20px;
+  }
 }
 
 .news_search_form {

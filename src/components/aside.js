@@ -229,12 +229,11 @@ function Aside() {
             </ul>
           </li>
           <li className="aside_sub_title" onClick={() => openSub("events")}>
-            <NavLink to="/events" exact onClick={asideMenu}>
-              <span className="aside_sub_title_group">
-                Events
-                <FiChevronDown />
-              </span>
-            </NavLink>
+            <span className="aside_sub_title_group">
+              Events
+              <FiChevronDown />
+            </span>
+
             <ul className="aside_sub_nav" id="events">
               <NavLink to="/upcoming_events" exact onClick={asideMenu}>
                 <li>
