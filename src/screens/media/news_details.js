@@ -65,7 +65,7 @@ function NewsDetails(props) {
         </div>
 
         <div className="news_details_info_row">
-          <p>Share</p>
+          <p>Share:</p>
           <div className="news_icons">
             <FaFacebook className="news_icon" />
             <FaTwitter className="news_icon" />
