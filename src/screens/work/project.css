@@ -345,3 +345,8 @@
   font-size: 48px;
   font-weight: 700;
 }
+
+.short_markdown_row {
+  display: flex;
+  flex-direction: row;
+}

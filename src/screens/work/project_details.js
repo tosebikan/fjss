@@ -3,6 +3,7 @@
 import React from "react";
 import HeroImage from "../../assets/images/home_hero.jpg";
 import "./project_details.css";
+import Markdown from "react-markdown";
 
 const ProjectDetails = props => {
   let data = props.location.state.el;
@@ -20,13 +21,14 @@ const ProjectDetails = props => {
       {/*project info*/}
       <div className="project_details_info">
         <div className="project_details_info_left">
-          <img src={data.image} alt="" />
+          <img src={data.image.url} alt="" />
         </div>
         <div className="project_details_info_right">
           <h2>{data.title}</h2>
-          {data.text.map((el, id) => (
+          {/*{data.text.map((el, id) => (
             <p key={id}>{el}</p>
-          ))}
+          ))}*/}
+          <Markdown>{`${data.text}`}</Markdown>
         </div>
       </div>
     </div>

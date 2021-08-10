@@ -1,7 +1,7 @@
 import axios from "axios";
 import { BASE_URL } from "./config";
 
-const apiFunctions = {
+export const apiFunctions = {
   getCountDown: async () => get("/countdown"),
   getProjects: async () => get("/projects")
 };
@@ -10,7 +10,7 @@ const get = path => {
   try {
     return new Promise((resolve, reject) => {
       axios
-        .get(`${BASE_URL}/${path}`, {
+        .get(`${BASE_URL}${path}`, {
           headers: {
             "Content-Type": "application/json"
           }
@@ -42,7 +42,7 @@ const post = (path, fd) => {
   try {
     return new Promise((resolve, reject) => {
       axios
-        .post(`${BASE_URL}/${path}`, fd, {
+        .post(`${BASE_URL}${path}`, fd, {
           headers: {
             "Content-Type": "application/json"
           }
@@ -71,4 +71,4 @@ const post = (path, fd) => {
   } catch (err) {}
 };
 
-module.exports = apiFunctions;
+// module.exports = apiFunctions;
