@@ -39,7 +39,7 @@ function Volunteer() {
       last_name: lastName,
       to_name: "FJSS GROUP",
       message: message,
-      to: "tosebikan@gmail.com",
+      to: "volunteerservices@fjssgroup.org",
       from_mail: email,
       dob: dob
     };
