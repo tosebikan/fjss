@@ -3,14 +3,32 @@ import "./gallery.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
 import { images } from "../../helpers/data";
 import Slider from "react-slick";
+import { apiFunctions } from "../../helpers/api";
 
 function Gallery() {
   const [modal, setModal] = React.useState(false);
   const [initialSlide, setInitialSlide] = React.useState(0);
   const [filteredData, setFilteredData] = React.useState({
     active: "all",
-    data: images
+    data: []
   });
+  const [placeholder, setplaceholder] = React.useState({
+    active: "all",
+    data: []
+  });
+
+  React.useEffect(() => {
+    fetchImages();
+  }, []);
+
+  const fetchImages = async () => {
+    let images = await apiFunctions.getMedia();
+    console.log(images);
+    setFilteredData({ active: "all", data: images });
+    setplaceholder({ active: "all", data: images });
+
+    console.log("placeholder", placeholder);
+  };
 
   const settings = {
     // dots: true,
@@ -24,20 +42,25 @@ function Gallery() {
 
   const filter = e => {
     if (e === "all") {
-      setFilteredData({ active: "all", data: images });
+      let all = placeholder.data.filter(
+        el => el.type === "photo" || el.type === "graphics"
+      );
+      setFilteredData({ active: "all", data: all });
       return;
     }
 
     if (e === "photos") {
-      setFilteredData({ active: "photos", data: images });
+      let photos = placeholder.data.filter(el => el.type === "photo");
+      setFilteredData({ active: "photos", data: photos });
       return;
     }
     if (e === "graphics") {
-      setFilteredData({ active: "graphics", data: [] });
+      let graphics = placeholder.data.filter(el => el.type === "graphics");
+      setFilteredData({ active: "graphics", data: graphics });
       return;
     }
 
-    console.log(e);
+    console.log("placeholder", placeholder);
   };
 
   return (
@@ -57,9 +80,9 @@ function Gallery() {
           </div>
 
           <Slider {...settings}>
-            {images.map((el, id) => (
+            {filteredData.data.map((el, id) => (
               <div className="media_cont" key={id}>
-                <img src={el.url} alt="" />
+                <img src={el.image.url} alt="" />
               </div>
             ))}
           </Slider>
@@ -100,7 +123,7 @@ function Gallery() {
             }}
             className="gallery_img"
           >
-            <img src={el.url} alt="" />
+            <img src={el.image.url} alt="" />
           </div>
         ))}
 

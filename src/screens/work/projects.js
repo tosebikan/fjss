@@ -15,10 +15,13 @@ function Projects() {
     fetchProjects();
   }, []);
 
+  let storage = {};
+
   const fetchProjects = async () => {
     setLoading(true);
     let res = await apiFunctions.getProjects();
     setProjects(res);
+    storage.projects = res;
     setLoading(false);
 
     // console.log(projects);
