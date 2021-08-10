@@ -83,9 +83,6 @@ function Projects() {
 
   console.log({ completed, ongoing, upcoming });
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
   return (
     <div className="projects_container">
       <div className="project_hero">
@@ -125,57 +122,61 @@ function Projects() {
       </Slider>
 
       {/* ONGOING PROJECTS*/}
-      <div className="ongoing_projects">
-        <h2>Ongoing projects</h2>
+      {ongoing.length > 0 && (
+        <div className="ongoing_projects">
+          <h2>Ongoing projects</h2>
 
-        <Slider {...settings2}>
-          {ongoing.map(el => (
-            <div className="ongoin_group" key={el.id}>
-              <div className="ongoing_projects_group">
+          <Slider {...settings2}>
+            {ongoing.map(el => (
+              <div className="ongoin_group" key={el.id}>
+                <div className="ongoing_projects_group">
+                  <img src={el.image.url} alt="" />
+                  <p className="ongoing_projects_title">{el.title}</p>
+                  {/*<p className="ongoing_projects_body">
+                  {el.text.map(el => el.slice(0, 30))}...
+                </p>*/}
+                  <div className="short_markdown_row">
+                    <StyledMarkdown content={el.text.slice(0, 100)} />
+                    {/*<p>...</p>*/}
+                  </div>
+                  <Link to={{ pathname: "project-details", state: { el } }}>
+                    <button>Read more</button>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      )}
+
+      {/* UPCOMING PROJECTS*/}
+      {upcoming.length > 0 && (
+        <div className="upcoming_projects">
+          <h2>Upcoming projects</h2>
+
+          <div className="ongoing_projects_section">
+            {upcoming.map(el => (
+              <div className="ongoing_projects_group" key={el.id}>
                 <img src={el.image.url} alt="" />
                 <p className="ongoing_projects_title">{el.title}</p>
                 {/*<p className="ongoing_projects_body">
-                  {el.text.map(el => el.slice(0, 30))}...
-                </p>*/}
+                {el.text.map(el => el.slice(0, 100))}...
+              </p>*/}
                 <div className="short_markdown_row">
-                  <StyledMarkdown content={el.text.slice(0, 100)} />
+                  <StyledMarkdown
+                    content={el.text.slice(0, 100)}
+                    className="short_richtext"
+                  />
                   {/*<p>...</p>*/}
                 </div>
                 <Link to={{ pathname: "project-details", state: { el } }}>
                   <button>Read more</button>
                 </Link>
               </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
-
-      {/* UPCOMING PROJECTS*/}
-      <div className="upcoming_projects">
-        <h2>Upcoming projects</h2>
-
-        <div className="ongoing_projects_section">
-          {upcoming.map(el => (
-            <div className="ongoing_projects_group" key={el.id}>
-              <img src={el.image.url} alt="" />
-              <p className="ongoing_projects_title">{el.title}</p>
-              {/*<p className="ongoing_projects_body">
-                {el.text.map(el => el.slice(0, 100))}...
-              </p>*/}
-              <div className="short_markdown_row">
-                <StyledMarkdown
-                  content={el.text.slice(0, 100)}
-                  className="short_richtext"
-                />
-                {/*<p>...</p>*/}
-              </div>
-              <Link to={{ pathname: "project-details", state: { el } }}>
-                <button>Read more</button>
-              </Link>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
