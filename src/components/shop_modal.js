@@ -2,7 +2,6 @@
 
 import React from "react";
 import "./shop_modal.css";
-import prod from "../assets/images/shop/5.png";
 
 const ShopModal = props => (
   <div className="shop_modal_container">
@@ -10,7 +9,7 @@ const ShopModal = props => (
       X
     </div>
     <div className="shop_modal_left">
-      <img src={prod} alt="" />
+      <img src={props.data.image.url} alt="" />
     </div>
     <div className="shop_modal_right">
       <h2> {props.data.title}</h2>

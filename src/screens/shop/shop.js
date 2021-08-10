@@ -9,16 +9,28 @@ import ShopModal from "../../components/shop_modal";
 import { FaShoppingBag, FaSearch } from "react-icons/fa";
 import { IoBagRemove } from "react-icons/io5";
 import { CartContext } from "../../context/cart_context";
+import { apiFunctions } from "../../helpers/api";
 
-let placeholder = products;
+// let placeholder = products;
 
 function Shop() {
-  const [shopProducts, setShopProduct] = React.useState(products);
+  const [shopProducts, setShopProduct] = React.useState([]);
+  const [placeholder, setPlaceholder] = React.useState([]);
   const [shopModal, setShopModal] = React.useState(false);
   const [currentProduct, setCurrentProduct] = React.useState({});
   const [productQuantity, setProductQuantity] = React.useState(1);
   const { cart, setCart } = React.useContext(CartContext);
   // console.log({ cart, productQuantity });
+
+  React.useEffect(() => {
+    fetchProducts();
+  }, []);
+
+  const fetchProducts = async () => {
+    let res = await apiFunctions.getProducts();
+    setShopProduct(res);
+    setPlaceholder(res);
+  };
 
   const handleSearch = e => {
     let prod = placeholder.filter(el => {
@@ -198,7 +210,7 @@ function Shop() {
                       <FaSearch className="shop_card_icon" />
                     </div>
                   </div>
-                  <img src={el.image} alt="" />
+                  <img src={el.image.url} alt="" />
                 </div>
                 <p>{el.title}</p>
                 <p className="shop_main_price">${el.price.toFixed(2)} </p>

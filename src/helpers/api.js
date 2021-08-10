@@ -5,7 +5,8 @@ export const apiFunctions = {
   getCountDown: async () => get("/countdown"),
   getProjects: async () => get("/projects"),
   getMedia: async () => get("/media-images"),
-  getPeople: async () => get("/people")
+  getPeople: async () => get("/people"),
+  getProducts: async () => get("/products")
 };
 
 const get = path => {
