@@ -32,7 +32,7 @@ function People() {
 
       <div className="people_images">
         {people.map(el => (
-          <div className="people_card">
+          <div className="people_card" key={el.id}>
             <img src={el.image.url} alt="" />
             <div className="people_info">
               <h4>{el.name}</h4>
