@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./gallery.css";
 import HeroImage from "../../assets/images/home_hero.jpg";
-import { images } from "../../helpers/data";
+// import { images } from "../../helpers/data";
 import Slider from "react-slick";
 import { apiFunctions } from "../../helpers/api";
 
@@ -19,6 +19,7 @@ function Gallery() {
 
   React.useEffect(() => {
     fetchImages();
+    // eslint-disable-next-line
   }, []);
 
   const fetchImages = async () => {

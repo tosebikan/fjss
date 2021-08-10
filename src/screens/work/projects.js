@@ -13,6 +13,7 @@ function Projects() {
 
   React.useEffect(() => {
     fetchProjects();
+    //eslint-disable-next-line
   }, []);
 
   let storage = {};
@@ -92,6 +93,8 @@ function Projects() {
           <p>FJSS GROUP</p>
         </div>
       </div>
+
+      {loading && <p className="empty_media_text">Loading...</p>}
 
       {/*PROJECTS COMPLETE SECTIOn*/}
 

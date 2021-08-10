@@ -6,7 +6,8 @@ export const apiFunctions = {
   getProjects: async () => get("/projects"),
   getMedia: async () => get("/media-images"),
   getPeople: async () => get("/people"),
-  getProducts: async () => get("/products")
+  getProducts: async () => get("/products"),
+  postjobApplication: async fd => post("/job-application", fd)
 };
 
 const get = path => {
