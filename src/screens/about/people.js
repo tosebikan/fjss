@@ -1,3 +1,4 @@
+import * as React from "react";
 import "./people.css";
 // import { FaFacebook } from "react-icons/fa";
 // import { FaTwitter } from "react-icons/fa";
@@ -5,9 +6,20 @@ import "./people.css";
 
 import HeroImage from "../../assets/images/home_hero.jpg";
 import getInvolved from "../../assets/images/getinvolved.jpg";
-import { people } from "../../helpers/data";
+// import { people } from "../../helpers/data";
+import { apiFunctions } from "../../helpers/api";
 
 function People() {
+  const [people, setPeople] = React.useState([]);
+
+  React.useEffect(() => {
+    fetchPeople();
+  }, []);
+
+  const fetchPeople = async () => {
+    let people = await apiFunctions.getPeople();
+    setPeople(people);
+  };
   return (
     <div className="people_container">
       <div className="people_hero">
@@ -21,7 +33,7 @@ function People() {
       <div className="people_images">
         {people.map(el => (
           <div className="people_card">
-            <img src={el.url} alt="" />
+            <img src={el.image.url} alt="" />
             <div className="people_info">
               <h4>{el.name}</h4>
               <p>{el.position}</p>
