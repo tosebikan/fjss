@@ -176,10 +176,11 @@
 }
 
 .project_complete_right img {
-  width: 600px;
-  height: 500px;
+  width: 550px;
+  height: 450px;
   border-radius: 20px;
   object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 1024px) {
@@ -349,4 +350,9 @@
 .short_markdown_row {
   display: flex;
   flex-direction: row;
+  text-overflow: ellipsis;
+}
+
+.short_richtext {
+  background-color: red;
 }
