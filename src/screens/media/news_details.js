@@ -9,6 +9,10 @@ import { FaLinkedin } from "react-icons/fa";
 import "./news_details.css";
 function NewsDetails(props) {
   let news = props.location.state.el;
+
+  const handlePost = e => {
+    e.preventDefault();
+  };
   return (
     <div className="newsDetails_container">
       <div className="news_details_hero">
@@ -111,7 +115,7 @@ function NewsDetails(props) {
             </label>
           </div>
 
-          <button>Post comment</button>
+          <button onClick={handlePost}>Post comment</button>
         </form>
       </div>
     </div>

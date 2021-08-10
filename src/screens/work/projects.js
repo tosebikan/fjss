@@ -98,31 +98,35 @@ function Projects() {
 
       {/*PROJECTS COMPLETE SECTIOn*/}
 
-      <Slider {...settings}>
-        {completed.map(el => (
-          <div className="project_complete" key={el.id}>
-            <div className="project_complete_left">
-              <h2>Completed Projects</h2>
+      {completed && (
+        <div className="completed_projects">
+          <Slider {...settings}>
+            {completed.map(el => (
+              <div className="project_complete" key={el.id}>
+                <div className="project_complete_left">
+                  <h2>Completed Projects</h2>
 
-              <p className="project_complete_title">{el.title}</p>
-              {/*<p className="project_complete_body">
+                  <p className="project_complete_title">{el.title}</p>
+                  {/*<p className="project_complete_body">
                 {el.text?.[0].slice(0, 100)}...
               </p>*/}
-              <div className="short_markdown_row">
-                <StyledMarkdown content={el.text.slice(0, 50)} />
-                <p>...</p>
-              </div>
-              <Link to={{ pathname: "project-details", state: { el } }}>
-                <button>Read more </button>
-              </Link>
-            </div>
+                  <div className="short_markdown_row">
+                    <StyledMarkdown content={el.text.slice(0, 50)} />
+                    <p>...</p>
+                  </div>
+                  <Link to={{ pathname: "project-details", state: { el } }}>
+                    <button>Read more </button>
+                  </Link>
+                </div>
 
-            <div className="project_complete_right">
-              <img src={el.image.url} alt="" />
-            </div>
-          </div>
-        ))}
-      </Slider>
+                <div className="project_complete_right">
+                  <img src={el.image.url} alt="" />
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      )}
 
       {/* ONGOING PROJECTS*/}
       {ongoing.length > 0 && (

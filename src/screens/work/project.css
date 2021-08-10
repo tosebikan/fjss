@@ -117,6 +117,13 @@
   outline: none;
 }
 
+.completed_projects {
+  /* background-color: #fc9801;
+  color: #fff;
+  padding: 60px 0; */
+  width: 100vw;
+}
+
 .project_slider {
   /* background-color: blue; */
   width: 100vw;
