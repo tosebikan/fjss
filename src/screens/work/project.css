@@ -127,8 +127,8 @@
 .project_slider {
   /* background-color: blue; */
   width: 100vw;
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
   outline: none;
   /* overflow: hidden; */
 }
