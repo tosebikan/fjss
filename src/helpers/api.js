@@ -7,6 +7,7 @@ export const apiFunctions = {
   getMedia: async () => get("/media-images"),
   getPeople: async () => get("/people"),
   getProducts: async () => get("/products"),
+  getReports: async () => get("/reports"),
   postjobApplication: async fd => post("/job-application", fd)
 };
 
