@@ -1,23 +1,24 @@
 import * as React from "react";
-import { saveAs } from "file-saver";
+// import { saveAs } from "file-saver";
 import "./reports.css";
 import { FiChevronDown } from "react-icons/fi";
 import HeroImage from "../../assets/images/home_hero.jpg";
 // import framework from "../../assets/pdfs/Framework-for-Justice-Reforms-in-Scotland-July-2020.pdf";
 import { apiFunctions } from "../../helpers/api";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Reports() {
   const [reports, setReports] = React.useState([]);
   const [currReport, setCurrReports] = React.useState(0);
-  const download = e => {
-    e.preventDefault();
-    //   const blob = new Blob([framework], {
-    //     type: "application/pdf;charset=utf-8"
-    //   });
-    //   saveAs(blob, "Framework-for-Justice-Reforms-in-Scotland-July-2020.pdf");
-  };
+  // const download = e => {
+  //   // e.preventDefault();
+  //   const blob = new Blob([framework], {
+  //     type: "application/pdf;charset=utf-8"
+  //   });
+  //   saveAs(blob, "Framework-for-Justice-Reforms-in-Scotland-July-2020.pdf");
+  // };
   React.useEffect(() => {
+    setCurrReports(0);
     fetchReports();
   }, []);
 
