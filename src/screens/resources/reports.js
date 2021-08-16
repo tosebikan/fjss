@@ -27,12 +27,12 @@ function Reports() {
           <h2>The Framework for Justice Reform in Scotland July 2020</h2>
           <FiChevronDown className="report_group_icon" />
         </div>
-        <a
+        {/*<a
           href="../../assets/pdfs/Framework-for-Justice-Reforms-in-Scotland-July-2020.pdf"
           download="Framework-for-Justice-Reforms-in-Scotland-July-2020.pdf"
         >
           download
-        </a>
+        </a>*/}
         <button onClick={download}>Downloads</button>
       </div>
     </div>

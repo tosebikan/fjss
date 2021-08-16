@@ -1,5 +1,5 @@
 import "./reports.css";
-import { FiChevronDown } from "react-icons/fi";
+// import { FiChevronDown } from "react-icons/fi";
 import HeroImage from "../../assets/images/home_hero.jpg";
 function Info() {
   return (
@@ -13,11 +13,11 @@ function Info() {
       </div>
 
       <div className="reports_download">
-        <div className="report_group">
+        {/*<div className="report_group">
           <h2>The Framework for Justice Reform in Scotland July 2020</h2>
           <FiChevronDown className="report_group_icon" />
         </div>
-        <button>Downloads</button>
+        <button>Downloads</button>*/}
       </div>
     </div>
   );
