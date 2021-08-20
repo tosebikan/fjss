@@ -4,7 +4,7 @@ import "./shop.css";
 
 // import gallery1 from "../../assets/images/gallery1.png";
 import { FiSearch } from "react-icons/fi";
-import { products, news } from "../../helpers/data";
+import { news } from "../../helpers/data";
 import ShopModal from "../../components/shop_modal";
 import { FaShoppingBag, FaSearch } from "react-icons/fa";
 import { IoBagRemove } from "react-icons/io5";
