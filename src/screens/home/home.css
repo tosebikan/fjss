@@ -974,12 +974,13 @@
   display: inline-block;
   color: #fff;
   padding-left: 10px;
-  width: 120px;
+  width: 80px;
 }
 .home_news_date p {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .home_news_body p {

@@ -10,6 +10,7 @@ import { FaShoppingBag, FaSearch } from "react-icons/fa";
 import { IoBagRemove } from "react-icons/io5";
 import { CartContext } from "../../context/cart_context";
 import { apiFunctions } from "../../helpers/api";
+import { Link } from "react-router-dom";
 
 // let placeholder = products;
 
@@ -149,25 +150,25 @@ function Shop() {
             <h2>Top Products</h2>
             <div className="shop_menu_card">
               <div className="shop_menu_card_column">
-                <img src={products[0].image} alt="" />
-                <p> $5.00</p>
+                <img src={shopProducts[0]?.image.url} alt="" />
+                <p> ${shopProducts[0]?.price.toFixed(2)}</p>
               </div>
-              <p className="menu_card_text">
-                Scottish History: The West Lothian Connection (Ebook){" "}
-              </p>
+              <p className="menu_card_text">{shopProducts[0]?.title}</p>
             </div>
           </div>
 
           <div className="shop_menu_news">
             <h2>Latest News</h2>
 
-            <div className="shop_menu_news_card">
-              <img src={news[1].images[0]} alt="" />
-              <div className="shop_menu_news_card_column">
-                <p className="shop_menu_news_date"> 21 Feb 2021</p>
-                <p className="menu_news_card_text">{news[1].title}</p>
+            <Link to="/news">
+              <div className="shop_menu_news_card">
+                <img src={news[1].images[0]} alt="" />
+                <div className="shop_menu_news_card_column">
+                  <p className="shop_menu_news_date"> 21 Feb 2021</p>
+                  <p className="menu_news_card_text">{news[1].title}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
 
