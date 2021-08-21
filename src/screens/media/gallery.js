@@ -24,9 +24,10 @@ function Gallery() {
 
   const fetchImages = async () => {
     let images = await apiFunctions.getMedia();
+    let sortedImages = images.sort((a, b) => b.id - a.id);
     console.log(images);
-    setFilteredData({ active: "all", data: images });
-    setplaceholder({ active: "all", data: images });
+    setFilteredData({ active: "all", data: sortedImages });
+    setplaceholder({ active: "all", data: sortedImages });
 
     console.log("placeholder", placeholder);
   };
