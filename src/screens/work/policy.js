@@ -14,19 +14,22 @@ function Policy() {
       <div className="policy_dev">
         <h2>Policy Development and Support</h2>
         <p>
-          The FJSS Group provides policy development input and support to
-          institutions and organisations that do not have adequate BAME
-          representation in their key decision-making structures. This helps the
-          organisations to bridge the racial equality gap through the input they
-          get from our policy experts. In 2020 the organisation commenced
-          working with the Scottish Government to provide them with essential
-          BAME input in their policy development processes and give BAME people
-          a voice in policy and key decision making. The work with the Scottish
-          Government is focused on the justice sector, ensuring issues are
-          raised in the right arena for change, and providing a platform for
-          public consultation and engagement to represent these unheard voices.
+          The FJSS Group provides policy development input and support to the
+          Scottish Government, key institutions, and local authorities as well
+          as other organisations that do not have adequate BAME representation
+          in their key decision-making structures. This helps these
+          organisations to bridge the racial equality and diversity gap through
+          the input they get from our policy development experts. In 2020 the
+          organisation commenced working with the Scottish Government to provide
+          them with essential BAME policy development input to the Justice
+          Department. This helps the Scottish Government to meet it race
+          equality outcomes while proving the BAME commutates across Scotland
+          with an essential voice in policy and key decision making. The work
+          with the Scottish Government is focused on the wider cross justice
+          sector, ensuring issues are raised in the right arena for change, and
+          providing a great platform for public consultation and engagement.
           There is scope to expand this work to cover other areas of the
-          Scottish Government departments.
+          Scottish Government structures beyond the Justice Department.
         </p>
       </div>
     </div>
