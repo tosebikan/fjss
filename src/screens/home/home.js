@@ -14,6 +14,7 @@ import news1 from "../../assets/images/news1.jpg";
 import { Link } from "react-router-dom";
 import { testimonials, events } from "../../helpers/data";
 import YoutubeEmbed from "../../components/youtube_embed";
+// import moment from "moment";
 
 import Slider from "react-slick";
 
@@ -223,8 +224,8 @@ function Home() {
         <div className="home_events_left">
           <h2> Our Events </h2>
           <div className="home_events_date">
-            <p>13</p>
-            <p>April</p>
+            <p>{events[currentEvent].startDate.split(",")[1]}</p>
+            <p>{events[currentEvent].startDate.split(",")[0]}</p>
           </div>
           <p className="home_event_text">{events[currentEvent].title}</p>
           <div className="home_events_schedule">

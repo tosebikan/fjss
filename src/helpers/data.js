@@ -278,7 +278,7 @@ export const events = [
     image: scottishMeditation,
     status: "completed",
     type: "Virtual Event",
-    startDate: "Feb 4, 2021",
+    startDate: "Jul,15, 2021",
     endDate: "",
     startTime: "7:00 pm",
     endTime: "8:00 pm"
@@ -292,7 +292,7 @@ export const events = [
     image: heritageFlyer,
     status: "completed",
     type: "Virtual Event",
-    startDate: "Feb 4, 2021",
+    startDate: "Apr,13, 2021",
     endDate: "",
     startTime: "7:00 pm",
     endTime: "10:00 pm"
@@ -305,7 +305,7 @@ export const events = [
     image: equalitiesspeaker,
     status: "completed",
     type: "Virtual Event",
-    startDate: "Feb 4, 2021",
+    startDate: "Mar,24, 2021",
     endDate: "",
     startTime: "9:00 am",
     endTime: "11:30 am"
@@ -318,7 +318,7 @@ export const events = [
     image: equalitiesworkshop,
     status: "completed",
     type: "Virtual Event",
-    startDate: "Feb 4, 2021",
+    startDate: "Mar,24, 2021",
     endDate: "",
     startTime: "9:00 am",
     endTime: "11:30 am"
@@ -331,7 +331,7 @@ export const events = [
     image: publicAppointment,
     status: "completed",
     type: "Virtual Event",
-    startDate: "Feb 4, 2021",
+    startDate: "Feb,4, 2021",
     endDate: "",
     startTime: "1:00 pm",
     endTime: "2:30 pm",
@@ -374,7 +374,7 @@ export const events = [
     image: independentPrison,
     status: "completed",
     type: "Virtual Event",
-    startDate: "Jan 26, 2021",
+    startDate: "Jan,26, 2021",
     endDate: "",
     startTime: "1:30 pm",
     endTime: "2:30 pm",
