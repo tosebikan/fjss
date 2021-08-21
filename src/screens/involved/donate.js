@@ -49,9 +49,10 @@ function Donate() {
           Donate To FJSS Group To Help Improve The Scottish Justice System
         </h2>
         <p>
-          The FJSS Group is the main voice for Justice Sector Reforms in the
-          Scottish justice system. Our work is mainly self funded and we will
-          greatly appreciate your support to our work.
+          The FJSS Group is a small charity organisation undertaking very
+          important work. We are still largely self-funded and we would greatly
+          appreciate your kind donation. Kindly follow the simple steps if you
+          would like to donate towards our work.
         </p>
       </div>
 
