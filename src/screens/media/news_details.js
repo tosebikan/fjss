@@ -114,18 +114,31 @@ function NewsDetails(props) {
       <div className="news_details_comments">
         <h2> Comment section</h2>
         <div className="news_details_comment_group">
-          <div className="news_details_comment">
-            <img src={gallery1} alt="" />
-            <div className="news_details_comment_info">
-              <p className="news_details_comment_title">Lance</p>
-              <p className="news_details_comment_date">21 February, 2021</p>
-              <p className="news_details_comment_text">
-                Thank you FJSS Group for the friendly and helpful services. Your
-                support team is wonderful.
-              </p>
-            </div>
-            <button>Reply</button>
-          </div>
+          {news.comments.map(el => {
+            let approved = el.approved;
+            if (approved) {
+              return (
+                <div className="news_details_comment" key={el.id}>
+                  <img
+                    src={
+                      el.image?.url
+                        ? el.image?.url
+                        : "https://res.cloudinary.com/dx9nvxad3/image/upload/v1629552242/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws_qdj2z3.jpg"
+                    }
+                    alt=""
+                  />
+                  <div className="news_details_comment_info">
+                    <p className="news_details_comment_title">{el.author}</p>
+                    <p className="news_details_comment_date">
+                      21 February, 2021
+                    </p>
+                    <p className="news_details_comment_text">{el.text}</p>
+                  </div>
+                </div>
+              );
+            }
+            return null;
+          })}
         </div>
       </div>
 

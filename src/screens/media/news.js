@@ -22,8 +22,10 @@ function News() {
 
   const fetchNews = async () => {
     let news = await apiFunctions.getNews();
-    setData(news);
-    setPlaceHolder(news);
+    console.log({ news });
+    let sorted = news.sort((a, b) => b.date > a.date);
+    setData(sorted);
+    setPlaceHolder(sorted);
     // console.log({ news });
   };
 
