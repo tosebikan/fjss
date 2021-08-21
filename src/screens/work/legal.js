@@ -28,8 +28,8 @@ function Legal() {
           elsewhere. Our service makes a huge difference to BAME people who
           benefit from team composed of a cross-section of people of diverse
           skills and backgrounds who offer their expertise to those who need it
-          most. This mix of experience makes the legal services department real
-          a hub of activity as the teams go through their caseloads with
+          most. This mix of experience makes the legal services department a
+          real hub of activity as the teams go through their caseloads with
           exceptional commitment and dedication.
         </p>
       </div>

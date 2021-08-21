@@ -38,11 +38,11 @@ function Nav() {
                 <p>Our Approach</p>
               </li>
             </NavLink>
-            <NavLink to="/people" exact>
+            {/*<NavLink to="/people" exact>
               <li>
                 <p>Our People</p>
               </li>
-            </NavLink>
+            </NavLink>*/}
           </ul>
         </li>
         <li className="sub_title">

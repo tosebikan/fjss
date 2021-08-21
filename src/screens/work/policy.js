@@ -22,7 +22,7 @@ function Policy() {
           the input they get from our policy development experts. In 2020 the
           organisation commenced working with the Scottish Government to provide
           them with essential BAME policy development input to the Justice
-          Department. This helps the Scottish Government to meet it race
+          Department. This helps the Scottish Government to meet its race
           equality outcomes while proving the BAME commutates across Scotland
           with an essential voice in policy and key decision making. The work
           with the Scottish Government is focused on the wider cross justice
