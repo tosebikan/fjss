@@ -18,7 +18,8 @@ function People() {
 
   const fetchPeople = async () => {
     let people = await apiFunctions.getPeople();
-    setPeople(people);
+    let sorted = people.sort((a, b) => a.id - b.id);
+    setPeople(sorted);
   };
   return (
     <div className="people_container">
