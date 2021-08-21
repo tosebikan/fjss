@@ -1,17 +1,49 @@
+import * as React from "react";
 import HeroImage from "../../assets/images/home_hero.jpg";
 import gallery1 from "../../assets/images/gallery1.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import axios from "axios";
 // import { FiSearch } from "react-icons/fi";
 
 import "./news_details.css";
 function NewsDetails(props) {
   let news = props.location.state.el;
+  console.log({ news });
+  const [fName, setFName] = React.useState("");
+  const [lName, setLName] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  const [success, setSuccess] = React.useState("");
 
-  const handlePost = e => {
-    e.preventDefault();
+  const handlePost = async event => {
+    event.preventDefault();
+
+    let payload = {
+      author: `${fName} ${lName}`,
+      text: message,
+      news_info: news.id
+    };
+    console.log({ payload });
+    //
+    await axios
+      .post("https://fjss-admin.herokuapp.com/comments", payload, {
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+      .then(res => {
+        console.log({ res });
+        setFName("");
+        setLName("");
+        setMessage("");
+        setSuccess("Sent!, your comment will be visible once approved");
+        setTimeout(() => setSuccess(""), 3000);
+      })
+      .catch(err => {
+        console.log({ err });
+      });
   };
   return (
     <div className="newsDetails_container">
@@ -42,7 +74,7 @@ function NewsDetails(props) {
       {/*NEWS DETAILS*/}
       <div className="news_details_info">
         <div className="news_details_info_top">
-          <img src={news.images[0]} alt="" />
+          <img src={news.thumbnail.url} alt="" />
           <div className="news_details_info_text_group">
             <h2>FJSS Group Food Support</h2>
             <p>
@@ -58,14 +90,14 @@ function NewsDetails(props) {
       {/*NEWS IMAGES*/}
       <div className="news_details_info_images">
         {news.images.map(el => (
-          <img src={el} alt="" />
+          <img src={el.url} alt="" />
         ))}
       </div>
       {/*NEWS TAGS */}
       <div className="news_details_info_tags">
         <div className="news_details_info_row">
           <p>Tags:</p>
-          <p> Uncategorized</p>
+          <p> {news.tags}</p>
         </div>
 
         <div className="news_details_info_row">
@@ -102,10 +134,24 @@ function NewsDetails(props) {
         <p>Your email address will not be published. *</p>
         <form className="news_details_section_form">
           <div className="news_form_row">
-            <input placeholder="First Name *" type="text" />
-            <input placeholder="Last Name *" type="text" />
+            <input
+              placeholder="First Name *"
+              type="text"
+              value={fName}
+              onChange={e => setFName(e.target.value)}
+            />
+            <input
+              placeholder="Last Name *"
+              type="text"
+              value={lName}
+              onChange={e => setLName(e.target.value)}
+            />
           </div>
-          <textarea placeholder="Your comment *" />
+          <textarea
+            placeholder="Your comment *"
+            onChange={e => setMessage(e.target.value)}
+            value={message}
+          />
           <div className="news_details_check">
             <input type="checkbox" id="saveName" />
             <label htmlFor="saveName">
@@ -114,8 +160,8 @@ function NewsDetails(props) {
               I comment
             </label>
           </div>
-
           <button onClick={handlePost}>Post comment</button>
+          <p>{success}</p>
         </form>
       </div>
     </div>

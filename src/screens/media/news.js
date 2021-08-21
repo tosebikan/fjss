@@ -5,15 +5,27 @@ import HeroImage from "../../assets/images/home_hero.jpg";
 import { Link } from "react-router-dom";
 import { news } from "../../helpers/data";
 import { FiSearch } from "react-icons/fi";
-
+import { apiFunctions } from "../../helpers/api";
 function News() {
   const [data, setData] = React.useState(news);
+  const [placeholder, setPlaceHolder] = React.useState([]);
   const [newsModal, setNewsModal] = React.useState(false);
   const [menuData, setMenuData] = React.useState({
     title: "All",
     data: []
   });
-  let placeholder = news;
+  // let placeholder = news;
+
+  React.useEffect(() => {
+    fetchNews();
+  }, []);
+
+  const fetchNews = async () => {
+    let news = await apiFunctions.getNews();
+    setData(news);
+    setPlaceHolder(news);
+    // console.log({ news });
+  };
 
   const searchNews = e => {
     setMenuData({ title: "", data: [] });
@@ -72,9 +84,12 @@ function News() {
   };
 
   const filterNews = e => {
+    console.log({ placeholder, e });
     if (menuData.title === "Categories") {
-      let filtered = placeholder.filter(el =>
-        el.category.join(",").includes(e)
+      let filtered = placeholder.filter(
+        el =>
+          // el.category.join(",").includes(e)
+          el.tags === e
       );
       setData(filtered);
       setNewsModal(!newsModal);
@@ -83,7 +98,8 @@ function News() {
 
     if (menuData.title === "Popular Tags") {
       let filtered = placeholder.filter(el =>
-        el.category.join(",").includes(e)
+        // el.category.join(",").includes(e)
+        el.tags.toLowerCase().includes(e.toLowerCase())
       );
       setData(filtered);
       setNewsModal(!newsModal);
@@ -181,34 +197,35 @@ function News() {
       </div>
 
       <div className="news_card_container">
-        {data.map((el, id) => (
-          <div className="news_card" key={id}>
-            <img src={el.images[0]} alt="" />
-            <div className="news_card_info">
-              <p className="news_card_date">{el.date}</p>
-              <p className="news_card_title">{el.title}</p>
+        {data &&
+          data.map(el => (
+            <div className="news_card" key={el.id}>
+              <img src={el?.thumbnail?.url} alt="" />
+              <div className="news_card_info">
+                <p className="news_card_date">{el.date}</p>
+                <p className="news_card_title">{el.title}</p>
 
-              <p className="news_card_body">
-                {el.text[0]?.slice(0, 100)}
-                {el.text[0]?.length > 0 ? "..." : ""}
-              </p>
+                <p className="news_card_body">
+                  {/*{el.text[0]?.slice(0, 100)}*/}
+                  {/*{el.text[0]?.length > 0 ? "..." : ""}*/}
+                </p>
 
-              <Link to={{ pathname: "/news-details", state: { el } }}>
-                <button className="news_card_button">Read more</button>{" "}
-              </Link>
-              <div className="news_card_hr" />
-              <div className="news_card_bottom">
-                <div>
-                  <p>Ignitious Ocansey</p>
-                </div>
-                <div className="news_card_comments">
-                  <p> 0</p>
-                  <p>Comments</p>
+                <Link to={{ pathname: "/news-details", state: { el } }}>
+                  <button className="news_card_button">Read more</button>{" "}
+                </Link>
+                <div className="news_card_hr" />
+                <div className="news_card_bottom">
+                  <div>
+                    <p>Ignitious Ocansey</p>
+                  </div>
+                  <div className="news_card_comments">
+                    <p> 0</p>
+                    <p>Comments</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
       </div>
 
       {data.length === 0 && (
