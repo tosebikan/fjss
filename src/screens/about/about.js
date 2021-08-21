@@ -110,30 +110,30 @@ function About() {
         <div>
           <p>
             {" "}
-            The Fair Justice System for Scotland Group (FJSS Group) is a
+            The Fair Justice System for Scotland (FJSS) Group is a
             grassroots-led legal charity based in West Calder, West Lothian. The
-            organisation has established itself as one of the leading voices for
-            justice sector reforms necessary to create greater equality,
-            diversity and representative employment and appointments in the
-            Scottish justice system. The FJSS Group advocates for a justice
-            system reflective of the diversity of modern-day Scottish society
-            and our work is geared to influence justice delivery policy in
-            Scotland through informing the processes of policy formulation and
-            development by engaging with the key policy and decision-makers in
-            the Scottish Government and key agencies.
+            organisation has established itself as a leading voice for justice
+            sector reforms necessary to create greater racial equality and
+            diversity in the Scottish justice system. The FJSS Group advocates
+            for employment and appointments in the justice system reflective of
+            the diversity of modern-day Scottish society. Our work is geared
+            towards influencing justice delivery policy in Scotland through
+            informing the processes of policy formulation and development. Our
+            Organisation engages with key stakeholders including policy and
+            decision-makers in the Scottish Government and its agencies.
           </p>
 
           <p>
-            Currently the FJSS Group works closely with the key stakeholders in
-            the justice system including the Scottish Government, the Judicial
-            Institute for Scotland, the Scottish Courts and Tribunal Service,
-            Police Scotland, the Scottish Parliament, the Law Society of
-            Scotland, HM Inspectorates across all the disciplines (Prison
+            Currently, the FJSS Group works closely with those key stakeholders
+            in the justice system including the Scottish Government, the
+            Judicial Institute for Scotland, the Scottish Courts and Tribunal
+            Service, Police Scotland, the Scottish Parliament, the Law Society
+            of Scotland, HM Inspectorates across all the disciplines (Prison
             Service Scotland, Constabulary and Crown Prosecution), Scottish
             Police Authority and Public Appointments. This connects our work
-            with the key policies and process that shape the Scottish justice
-            system and the Scottish Government’s wider community and social
-            justice outcomes.{" "}
+            with high-level policies and processes that shape the Scottish
+            justice sector including the Scottish Government’s race equality and
+            safer community outcomes.{" "}
           </p>
         </div>
         <div>
