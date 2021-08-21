@@ -15,17 +15,19 @@ function Opportunity() {
         <h2> Creating Opportunity</h2>
         <p>
           The FJSS Group creates opportunities for people of BAME background to
-          volunteer and gain experience that they would otherwise struggle to
-          gain elsewhere. The organisation is 99% volunteer driven and most of
-          the volunteers in o0ur teams are professionals with excellent
-          qualifications from several disciplines such Legal, IT, Business and
-          Marketing, Project Management, Health and Psychology, History and
-          Literature and Science and Research. This provides these professionals
-          with a real time opportunity to showcase their skills, gain experience
-          of running real programs and departments in an environment that
-          enriches and rewards their contributions. The organisation provides
-          mentoring and personal development of an extremely high standards to
-          the volunteers most of whom join as graduates looking for work
+          volunteer and gain experience while improving their skills in fields
+          that they would otherwise struggle to gain access to. The organisation
+          is 99% volunteer driven and most of the volunteers in our teams are
+          highly qualified and skilled individuals with excellent qualifications
+          from several disciplines such Legal, IT, Business and Marketing,
+          Project and Events Management, Media and Photography, Health and
+          Psychology, History and Literature, Science and Research as well as
+          Engineering. Our organisation provides these dedicated volunteers with
+          a real time opportunity to showcase their skills, and gain experience
+          of running life changing programs and departments in an environment
+          that enriches and rewards their contributions. The organisation
+          provides mentoring and personal development support of high standard
+          to the volunteers most of whom join as graduates looking for work
           experience and this creates a win-win scenario for the volunteers and
           the organisation.
         </p>
