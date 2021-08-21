@@ -83,12 +83,12 @@ function Nav() {
               </li>
             </NavLink>
 
-            <NavLink to="/community" exact>
+            {/*<NavLink to="/community" exact>
               <li>
                 {" "}
                 <p> Community Engagements </p>{" "}
               </li>
-            </NavLink>
+            </NavLink>*/}
 
             <NavLink to="/opportunity" exact>
               <li>

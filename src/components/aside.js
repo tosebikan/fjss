@@ -105,12 +105,12 @@ function Aside() {
                 </li>
               </NavLink>
 
-              <NavLink to="/community" exact onClick={asideMenu}>
+              {/*<NavLink to="/community" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Community Engagements </p>{" "}
                 </li>
-              </NavLink>
+              </NavLink>*/}
 
               <NavLink to="/opportunity" exact onClick={asideMenu}>
                 <li>
