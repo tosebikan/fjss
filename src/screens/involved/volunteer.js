@@ -80,7 +80,7 @@ function Volunteer() {
 
       {/* VOLUNTEER REQ SECTION*/}
       <div className="volunteer_sec">
-        <h2>Volunteer Requitment Forms </h2>
+        <h2>Volunteer Application Form </h2>
         <p className="volunteer_sec_text">
           Fill in the form below to volunteer for FJSS Group. You will be
           contacted when we receive your application.
