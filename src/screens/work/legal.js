@@ -14,24 +14,23 @@ function Legal() {
       <div className="policy_dev">
         <h2>Legal Services</h2>
         <p>
-          Legal Services The FJSS Group has a legal services department that
-          performs several functions including providing legal advice and legal
-          representation to BAME communities. The focus of the legal
-          representation is employment and immigration issues where most people
-          of BAME background have challenges at workplaces and in regularising
-          their stay in the United Kingdom. The organisation provides legal
-          advice without prejudice on matters that our committed team of
-          volunteers have competence in, and this advice does not stop our
-          communities from seeking alternative advice where they feel need to do
-          so. Our main priority is to provide legal support to members of our
-          community who can not afford to get this anywhere else, and this has
-          made a huge difference to many people. The legal services team at FJSS
-          is a cross-section of people who have retired but still want to offer
-          their expertise to those who need it and those who are still in the
-          process of going through the various stages of their legal
-          professional development. This mix of experience makes the legal
-          services department real a hub of activity as the teams go through
-          their case loads with excellent commitment and dedication.
+          Our Legal Services Department provides legal advice and legal
+          representation to BAME who cannot afford to pay for legal fees or have
+          no confidence in available services that lack racial diversity and
+          understanding of their situations. The legal representation is mainly
+          focused on employment and immigration issues where most people of BAME
+          background have challenges at workplaces and regularising their stay
+          in the United Kingdom. The organisation provides legal advice without
+          prejudice on matters that our committed team of volunteers have
+          competence in. This advice does not stop our communities from seeking
+          alternative advice where they feel need to do so but our main priority
+          is to support our communities who cannot afford to get this service
+          elsewhere. Our service makes a huge difference to BAME people who
+          benefit from team composed of a cross-section of people of diverse
+          skills and backgrounds who offer their expertise to those who need it
+          most. This mix of experience makes the legal services department real
+          a hub of activity as the teams go through their caseloads with
+          exceptional commitment and dedication.
         </p>
       </div>
     </div>
