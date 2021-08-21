@@ -10,6 +10,7 @@ function News() {
   const [data, setData] = React.useState(news);
   const [placeholder, setPlaceHolder] = React.useState([]);
   const [newsModal, setNewsModal] = React.useState(false);
+  // const [loading, setLoading] = React.useState(false);
   const [menuData, setMenuData] = React.useState({
     title: "All",
     data: []

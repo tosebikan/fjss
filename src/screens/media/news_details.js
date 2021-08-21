@@ -1,6 +1,5 @@
 import * as React from "react";
 import HeroImage from "../../assets/images/home_hero.jpg";
-import gallery1 from "../../assets/images/gallery1.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
