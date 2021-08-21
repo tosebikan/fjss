@@ -14,24 +14,20 @@ function Strategic() {
       <div className="policy_dev">
         <h2>Strategic Partnerships</h2>
         <p>
-          Legal Services The FJSS Group has a legal services department that
-          performs several functions including providing legal advice and legal
-          representation to BAME communities. The focus of the legal
-          representation is employment and immigration issues where most people
-          of BAME background have challenges at workplaces and in regularising
-          their stay in the United Kingdom. The organisation provides legal
-          advice without prejudice on matters that our committed team of
-          volunteers have competence in, and this advice does not stop our
-          communities from seeking alternative advice where they feel need to do
-          so. Our main priority is to provide legal support to members of our
-          community who can not afford to get this anywhere else, and this has
-          made a huge difference to many people. The legal services team at FJSS
-          is a cross-section of people who have retired but still want to offer
-          their expertise to those who need it and those who are still in the
-          process of going through the various stages of their legal
-          professional development. This mix of experience makes the legal
-          services department real a hub of activity as the teams go through
-          their case loads with excellent commitment and dedication.
+          Our work provides the organisation with great opportunities to form
+          strong, mutually beneficial strategic partnerships with key
+          institutions and organisations such as the government, agencies, local
+          authorities, and institutions of higher learning. The strategic
+          partnerships form the fundamental basis of most of the work that we do
+          as our organisation strongly believes in a collaborative approach
+          towards addressing structurally entrenched and institutionalised
+          racial discrimination and racial inequality. We are always looking for
+          new partnerships to enhance our impact in the work that we do because
+          the problems of racial inequality and racial exclusion are so serious
+          that no singular approach will resolve them. Only a collaborative and
+          holistic approach will help to seriously address racial inequality and
+          the lack of diversity that still exist in many state institutions and
+          public organisations
         </p>
       </div>
     </div>
