@@ -69,13 +69,6 @@ function Nav() {
               </li>
             </NavLink>
 
-            <NavLink to="/projects" exact>
-              <li>
-                {" "}
-                <p> Projects </p>
-              </li>
-            </NavLink>
-
             <NavLink to="/strategic" exact>
               <li>
                 {" "}
@@ -225,6 +218,13 @@ function Nav() {
               <li>
                 {" "}
                 <p> Past Events </p>{" "}
+              </li>
+            </NavLink>
+
+            <NavLink to="/projects" exact>
+              <li>
+                {" "}
+                <p> Projects </p>
               </li>
             </NavLink>
 

@@ -91,13 +91,6 @@ function Aside() {
                 </li>
               </NavLink>
 
-              <NavLink to="/projects" exact onClick={asideMenu}>
-                <li>
-                  {" "}
-                  <p> Projects </p>
-                </li>
-              </NavLink>
-
               <NavLink to="/strategic" exact onClick={asideMenu}>
                 <li>
                   {" "}
@@ -246,6 +239,13 @@ function Aside() {
                 <li>
                   {" "}
                   <p> Past Events </p>{" "}
+                </li>
+              </NavLink>
+
+              <NavLink to="/projects" exact onClick={asideMenu}>
+                <li>
+                  {" "}
+                  <p> Projects </p>
                 </li>
               </NavLink>
 
