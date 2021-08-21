@@ -143,3 +143,17 @@
   background-color: #000;
   color: #fff;
 }
+
+.reportModal {
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+.reportModal p:hover {
+  color: #fc6a01;
+  text-decoration: underline;
+  cursor: pointer;
+}

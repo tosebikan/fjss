@@ -61,6 +61,11 @@ function Nav() {
                 <p> Equality Diversity and Inclusion </p>{" "}
               </li>
             </NavLink>
+            <NavLink to="/projects&events" exact>
+              <li>
+                <p> Projects & Events</p>{" "}
+              </li>
+            </NavLink>
 
             <NavLink to="/legal" exact>
               <li>

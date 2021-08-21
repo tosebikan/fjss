@@ -31,6 +31,7 @@ import Cart from "./screens/shop/cart";
 import Community from "./screens/work/community";
 import Equality from "./screens/work/equality";
 import Legal from "./screens/work/legal";
+import Projects_Events from "./screens/work/project&events";
 import Opportunity from "./screens/work/opportunity";
 import Policy from "./screens/work/policy";
 import Projects from "./screens/work/projects";
@@ -118,6 +119,11 @@ function App() {
             <Route path="/community" component={Community} exact={true} />
             <Route path="/equality" component={Equality} exact={true} />
             <Route path="/legal" component={Legal} exact={true} />
+            <Route
+              path="/projects&events"
+              component={Projects_Events}
+              exact={true}
+            />
             <Route path="/opportunity" component={Opportunity} exact={true} />
             <Route path="/policy" component={Policy} exact={true} />
             <Route path="/projects" component={Projects} exact={true} />

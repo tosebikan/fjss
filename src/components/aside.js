@@ -83,6 +83,11 @@ function Aside() {
                   <p> Equality Diversity and Inclusion </p>{" "}
                 </li>
               </NavLink>
+              <NavLink to="/projects&events" exact onClick={asideMenu}>
+                <li>
+                  <p> Projects & Events </p>{" "}
+                </li>
+              </NavLink>
 
               <NavLink to="/legal" exact onClick={asideMenu}>
                 <li>
