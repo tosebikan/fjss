@@ -56,6 +56,22 @@ function Gallery() {
       setFilteredData({ active: "photos", data: photos });
       return;
     }
+    if (e === "fjss") {
+      let photos = placeholder.data.filter(el => el.type === "photo");
+      setFilteredData({ active: "fjss", data: photos });
+      return;
+    }
+    if (e === "windrush") {
+      let photos = placeholder.data.filter(el => el.type === "photo");
+      setFilteredData({ active: "windrush", data: photos });
+      return;
+    }
+    if (e === "events") {
+      let photos = placeholder.data.filter(el => el.type === "photo");
+      setFilteredData({ active: "events", data: photos });
+      return;
+    }
+
     if (e === "graphics") {
       let graphics = placeholder.data.filter(el => el.type === "graphics");
       setFilteredData({ active: "graphics", data: graphics });
@@ -104,6 +120,30 @@ function Gallery() {
           onClick={() => filter("photos")}
         >
           Photos
+        </p>
+        <p
+          className={
+            filteredData.active === "fjss" ? "gallery_active_menu" : ""
+          }
+          onClick={() => filter("fjss")}
+        >
+          FJSS Group Staff
+        </p>
+        <p
+          className={
+            filteredData.active === "windrush" ? "gallery_active_menu" : ""
+          }
+          onClick={() => filter("windrush")}
+        >
+          Windrush Project Photos
+        </p>
+        <p
+          className={
+            filteredData.active === "events" ? "gallery_active_menu" : ""
+          }
+          onClick={() => filter("events")}
+        >
+          Events
         </p>
         <p
           className={
