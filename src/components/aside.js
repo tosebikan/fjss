@@ -180,7 +180,7 @@ function Aside() {
               <NavLink to="/jobs" exact onClick={asideMenu}>
                 <li>
                   {" "}
-                  <p> Jobs </p>{" "}
+                  <p> Job Opportunities</p>{" "}
                 </li>
               </NavLink>
             </ul>

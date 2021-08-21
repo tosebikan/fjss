@@ -7,7 +7,7 @@ function Jobs() {
       <div className="jobs_hero">
         <img src={HeroImage} alt="" />
         <div className="jobs_hero_text">
-          <h2>Jobs</h2>
+          <h2>Job Opportunities</h2>
           <p>FJSS GROUP</p>
         </div>
       </div>

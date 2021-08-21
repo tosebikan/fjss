@@ -158,7 +158,7 @@ function Nav() {
             <NavLink to="/jobs" exact>
               <li>
                 {" "}
-                <p> Jobs </p>{" "}
+                <p> Job Opportunities</p>{" "}
               </li>
             </NavLink>
           </ul>
