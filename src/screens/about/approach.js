@@ -17,17 +17,31 @@ function Approach() {
 
       <div className="approach_top">
         <p>
-          Our signature approach involves engaging the system. We do this
-          through holding regular meetings, workshops, seminars and conferences
-          to discuss key policies that inform justice delivery in Scotland. We
-          run regular open forums where invited speakers address topical issues
-          affecting justice delivery to our communities. We jointly run focus
-          surgeries with local elected leaders to address specific issues
-          affecting our communities. We research on key issues such as
-          representation in elected offices and make key recommendations to
-          oversight bodies and political leaders. We explore the role of history
-          plays in shaping modern-day inequality and highlight the historical
-          links to inequality, racial injustice, and racial prejudice.
+          Our signature approach involves engaging the “system” rather than
+          antagonise it. We do this through holding regular meetings, workshops,
+          seminars, and conferences to discuss key policies that inform justice
+          delivery in Scotland. We also run a regular open forum where invited
+          speakers address topical issues affecting fair justice delivery to our
+          communities. We jointly run focus surgeries with local and national
+          elected leaders to address specific issues around racial equality and
+          diversity that affect our communities. We research on key issues such
+          as representation in appointed and elected offices and make key
+          recommendations to oversight bodies and political leaders.
+        </p>
+
+        <p>
+          {" "}
+          We explore the role that history has played over the years and
+          decades, in shaping modern- day structurally entrenched and
+          institutionalised racial inequality and highlight that historical
+          connection to inequality, racial injustice, and racial prejudice,
+          racial stereotype and lack of opportunity for minority ethnic
+          communities. Our work now involves education leaders across local
+          authorities where are we providing input and advice on key curriculum
+          reforms that will seek to update history for schools. We publish books
+          and run projects that provide essential opportunities for important
+          research on key aspects of history to educate young people and adults
+          on diversity and harmonical racial co-existence.
         </p>
       </div>
 
