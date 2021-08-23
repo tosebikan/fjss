@@ -60,11 +60,11 @@ function Aside() {
                   <p>Our Approach</p>
                 </li>
               </NavLink>
-              {/*<NavLink to="/people" exact onClick={asideMenu}>
+              <NavLink to="/people" exact onClick={asideMenu}>
                 <li>
                   <p>Our People</p>
                 </li>
-              </NavLink>*/}
+              </NavLink>
             </ul>
           </li>
           <li className="aside_sub_title" onClick={() => openSub("work")}>
