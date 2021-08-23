@@ -15,6 +15,8 @@ function Approach() {
 
       {/*TOP SECTION */}
 
+      <h2 className="about_title">Our Approach</h2>
+
       <div className="approach_top">
         <p>
           Our signature approach involves engaging the “system” rather than

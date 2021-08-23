@@ -106,6 +106,8 @@ function About() {
         </div>
       </div>
 
+      <h2 className="about_title">About Us</h2>
+
       <div className="about_info">
         <div>
           <p>
