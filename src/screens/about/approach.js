@@ -54,18 +54,18 @@ function Approach() {
           <div className="approach_row_left">
             <h2>Collaborations</h2>
             <p>
-              Collaborations Our main approach involves engaging the key
-              stakeholders in the Scottish justice system through regular
-              meetings and conferences to discuss key the polices that inform
-              justice delivery in Scotland. For the past 18 months the FJSS
-              Group has been running a monthly open forum, the Justice Forum
-              where invited speakers address topical issues affecting our
-              communities such as community relations and racially motivated
-              antisocial incidents. The issues discussed also look at historical
-              links to inequality, the Scottish justice system , the law in
-              Scotland and how it affects issues around opportunity, employment,
-              immigration, settlement, social housing and the forum also gathers
-              the views from the audiences.
+              Our main approach involves engaging the key stakeholders in the
+              Scottish justice system through regular meetings and conferences
+              to discuss key the polices that inform justice delivery in
+              Scotland. For the past 18 months the FJSS Group has been running a
+              monthly open forum, the Justice Forum where invited speakers
+              address topical issues affecting our communities such as community
+              relations and racially motivated antisocial incidents. The issues
+              discussed also look at historical links to inequality, the
+              Scottish justice system , the law in Scotland and how it affects
+              issues around opportunity, employment, immigration, settlement,
+              social housing and the forum also gathers the views from the
+              audiences.
             </p>
           </div>
           <div className="approach_row_right">
