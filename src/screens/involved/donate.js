@@ -45,9 +45,7 @@ function Donate() {
         <img src={give} alt="" />
       </div>
       <div className="donate_title">
-        <h2>
-          Donate To FJSS Group To Help Improve The Scottish Justice System
-        </h2>
+        <h2>Donate</h2>
         <p>
           The FJSS Group is a small charity organisation undertaking very
           important work. We are still largely self-funded and we would greatly
