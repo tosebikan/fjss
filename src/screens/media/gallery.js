@@ -44,30 +44,28 @@ function Gallery() {
 
   const filter = e => {
     if (e === "all") {
-      let all = placeholder.data.filter(
-        el => el.type === "photo" || el.type === "graphics"
-      );
+      let all = placeholder.data;
       setFilteredData({ active: "all", data: all });
       return;
     }
 
     if (e === "photos") {
-      let photos = placeholder.data.filter(el => el.type === "photo");
+      let photos = placeholder.data.filter(el => el.type !== "graphics");
       setFilteredData({ active: "photos", data: photos });
       return;
     }
     if (e === "fjss") {
-      let photos = placeholder.data.filter(el => el.type === "photo");
+      let photos = placeholder.data.filter(el => el.type === "fjss");
       setFilteredData({ active: "fjss", data: photos });
       return;
     }
     if (e === "windrush") {
-      let photos = placeholder.data.filter(el => el.type === "photo");
+      let photos = placeholder.data.filter(el => el.type === "windrush");
       setFilteredData({ active: "windrush", data: photos });
       return;
     }
     if (e === "events") {
-      let photos = placeholder.data.filter(el => el.type === "photo");
+      let photos = placeholder.data.filter(el => el.type === "events");
       setFilteredData({ active: "events", data: photos });
       return;
     }
@@ -113,14 +111,7 @@ function Gallery() {
         >
           All
         </p>
-        <p
-          className={
-            filteredData.active === "photos" ? "gallery_active_menu" : ""
-          }
-          onClick={() => filter("photos")}
-        >
-          Photos
-        </p>
+
         <p
           className={
             filteredData.active === "fjss" ? "gallery_active_menu" : ""
@@ -144,6 +135,14 @@ function Gallery() {
           onClick={() => filter("events")}
         >
           Events
+        </p>
+        <p
+          className={
+            filteredData.active === "photos" ? "gallery_active_menu" : ""
+          }
+          onClick={() => filter("photos")}
+        >
+          Photos
         </p>
         <p
           className={

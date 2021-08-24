@@ -130,14 +130,14 @@ function Shop() {
                   // min="0"
                   // max="1000"
                 />
-                <input
+                {/*<input
                   type="range"
                   name="price-max"
                   // id="price-max"
                   // value="800"
                   // min="0"
                   // max="1000"
-                />
+                />*/}
               </div>
             </div>
             <div className="shop_form_button_row">
@@ -162,10 +162,10 @@ function Shop() {
 
             <Link to="/news">
               <div className="shop_menu_news_card">
-                <img src={news[1].images[0]} alt="" />
+                <img src={news[5].images[0]} alt="" />
                 <div className="shop_menu_news_card_column">
                   <p className="shop_menu_news_date"> 21 Feb 2021</p>
-                  <p className="menu_news_card_text">{news[1].title}</p>
+                  <p className="menu_news_card_text">{news[5].title}</p>
                 </div>
               </div>
             </Link>
