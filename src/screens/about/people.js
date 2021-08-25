@@ -8,6 +8,7 @@ import HeroImage from "../../assets/images/home_hero.jpg";
 import getInvolved from "../../assets/images/getinvolved.jpg";
 // import { people } from "../../helpers/data";
 import { apiFunctions } from "../../helpers/api";
+import { Link } from "react-router-dom";
 
 function People() {
   const [people, setPeople] = React.useState([]);
@@ -52,7 +53,9 @@ function People() {
         <img src={getInvolved} alt="" className="people_footer_image" />
         <div className="people_footer_info">
           <h2>Become a Volunteer</h2>
-          <button>Get involved</button>
+          <Link to="/volunteer">
+            <button>Get involved</button>
+          </Link>
         </div>
       </div>
     </div>
