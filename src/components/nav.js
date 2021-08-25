@@ -226,10 +226,22 @@ function Nav() {
               </li>
             </NavLink>
 
-            <NavLink to="/projects" exact>
+            <NavLink
+              to={{ pathname: "/projects", state: { goto: "current" } }}
+              exact
+            >
               <li>
                 {" "}
-                <p> Projects </p>
+                <p> Current Projects </p>
+              </li>
+            </NavLink>
+            <NavLink
+              to={{ pathname: "/projects", state: { goto: "completed" } }}
+              exact
+            >
+              <li>
+                {" "}
+                <p> Completed Projects </p>
               </li>
             </NavLink>
 

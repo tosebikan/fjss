@@ -7,14 +7,29 @@ import { Link } from "react-router-dom";
 import { apiFunctions } from "../../helpers/api";
 import StyledMarkdown from "../../components/styled_markdown";
 
-function Projects() {
+function Projects(props) {
   const [loading, setLoading] = React.useState(true);
   const [projects, setProjects] = React.useState([]);
+  let goto = props.location.state.goto;
+  console.log({ goto });
+  const currRef = React.useRef();
+  const compRef = React.useRef();
 
   React.useEffect(() => {
     fetchProjects();
     //eslint-disable-next-line
   }, []);
+
+  React.useEffect(() => {
+    if (goto === "current" && currRef.current) {
+      currRef.current.scrollIntoView();
+      return;
+    }
+
+    if (goto === "completed" && compRef.current) {
+      compRef.current.scrollIntoView();
+    }
+  }, [projects]);
 
   let storage = {};
 
@@ -82,7 +97,7 @@ function Projects() {
     cssEase: "linear"
   };
 
-  console.log({ completed, ongoing, upcoming });
+  // console.log({ completed, ongoing, upcoming });
 
   return (
     <div className="projects_container">
@@ -99,7 +114,7 @@ function Projects() {
       {/*PROJECTS COMPLETE SECTIOn*/}
 
       {completed && (
-        <div className="completed_projects">
+        <div className="completed_projects" ref={compRef}>
           <Slider {...settings}>
             {completed.map(el => (
               <div className="project_complete" key={el.id}>
@@ -130,7 +145,7 @@ function Projects() {
 
       {/* ONGOING PROJECTS*/}
       {ongoing.length > 0 && (
-        <div className="ongoing_projects">
+        <div className="ongoing_projects" ref={currRef}>
           <h2>Ongoing projects</h2>
 
           <Slider {...settings2}>
