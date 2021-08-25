@@ -247,10 +247,30 @@ function Aside() {
                 </li>
               </NavLink>
 
-              <NavLink to="/projects" exact onClick={asideMenu}>
+              {/*<NavLink to="/projects" exact onClick={asideMenu}>
                 <li>
                   {" "}
                   <p> Projects </p>
+                </li>
+              </NavLink>*/}
+              <NavLink
+                to={{ pathname: "/projects", state: { goto: "current" } }}
+                exact
+                onClick={asideMenu}
+              >
+                <li>
+                  {" "}
+                  <p> Current Projects </p>
+                </li>
+              </NavLink>
+              <NavLink
+                to={{ pathname: "/projects", state: { goto: "completed" } }}
+                exact
+                onClick={asideMenu}
+              >
+                <li>
+                  {" "}
+                  <p> Completed Projects </p>
                 </li>
               </NavLink>
 
