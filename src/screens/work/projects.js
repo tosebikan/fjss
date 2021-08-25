@@ -29,6 +29,7 @@ function Projects(props) {
     if (goto === "completed" && compRef.current) {
       compRef.current.scrollIntoView();
     }
+    // eslint-disable-next-line
   }, [projects]);
 
   let storage = {};
