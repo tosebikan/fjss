@@ -13,6 +13,7 @@ import heritageFlyer from "../assets/images/heritageFlyer.jpg";
 import independentPrison from "../assets/images/independentprison.jpg";
 import publicAppointment from "../assets/images/publicappointment.jpg";
 import scottishMeditation from "../assets/images/scottishmeditation.jpg";
+import fHome from "../assets/images/fhome.jpeg";
 // import scottishGov from "../assets/images/projects/scottishgov.png";
 import un from "../assets/images/projects/un.png";
 import windrush from "../assets/images/projects/windrush.png";
@@ -278,10 +279,10 @@ export const events = [
     image: scottishMeditation,
     status: "completed",
     type: "Virtual Event",
-    startDate: "Jul,15, 2021",
-    endDate: "",
-    startTime: "7:00 pm",
-    endTime: "8:00 pm"
+    startDate: "Jul 15, 2021",
+    endDate: "Jul 15, 2021",
+    startTime: "19:00",
+    endTime: "20:00"
   },
   {
     id: 2,
@@ -292,10 +293,10 @@ export const events = [
     image: heritageFlyer,
     status: "completed",
     type: "Virtual Event",
-    startDate: "Apr,13, 2021",
-    endDate: "",
-    startTime: "7:00 pm",
-    endTime: "10:00 pm"
+    startDate: "Apr 13, 2021",
+    endDate: "Apr 13, 2021",
+    startTime: "19:00",
+    endTime: "21:00"
   },
   {
     id: 3,
@@ -305,10 +306,10 @@ export const events = [
     image: equalitiesspeaker,
     status: "completed",
     type: "Virtual Event",
-    startDate: "Mar,24, 2021",
-    endDate: "",
-    startTime: "9:00 am",
-    endTime: "11:30 am"
+    startDate: "Mar 24, 2021",
+    endDate: "Mar 24, 2021",
+    startTime: "09:00",
+    endTime: "11:30"
   },
   {
     id: 4,
@@ -318,10 +319,10 @@ export const events = [
     image: equalitiesworkshop,
     status: "completed",
     type: "Virtual Event",
-    startDate: "Mar,24, 2021",
-    endDate: "",
-    startTime: "9:00 am",
-    endTime: "11:30 am"
+    startDate: "Mar 24, 2021",
+    endDate: "Mar 24, 2021",
+    startTime: "09:00",
+    endTime: "11:30"
   },
   {
     id: 5,
@@ -331,10 +332,10 @@ export const events = [
     image: publicAppointment,
     status: "completed",
     type: "Virtual Event",
-    startDate: "Feb,4, 2021",
-    endDate: "",
-    startTime: "1:00 pm",
-    endTime: "2:30 pm",
+    startDate: "Feb 4, 2021",
+    endDate: "Feb 4, 2021",
+    startTime: "13:00",
+    endTime: "14:30",
 
     zoom: {
       topic: "The Public Appointments Process",
@@ -374,10 +375,10 @@ export const events = [
     image: independentPrison,
     status: "completed",
     type: "Virtual Event",
-    startDate: "Jan,26, 2021",
-    endDate: "",
-    startTime: "1:30 pm",
-    endTime: "2:30 pm",
+    startDate: "Jan 26, 2021",
+    endDate: "Jan 26, 2021",
+    startTime: "13:30",
+    endTime: "14:30",
     zoom: {
       topic: "The Role of the Independent Prison Monitor",
       time: "Jan 26, 2021 01:30 PM London",
@@ -406,7 +407,19 @@ export const events = [
       dialByLocPasscode: "758532",
       findYourLocalNumber: "https://us02web.zoom.us/u/kuPAVkx0I"
     }
-  }
+  },
+  {
+    id: 7,
+    title: "FJSS Group | Home Office Information Event",
+    text: "Check out “FJSS Group | Home Office Information Event”!",
+    image: fHome,
+    status: "pending",
+    type: "Virtual Event",
+    startDate: "June 14, 2022",
+    endDate: "June 14, 2022",
+    startTime: "18:00",
+    endTime: "20:00"
+  },
 ];
 
 export const projects = [
