@@ -75,14 +75,8 @@ function NewsDetails(props) {
         <div className="news_details_info_top">
           <img src={news.thumbnail.url} alt="" />
           <div className="news_details_info_text_group">
-            <h2>FJSS Group Food Support</h2>
-            <p>
-              Serving our community is core to FJSS Group’s goals. Our food
-              support program has been waxing strong. We have and continue to
-              serve those in need during this challenging times. Our food
-              support brings hope to all those that have been affected by the
-              corona virus.
-            </p>
+            <h2>{news.title}</h2>
+            <p>{news.text}</p>
           </div>
         </div>
       </div>
