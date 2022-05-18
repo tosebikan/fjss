@@ -21,8 +21,7 @@ function PastEvents() {
             <div className="upcoming_events_card_left">
               <div>
                 <div className="upcoming_events_date">
-                  <p>13</p>
-                  <p className="upcoming_events_bold"> Apr </p>
+                  <p className="upcoming_events_bold">{el?.startDate}</p>
                 </div>
                 <p className="upcoming_events_text">{el.title}</p>
                 <div className="row">
