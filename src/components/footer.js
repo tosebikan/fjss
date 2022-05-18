@@ -87,9 +87,9 @@ function Footer() {
                 <img src={footernews2} alt="" />
                 <div>
                   <p className="footer_news_title">
-                    Global Refugee Forum Geneva
+                    Scottish Justice Conference Report Launch
                   </p>
-                  <p className="footer_news_date">2019-12-18 12:16</p>
+                  <p className="footer_news_date">2019-11-29 12:16</p>
                 </div>
               </div>
             </Link>
